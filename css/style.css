@@ -1,0 +1,202 @@
+@font-face {
+  font-family: 'Pluto Sans Cond Light';
+  src: url("../fonts/pluto-sans.eot");
+  src: url("../fonts/pluto-sans.eot?#iefix") format("embedded-opentype"), url("../fonts/pluto-sans.woff") format("woff"), url("../fonts/pluto-sans.ttf") format("truetype"); }
+
+body {
+  background: white;
+  margin: 0;
+  padding: 0;
+  color: #555555;
+  font-size: 14px;
+  font-family: "Pluto Sans Cond Light", sans-serif;
+  text-align: center;
+  line-height: 28px; }
+
+h1 {
+  font-size: 48px; }
+
+h2 {
+  font-size: 32px;
+  line-height: 48px; }
+
+h3 {
+  font-size: 18px;
+  line-height: 48px; }
+
+h6 {
+  font-size: 14px; }
+
+.h6 {
+  font-size: 18px; }
+
+.h7 {
+  font-size: 12px; }
+
+.typeLowlight {
+  color: #aeb8be; }
+
+b {
+  color: #000; }
+
+a {
+  text-decoration: none;
+  color: #00bdff; }
+  a:hover {
+    color: #f25f60; }
+  a:active {
+    position: relative;
+    top: 1px;
+    border: 0; }
+
+a.btn {
+  font-size: 18px;
+  color: white;
+  text-shadow: 0 0 0;
+  background: #00bdff;
+  box-shadow: 0 3px 0 #0097cc;
+  border-radius: 3px;
+  padding: 20px 30px 19px;
+  cursor: pointer;
+  transition: 0.3s background;
+  -webkit-transition: 0.3s background;
+  -moz-transition: 0.3s background;
+  -ms-transition: 0.3s background;
+  -o-transition: 0.3s background;
+  transition-delay: 0;
+  -webkit-transition-delay: 0;
+  -moz-transition-delay: 0;
+  -ms-transition-delay: 0;
+  -o-transition-delay: 0; }
+  a.btn:hover {
+    background: #33caff; }
+  a.btn:active {
+    position: relative;
+    top: 3px;
+    border: 0;
+    box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.15); }
+
+hr {
+  border: 0;
+  border-bottom: 2px dotted #aeb8be; }
+
+#blog {
+  float: right;
+  margin-right: 30px; }
+
+header {
+  margin: 19px auto 50px;
+  width: 700px;
+  height: 170px;
+  padding-bottom: 42px;
+  border-bottom: 1px dotted #d8dde0;
+  background: url(../images/150x150.png) no-repeat center center;
+  transition: 0.2s opacity;
+  -webkit-transition: 0.2s opacity;
+  -moz-transition: 0.2s opacity;
+  -ms-transition: 0.2s opacity;
+  -o-transition: 0.2s opacity;
+  transition-delay: 0;
+  -webkit-transition-delay: 0;
+  -moz-transition-delay: 0;
+  -ms-transition-delay: 0;
+  -o-transition-delay: 0; }
+  header:hover {
+    opacity: 0.8; }
+
+img {
+  max-width: 100%; }
+
+#content {
+  margin: 0 auto;
+  text-align: left; }
+  #content section {
+    width: 500px;
+    margin: 50px auto;
+    padding-bottom: 20px;
+    border-bottom: 1px dotted #d8dde0; }
+    #content section p {
+      font-family: "Pluto Sans Cond Light", sans-serif;
+      font-size: 14px;
+      width: 500px;
+      margin-bottom: 10px; }
+    #content section ul {
+      float: left;
+      width: 33%; }
+  #content .piece {
+    box-shadow: inset 2px 2px 25px rgba(0, 0, 0, 0.01);
+    border-bottom: 1px dotted #d8dde0;
+    padding-top: 50px;
+    text-align: center; }
+    #content .piece .work {
+      margin: 20px auto;
+      padding: 0 20px; }
+    #content .piece p {
+      width: 500px;
+      margin: 0 auto;
+      text-align: left; }
+    #content .piece p.button {
+      margin: 30px auto 70px; }
+
+footer {
+  font-size: 12px;
+  color: #aeb8be;
+  margin-bottom: 20px; }
+  footer .heart {
+    color: #f25f60; }
+
+.clear {
+  margin: 0;
+  padding: 0;
+  clear: both; }
+
+::selection {
+  background: #f79898;
+  color: white;
+  text-shadow: 0 0 0; }
+
+::-moz-selection {
+  background: #f79898;
+  color: white;
+  text-shadow: 0 0 0; }
+
+.go-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #00bdff;
+  font-size: 14px;
+  font-family: PlutoSansCondLight, sans-serif;
+  padding: 1px 10px;
+  display: none;
+  opacity: 0.5;
+  transition: opacity 1s;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+}
+
+.go-top:hover {
+  opacity: 1.0;
+  color: #fff;      
+}
+
+@media screen and (max-width: 540px) {
+  header, #content section, #content .piece p, #content section p {
+    width: 300px;
+    transition: 0.3s width;
+    -webkit-transition: 0.3s width;
+    -moz-transition: 0.3s width;
+    -ms-transition: 0.3s width;
+    -o-transition: 0.3s width;
+    transition-delay: 0;
+    -webkit-transition-delay: 0;
+    -moz-transition-delay: 0;
+    -ms-transition-delay: 0;
+    -o-transition-delay: 0; }
+
+  h3 {
+    line-height: 32px;
+    margin-bottom: 10px; } }
