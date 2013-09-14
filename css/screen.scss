@@ -1,0 +1,262 @@
+/////////////////////////////
+// CSS for bysusanlin.com ///
+// @bysusanlin //////////////
+/////////////////////////////
+
+// Variables ///////////////
+
+$h1: 48px;
+$h2: 32px;
+$h3: 18px;
+$h6: 14px;
+$h7: 12px;
+
+$p: 14px;
+
+$sans-serif: "Pluto Sans Cond Light", sans-serif;
+$icon: "Entypo";
+$icon-social: "Entypo Social";
+
+$black: #555;
+$blue: #00bdff;
+$coral: #f25f60;
+$grey: #aeb8be;
+$beige: #f5f4f1;
+$white: #fff;
+
+$whiteTextShadow: 0 1px 0 $white;
+
+// Custom Fonts /////////////
+
+@font-face {
+	font-family: 'Pluto Sans Cond Light';
+	src: url('../fonts/pluto-sans.eot');
+	src: url('../fonts/pluto-sans.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/pluto-sans.woff') format('woff'),
+	url('../fonts/pluto-sans.ttf') format('truetype');
+}
+
+// Mixins ///////////////////
+
+@mixin transition($duration, $property: all, $delay:0) {
+  transition: $duration $property;
+  -webkit-transition: $duration $property;
+  -moz-transition: $duration $property;
+  -ms-transition: $duration $property;
+  -o-transition: $duration $property;
+  transition-delay: $delay;
+  -webkit-transition-delay: $delay;
+  -moz-transition-delay: $delay;
+  -ms-transition-delay: $delay;
+  -o-transition-delay: $delay;
+}
+
+/////////////////////////////
+
+body {
+	background: $white;
+	margin: 0;
+	padding: 0;
+	color: $black;
+	font-size: $p;
+	font-family: $sans-serif;
+	text-align: center;
+	line-height: 28px;
+}
+
+h1 {
+	font-size: $h1;
+}
+
+h2 {
+	font-size: $h2;
+	line-height: $h1;
+}
+
+h3 {
+	font-size: $h3;
+	line-height: $h1;
+}
+
+h6 {
+	font-size: $h6;
+}
+.h6 {
+	font-size: 18px;
+}
+
+.h7 {
+	font-size: $h7;
+}
+
+.typeLowlight {
+	color: $grey;
+}
+
+b {
+	color: #000;
+}
+
+a {
+	text-decoration: none;
+	color: $blue;
+	//@include transition(0.2s, color);
+
+	&:hover {
+		color: $coral;
+	}
+
+	&:active {
+		position: relative;
+		top: 1px; 
+		border: 0; 
+	}
+}
+
+a.btn {
+
+	font-size: $h3;
+	color: $white;
+	text-shadow: 0 0 0;
+	background: $blue;
+	box-shadow: 0 3px 0 darken($blue, 10%);
+	border-radius: 3px;
+	padding: 20px 30px 19px;
+	cursor: pointer;
+	@include transition(0.3s, background);
+
+	&:hover {
+		background: saturate(lighten($blue, 10%), 10%);
+	}
+
+	&:active {
+		position: relative;
+		top: 3px;
+		border: 0;
+		box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.15);
+	}
+
+}
+
+hr {
+	border: 0;
+	border-bottom: 2px dotted $grey;
+}
+
+#blog {
+	float: right;
+	margin-right: 30px;
+	z-index: 10px;
+}
+
+header {
+	margin: 19px auto 50px;
+	width: 700px;
+	height: 170px;
+	padding-bottom: 42px;
+	border-bottom: 1px dotted lighten($grey, 15%);
+	background: url(../images/150x150.png) no-repeat center center;
+	@include transition(0.2s, opacity);
+
+	&:hover {
+		opacity: 0.8;
+	}
+
+}
+
+img {
+  max-width: 100%;
+}
+
+#content {
+
+	margin: 0 auto;
+	text-align: left;
+
+	section {
+		width: 500px;
+		margin: 50px auto;
+		padding-bottom: 20px;
+		border-bottom: 1px dotted lighten($grey, 15%);
+	
+		p {
+			font-family: $sans-serif;
+			font-size: $p;
+			width: 500px;
+			margin-bottom: 10px;
+		}	
+
+		ul {
+			float: left;
+			width: 33%;
+		}
+
+	}
+
+	.piece {
+	
+		box-shadow: inset 2px 2px 25px rgba(0, 0, 0, 0.01);
+		border-bottom: 1px dotted lighten($grey, 15%);
+		padding-top: 50px;
+		text-align: center;
+
+		.work {
+			margin: 20px auto;
+			padding: 0 20px;
+		}
+
+		p {
+			width: 500px;
+			margin: 0 auto;
+			text-align: left;
+		}
+
+		p.button {
+			margin: 30px auto 70px;
+		}
+
+	}
+
+}
+
+footer {
+	font-size: $h7;
+	color: $grey;
+	margin-bottom: 20px;
+
+	.heart {
+		color: $coral;
+	}
+
+}
+
+.clear {
+	margin: 0;
+	padding: 0;
+	clear: both;
+}
+			
+::selection {
+	background: lighten($coral, 12%);
+	color: $white;
+	text-shadow: 0 0 0;
+}
+::-moz-selection {
+	background: lighten($coral, 12%);
+	color: $white;
+	text-shadow: 0 0 0;
+}
+
+@media screen and (max-width:540px) {
+
+	header, #content section, #content .piece p, #content section p {
+		width: 300px;
+		@include transition(0.3s, width);
+	}
+
+	h3 {
+		line-height: $h2;
+		margin-bottom: 10px;
+	}
+
+}
