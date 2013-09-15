@@ -121,7 +121,8 @@ header {
       float: left;
       margin-right: 20px; }
     #subnav ul li:last-child {
-      float: right; }
+      float: right; 
+      margin-right: 0; }
 
 .sticky {
   position: fixed;
