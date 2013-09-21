@@ -23,25 +23,28 @@
 	<meta name="p:domain_verify" content="766c1df40cfdc1ba812d5b2668f45ede"/>
 
 	<script type="text/javascript">
-	$(document).ready(function() {  
-		var stickyNavTop = $('#subnav').offset().top;  
+	
+		//hooray, sticky navs?
+		$(document).ready(function() {  
+			var stickyNavTop = $('#subnav').offset().top;  
 
-		var stickyNav = function(){  
-			var scrollTop = $(window).scrollTop();  
+			var stickyNav = function(){  
+				var scrollTop = $(window).scrollTop();  
 
-			if (scrollTop > stickyNavTop) {   
-				$('#subnav').addClass('sticky');  
-			} else {  
-				$('#subnav').removeClass('sticky');   
-			}  
-		};  
+				if (scrollTop > stickyNavTop) {   
+					$('#subnav').addClass('sticky');  
+				} else {  
+					$('#subnav').removeClass('sticky');   
+				}  
+			};  
 
-		stickyNav();  
-
-		$(window).scroll(function() {  
 			stickyNav();  
+
+			$(window).scroll(function() {  
+				stickyNav();  
+			});  
 		});  
-	});  
+	
 	</script>
 
 	<script type="text/javascript">
@@ -59,6 +62,7 @@
 	});
 	</script>
 
+	<!-- oh hai, google analytics -->
 	<script type="text/javascript">
 		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
@@ -83,8 +87,6 @@
 			<li class="typeLowlight"> design by susan </li>
 			<li> <a href="#work">work</a> </li>
 			<li> <a href="#talks">talks</a> </li>
-			<!-- <li> <a href="#sketches">sketches</a> </li>
-			<li> <a href="#bonus">bonus</a> </li> -->
 			<li> <a href="#contact">contact</a> </li>
 			<li> <a href="http://sketch.bysusanlin.com">blog<i class="icon-popup"></i></a> </li>
 			<li> <a href="#top" class="go-top">&uarr;</a> </li>
@@ -112,9 +114,9 @@
 		</div> <!-- //piece -->
 
 		<a name="talks"> </a>
-		<div class="piece">
+		<div class="piece dark">
 
-			<!-- <h6> Talks / Speaking the Code </h6> -->
+			<h6>Speaking the Code <span class="typeLowlight">//Talks</span></h6>
 			
 			<iframe width="700" height="525" src="//www.youtube.com/embed/KWPnozbp4us" frameborder="0" allowfullscreen></iframe>
 
@@ -129,13 +131,10 @@
 				 Previously, I've spoken privately for a visual design studio class and on a <a href="http://sketch.bysusanlin.com/post/45977847470/speaking-with-the-cmu-bxa-panel">Carnegie Mellon BXA alumni panel<i class="icon-popup"></i></a>
 			</p>
 
-			<p class="button">
-				<a href="#contact" class="btn">Contact for Talk Requests &darr;</a>
-			</p>
-
 		</div> <!-- //piece -->
 
 		<section>
+		<a name="contact"></a>
 
 			<img src="images/bysusanlin-portrait.png"/>
 		
@@ -143,18 +142,17 @@
 			<h3> Designerd, illustrator, & pretend developer </h3>
 
 			<p>
-				Once upon a time, Susan was an oil painter. Then she fell in love with technology and the people who built it during her time at <a href="http://cmu.edu"><i class="icon-graduation-cap"></i>Carnegie Mellon</a>
+				Once upon a time, Susan was an oil painter. Then she fell in love with technology and the people who built it during her time at <a href="http://cmu.edu"><i class="icon-graduation-cap"></i>Carnegie Mellon.</a>
 			</p>
 			<p>
-				She’s currently Senior Visual UX Designer at <a href="#design"> <i class="icon-monitor"></i>Trulia</a>
+				She's currently Senior Visual UX Designer at <a href="#work">Trulia.</a>
 			</p>
 			<p>
-				Her hair was last seen as turquoise-one-streak-pink.
+				She believes great designs are created from <a href="#talks">those who truly know the medium.</a> Or simply said, to design for internet, you have to internet. 
 			</p>
 
 		</section>
 
-		<a name="contact"></a>
 		<section>
 			<ul>
 				<li>

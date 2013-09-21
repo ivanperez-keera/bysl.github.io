@@ -27,7 +27,7 @@ h3 {
 
 h6 {
   font-size: 14px;
-  color: #aeb8be;
+  color: #f25f60;
   text-transform: uppercase;
   line-height: 32px;
   text-align: left;
@@ -121,31 +121,23 @@ header {
       float: left;
       margin-right: 20px; }
     #subnav ul li:last-child {
-      float: right; 
+      float: right;
       margin-right: 0; }
-      
-        .go-top {
-            border-radius: 10px;
-            text-decoration: none;
-        	color: #fff;
-        	background-color: #00bdff;
-        	font-size: 14px;
-            font-family: PlutoSansCondLight, sans-serif;
-        	padding: 6px 10px;
-        	display: none;
-            opacity: 0.5;
-        }
-        
-        .go-top:hover {
-        	opacity: 1.0;
-            color: #fff;
-        }
-        
-        .go-top:active {
-            position: relative;
-            top: 1px; 
-            border: 0; 
-        }
+      #subnav ul li:last-child .go-top {
+        border-radius: 10px;
+        text-decoration: none;
+        color: white;
+        background-color: #00bdff;
+        padding: 8px 10px 7px;
+        display: none;
+        opacity: 0.5;
+        font-size: 14px; }
+        #subnav ul li:last-child .go-top:hover {
+          opacity: 1.0; }
+        #subnav ul li:last-child .go-top:active {
+          position: relative;
+          top: 1px;
+          border: 0; }
 
 .sticky {
   position: fixed;
@@ -160,7 +152,7 @@ img {
   text-align: left; }
   #content section {
     width: 500px;
-    margin: 30px auto;
+    margin: 40px auto;
     padding-bottom: 20px;
     border-bottom: 1px dotted #d8dde0; }
     #content section p {
@@ -174,7 +166,7 @@ img {
   #content .piece {
     box-shadow: inset 2px 2px 25px rgba(0, 0, 0, 0.01);
     border-bottom: 1px dotted #d8dde0;
-    margin-top: 30px;
+    padding: 40px 0 60px;
     text-align: center; }
     #content .piece .work {
       margin: 20px auto;
@@ -186,6 +178,12 @@ img {
     #content .piece p.button {
       font-weight: 300;
       margin: 30px auto 70px; }
+  #content .dark {
+    background: #111111;
+    color: #aeb8be;
+    line-height: 30px; }
+    #content .dark p {
+      margin-top: 10px; }
 
 footer {
   font-size: 12px;
