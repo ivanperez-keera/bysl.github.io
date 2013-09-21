@@ -1,8 +1,7 @@
-bysl.github.io
+bysusalin.com
 ====================
 
 design by susan
 
-my portfolio! on github! hooray!
-
-!!!
+my portfolio! on github!
+hooray!
