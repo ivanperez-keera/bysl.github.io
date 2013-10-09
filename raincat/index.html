@@ -1,0 +1,216 @@
+<!-- Project Raincat Webpage (http://raincat.bysusanlin.com) - Last Edited 1.21.10 -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="description" content="Project Raincat is a 2D Puzzle Game created by a team of Carnegie Mellon students. It is written in Haskell and playable on Windows and Linux machines. Every semester we design and make a new game; our team specializes in creating cat games." />
+    <meta name="keywords" content="project raincat rain cat 2d puzzle game indie independent cmu carnegie mellon game creation society gcs asterisk star haskell linux freeware windows" />
+
+    <title>Raincat | 2D Puzzle Game</title>
+    
+    <link href="stylesheets/raincat.css" rel="stylesheet" type="text/css" />
+    <!--[if IE 6]><link rel="stylesheet" href="stylesheets/ie6.css" type="text/css" /><![endif]-->
+    
+    <link rel="shortcut icon" href="favicon.ico" />
+    
+    <script type="text/javascript" src="javascript/jquery.js"></script>
+    <script type="text/javascript" src="javascript/smoothscroll.js"></script>
+    <script type="text/javascript" src="javascript/tipsy.js"></script>
+    <script type='text/javascript'> <!-- jQuery for Facebook Icon Tooltip -->
+			$(function() {
+				$('#facebook').tipsy({gravity: 'w', fade: true});
+				$('#play_windows').tipsy({gravity: 'n', fade: true});
+				$('#play_linux').tipsy({gravity: 'n', fade: true});
+			});
+		</script>
+    <script type="text/javascript"> <!-- jQuery for image gallery switching -->
+      $(document).ready(function(){
+      $(".thumbs a").click(function(){
+        var largePath = $(this).attr("href");
+        var largeAlt = $(this).attr("title");
+        $("#largeImg").attr({ src: largePath, alt: largeAlt });
+        return false;
+      });
+    });
+    </script>
+        
+</head>
+
+<body class="raincat">
+    
+    <div id="top">
+      <a name="play">&nbsp;</a>
+    </div> <!-- end top div -->
+
+    <div id="fixed"> <!-- left hand navigation -->
+	<a href="http://www.facebook.com/pages/Raincat/98795793005" id="facebook" class="fbk" target="_blank" original-title="Become a fan on Facebook">
+		<img src="images/raincat-facebook.png" border="0" alt="Add us on Facebook!"/>
+	</a>
+      <ul id="nav">
+        <li> <a href="#play">Play</a> </li>
+        <li> <a href="#about">About</a> </li>
+        <li> <a href="#team">Team</a> </li>
+        <li> <a href="#gallery">Gallery</a> </li>
+      </ul>
+    </div> <!-- end fixed div -->
+    
+    <div id="content">  
+      
+      <h1> <img src="images/h_play.png" alt="Play"/> </h1>
+      <h2> 2D puzzle game featuring a fuzzy little cat </h2>
+        <img src="images/cat_umbrella.png" align="left" />
+        <br/>
+        <p class="quotes">
+          "Watching the cat walk is so soothing." <br/>
+          "He's so cute! Look at him go... go Raincat, go!" <br/>
+        </p>
+        <p class="download">
+          <span class="dtplay">Download to play Raincat!</span> 
+          <span class="dtplay_border"><a href="Raincat.zip" id="play_windows" original-title=".zip | 11.4MB">Windows</a> | <a href="http://stage.gamecreation.org/raincat/raincat.linux.tar.gz " id="play_linux" original-title="tar.gz | 10.1MB">Linux</a></span>
+        </p>
+				<p class="source">
+					Written in Haskell <a href="Raincat_source.zip">Get the Source!</a>
+				</p>
+        
+        <br/>
+        
+
+      <h1> </h1>
+      <h2> what fans have said </h2>
+      <p class="quotes">
+        "Raincat is amazing. It's simple without being boring, and is probably the cutest thing I've seen in a while." &mdash;<a href="http://twitter.com/cekeen/status/3225364514">cekeen</a> <br/>
+      </p>
+      
+      <br/> 
+      
+      
+      <a name="about"></a>
+      <h1> <img src="images/h_about.png" alt="About"/> </h1>
+      <h2> how the cat sauntering in the rain came to be </h2>
+				<p class="info">
+					Project Raincat is a game developed by <a href="http://cmu.edu" target="_blank">Carnegie Mellon</a> students through <a href="http://gamecreation.org" target="_blank">GCS</a> during the Fall 2008 semester. Raincat features game play inspired from classics <a href="http://en.wikipedia.org/wiki/Lemmings_(video_game)" target="_blank">Lemmings</a> and <a href="http://en.wikipedia.org/wiki/The_Incredible_Machine" target="_blank">The Incredible Machine</a>.
+					<br/><br/>
+					The project proved to be an excellent learning experience for the programmers. Everything is programmed in <a href="http://www.haskell.org/" target="_blank">Haskell</a>.
+					<br/><br/>
+					It's always raining in Pittsburgh, which makes for gray days while cats are just adorable&mdash;perfect for brightening up such days. 
+					<br/><br/>
+					<img align="left" src="images/cat_bubble.png" alt="Raincat in Bubble"/> Your goal is simple: guide the fuzzy cat safe and dry to the end of each level. There are multiple ways to clear any given level; such flexible solutions hope to provide a more enjoyable game play experience.
+					<br/><br/>
+					Become our fan on <a href="http://www.facebook.com/pages/Raincat/98795793005" target="_blank">Facebook!</a> We make a new cat game every semester, so you'll be updated with future endeavors.
+					<br/><br/>
+					As students who make games for fun, we understand that our product isn't perfect. <i>We never anticipated such a wide audience, but because of this warm reception, we have improved some controls to make the game more enjoyable (January 2010).</i> If you have any improvements to the build you'd like to share, feel free to contact us. We'll be happy to hear your feedback.
+					<br/><br/>
+					Finally, we'd like to mention that Project Raincat placed first in <a href="http://www.gamecreation.org/games" target="_blank">GCS Gold</a> during the following spring semester release party. Now, would you care to <a href="#play" target="_self">play?</a>
+				</p>
+        
+        <br/>
+        
+        
+      <a name="team"></a>
+      <h1> <img src="images/h_team.png" alt="Team"/> </h1>
+      <h2> made by people who like cats maybe a little too much </h2>
+
+      <a href="http://www.gamecreation.org/game/raincat" target="_blank">Team on the GCS Project Page</a>
+      
+      <!-- 
+        <table id="team">
+          <tr>
+            <td width="25%">Garrick Chin</td>
+            <td width="55%">Project Leader, Programmer, Level Designer</td>
+            <td width="20%"><a href="http://www.contrib.andrew.cmu.edu/~gchin" target="_blank">Project Page</a></td>
+          </tr>
+          <tr>
+            <td>Susan Lin</td>
+            <td>Artist</td>
+            <td><a href="http://www.bysusanlin.com" target="_blank">Portfolio</a></td>
+          </tr>
+          <tr>
+            <td>SooHyun Jang</td>
+            <td>Artist</td>
+            <td><a href="http://emptyshadow.deviantart.com" target="_blank">deviantArt</a></td>
+          </tr>
+          <tr>
+            <td>Anthony Maurice</td>
+            <td>Programmer</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>William Wang</td>
+            <td>Programmer</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Andrew Zheng</td>
+            <td>Programmer</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Rachel Berkowitz</td>
+            <td>Composer</td>
+            <td><a href="http://www.rachelberkowitz.com" target="_blank">Portfolio</a></td>
+          </tr>
+          <tr>
+            <td>Spencer Ying</td>
+            <td>Artist, Level Designer</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Tal Stramer</td>
+            <td>Level Editor Programmer</td>
+            <td></td>
+          </tr>          
+        </table>
+        
+      -->
+
+        <br/><br/>
+        
+      <a name="gallery"></a>
+      <h1> <img src="images/h_gallery.png" alt="Gallery"/> </h1>
+      <h2> for your kitty watching pleasure </h2>
+      <p>
+        <img id="largeImg" src="images/ca_basket.jpg" alt="Now Viewing" />
+      </p>
+      <p class="thumbs">
+        <a href="images/ca_basket.jpg" title="Concept Art | Cats in a basket"><img src="images/ca_basket.jpg" /></a>
+        <a href="images/ca_falling.jpg" title="Concept Art | Falling with an umbrella"><img src="images/ca_falling.jpg" /></a>
+        <a href="images/ca_gameover.jpg" title="Concept Art | You made kitty cry :'("><img src="images/ca_gameover.jpg" /></a>
+        <br/>
+        <a href="images/ca_bubble.jpg" title="Concept Art | Kitty in a bubble"><img src="images/ca_bubble.jpg" /></a>
+        <a href="images/ca_rainy.jpg" title="Concept Art | It's rainy..."><img src="images/ca_rainy.jpg" /></a>
+
+        <a href="images/ca_tree.jpg" title="Concept Art | Traversing the tree"><img src="images/ca_tree.jpg" /></a>
+        <br/>
+        <a href="images/ca_river.jpg" title="Concept Art | Rapid river adventure"><img src="images/ca_river.jpg" /></a>
+        <a href="images/ss_levelselect.jpg" title="Screenshot | Choose your challenge!"><img src="images/ss_levelselect.jpg" /></a>
+        <a href="images/ss_city.jpg" title="Screenshot | City Streets Level"><img src="images/ss_city.jpg" /></a>
+        <br/>
+        <a href="images/ss_nodiving.jpg" title="Screenshot | No Diving!"><img src="images/ss_nodiving.jpg" /></a>
+        <a href="images/ss_poncho.jpg" title="Screenshot | Cat's in a poncho"><img src="images/ss_poncho.jpg" /></a>
+        <a href="images/ss_umbrellaboat.jpg" title="Screenshot | In the umbrella boat"><img src="images/ss_umbrellaboat.jpg" /></a>
+      </p>
+      <br/>
+      
+      
+      <h1></h1>
+      <h2>Thanks for visiting Project Raincat!</h2>
+      Project Raincat Webpage &copy; <a href="http://bysusanlin.com" target="_blank">Susan Lin</a>, 2009-2010. 
+      Visit the <a href="http://www.gamecreation.org/game/raincat" target="_blank">GCS Project Page</a>. 
+      <span class="top"><a href="#play" target="_self">Top</a></span>
+
+    </div> <!-- end content div -->
+
+	<script type="text/javascript"> <!-- Google Analytics -->
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+		try {
+			var pageTracker = _gat._getTracker("UA-7365280-2");
+			pageTracker._trackPageview();
+			} catch(err) {}</script>
+
+</body>
+</html>

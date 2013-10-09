@@ -1,0 +1,202 @@
+/* CSS for Project Raincat Webpage (http://raincat.bysusanlin.com) - Last Edited 1.22.10 */
+  
+  body { 
+    font: 12px verdana, sans-serif;
+    background: #e0e0e0;
+    background-image: url('../images/bg_main.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    color: #666666; 
+    }
+  p {
+    padding: 0 16px;
+    }
+    .quotes {
+      font: 18px georgia, serif;
+      line-height: 200%;
+      text-align: right;
+      font-style: italic;
+      }
+    .download {
+      text-align: right;
+      background: #eeeeee;
+      padding: 10px 15px 10px 10px;
+      }
+      .dtplay {
+				margin-right: -5px;
+				background-color: #FD9124;
+				padding: 5px;
+				font-weight: bold;
+				color: #ffffff;
+				}
+			.dtplay_border {
+				background-color: #ffffff;
+				border: 1px solid #FD9124;
+				padding: 5px;
+				}
+			.source {
+				text-align: right;
+				padding-bottom: 5px;
+				border-bottom: 1px dotted #ffffff;
+				}
+    .info {
+      line-height: 200%;
+      }
+    .footer {
+      background: #ffffff;
+      padding: 7px 0 7px 0;
+      margin-left: 3px;
+      width: 257px;
+      text-align: center;
+      color: #d3d1e9;
+      }
+      
+/* Headers */
+  h1 {
+    color: #ffffff;
+    padding: 4px 16px 4px 16px;
+    font-weight: normal;
+    border-bottom: 1px solid #ffffff;
+    }
+  h2 {
+    color: #6090c0;
+    font: 14px georgia, serif;
+    font-style: italic;
+    text-align: right;
+    margin-top: -38px;
+    }
+    
+/* Links */
+  a:link, a:visited { 
+    text-decoration: underline;
+    color: #6090c0;
+    font: 12px georgia, serif;
+    font-style: italic;
+    }
+  a:active, a:hover { 
+    text-decoration: none;
+    color: #666666;
+    }
+  .top a{
+    float: right;
+    color: #ffffff;
+    background: #cfcde5;
+    padding: 4px 16px 4px 16px;
+    text-decoration: none;
+  }
+    .top a:hover{
+      background: #6090c0;
+    }
+  .fbk {
+    margin-left: 10px;
+		}
+   
+/* Team Table */
+  #team{
+    width: 100%;
+    }
+    #team td{
+      padding: 8px 0 8px 16px;
+      border-bottom: 1px dotted #ffffff;
+    }
+    #team tr:hover{
+      background-color: #eeeeee;
+    }
+    
+/* Left-hand Navigation */
+  #fixed { 
+    position: absolute;
+    top: 37px;
+    left: 59px;
+    width: 265px;
+    height: 100%;
+    background-image: url('../images/bg_left.png');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    }
+  body > #fixed { 
+    position: fixed; 
+    }
+  #nav {
+    margin-top: 161px;
+    }
+    #nav li{
+      list-style-type: none;
+      margin: 0 0 16px 82px;
+      }
+      #nav li a{
+        font: 18px georgia, serif;
+        font-style: italic;
+        color: #ffffff;
+        background: #cfcde5;
+        padding: 4px 16px 4px 16px;
+        text-decoration: none;
+        }
+      #nav li a:hover{
+        background: #6090c0;
+        }    
+        
+/* divs */
+  #top {
+    margin: -5px;
+  }
+  #content { 
+    margin: 174px 0 0 375px;
+    width: 575px;
+    }
+    
+/* Customized Selection Colors */
+  ::selection { 
+    background: #cfcde5;
+    color: #ffffff;
+    /* Safari */ }
+  ::-moz-selection { 
+    background: #d3d1e9;
+    color: #ffffff;
+    /* Firefox */ }
+    
+/* Image Gallery */
+  #largeImg {
+    width: 547px;
+    border: 1px solid #cfcde5;
+    padding: 10px 5px 10px 5px;
+    background-color: #eeeeee;
+  }
+  .thumbs {
+    margin-top: -8px;
+  }
+    .thumbs img {
+      background-color: #eeeeee;
+      border: solid 1px #cfcde5;
+      height: 75px;
+      padding: 5px;
+    }
+    .thumbs img:hover {
+      border-color: #6090c0;
+    }
+
+/* Tipsy Tooltip - http://onehackoranother.com/projects/jquery/tipsy/ */
+.tipsy { 
+	padding: 5px;
+	background-repeat: no-repeat;  
+	background-image: url(../images/tipsy.png); 
+	}
+	.tipsy-inner { 
+		padding: 5px 8px 4px 8px; 
+		background-color: #ffffff; 
+    color: #666666;
+    font: 12px georgia, serif;
+    font-style: italic;
+		max-width: 200px; 
+		text-align: center;
+		}
+	.tipsy-inner { 
+		-moz-border-radius: 3px; 
+		-webkit-border-radius: 3px; 
+		}
+	.tipsy-west { 
+		background-position: left center; 
+		}
+  .tipsy-north { 
+		background-position: top center; 
+		}
