@@ -4,7 +4,7 @@
   src: url("../fonts/pluto-sans.eot?#iefix") format("embedded-opentype"), url("../fonts/pluto-sans.woff") format("woff"), url("../fonts/pluto-sans.ttf") format("truetype"); }
 
 body {
-  background: white;
+  background: #fffdf5;
   margin: 0;
   padding: 0;
   color: #555555;
@@ -47,7 +47,7 @@ b {
 
 a {
   text-decoration: none;
-  color: #00bdff; }
+  color: #21dcc7; }
   a:hover {
     color: #f25f60; }
   a:active {
@@ -126,7 +126,7 @@ header {
         border-radius: 10px;
         text-decoration: none;
         color: white;
-        background-color: #00bdff;
+        background-color: #21dcc7;
         padding: 8px 10px 7px;
         display: none;
         opacity: 0.5;
@@ -198,13 +198,13 @@ footer {
   clear: both; }
 
 ::selection {
-  background: #f79898;
-  color: white;
+  background: #aeeed9;
+  color: #555;
   text-shadow: 0 0 0; }
 
 ::-moz-selection {
-  background: #f79898;
-  color: white;
+  background: #aeeed9;
+  color: #555;
   text-shadow: 0 0 0; }
 
 @media screen and (max-width: 500px) {
