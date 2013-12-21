@@ -4,7 +4,7 @@
   src: url("../fonts/pluto-sans.eot?#iefix") format("embedded-opentype"), url("../fonts/pluto-sans.woff") format("woff"), url("../fonts/pluto-sans.ttf") format("truetype"); }
 
 body {
-  background: #fffdf5;
+  background: #ffffff;
   margin: 0;
   padding: 0;
   color: #555555;
@@ -108,11 +108,11 @@ header {
 
 #subnav {
   width: 100%;
-  background: #fffdf5; }
+  background: #ffffff; }
   #subnav ul {
     margin: 0 auto;
     width: 500px;
-    background: #fffdf5;
+    background: #ffffff;
     height: 36px;
     padding-top: 8px;
     border-bottom: 1px dotted #d8dde0; }
