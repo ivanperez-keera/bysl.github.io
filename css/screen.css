@@ -1,10 +1,10 @@
 @font-face {
-  font-family: 'Pluto Sans Cond Light';
+  font-family: "Pluto Sans Cond Light";
   src: url("../fonts/pluto-sans.eot");
   src: url("../fonts/pluto-sans.eot?#iefix") format("embedded-opentype"), url("../fonts/pluto-sans.woff") format("woff"), url("../fonts/pluto-sans.ttf") format("truetype"); }
 
 body {
-  background: #ffffff;
+  background: white;
   margin: 0;
   padding: 0;
   color: #555555;
@@ -43,7 +43,7 @@ h6 {
   color: #aeb8be; }
 
 b {
-  color: #000; }
+  color: black; }
 
 a {
   text-decoration: none;
@@ -59,8 +59,8 @@ a.btn {
   font-size: 18px;
   color: white;
   text-shadow: 0 0 0;
-  background: #00bdff;
-  box-shadow: 0 3px 0 #0097cc;
+  background: #21dcc7;
+  box-shadow: 0 3px 0 #1ab09f;
   border-radius: 3px;
   padding: 20px 30px 19px;
   cursor: pointer;
@@ -75,7 +75,7 @@ a.btn {
   -ms-transition-delay: 0;
   -o-transition-delay: 0; }
   a.btn:hover {
-    background: #33caff; }
+    background: #42eedb; }
   a.btn:active {
     position: relative;
     top: 3px;
@@ -108,11 +108,11 @@ header {
 
 #subnav {
   width: 100%;
-  background: #ffffff; }
+  background: white; }
   #subnav ul {
     margin: 0 auto;
     width: 500px;
-    background: #ffffff;
+    background: white;
     height: 36px;
     padding-top: 8px;
     border-bottom: 1px dotted #d8dde0; }
@@ -132,7 +132,7 @@ header {
         opacity: 0.5;
         font-size: 14px; }
         #subnav ul li:last-child .go-top:hover {
-          opacity: 1.0; }
+          opacity: 1; }
         #subnav ul li:last-child .go-top:active {
           position: relative;
           top: 1px;
@@ -197,13 +197,13 @@ footer {
   clear: both; }
 
 ::selection {
-  background: #aeeed9;
-  color: #555;
+  background: #21dcc7;
+  color: white;
   text-shadow: 0 0 0; }
 
 ::-moz-selection {
-  background: #aeeed9;
-  color: #555;
+  background: #21dcc7;
+  color: white;
   text-shadow: 0 0 0; }
 
 @media screen and (max-width: 500px) {
