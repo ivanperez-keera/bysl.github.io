@@ -168,7 +168,8 @@ img {
     text-align: center; }
     #content .piece .work {
       margin: 20px auto;
-      padding: 0 20px; }
+      padding: 0 20px;
+      width: 700px; }
     #content .piece p {
       width: 500px;
       margin: 0 auto;
