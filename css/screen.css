@@ -140,7 +140,7 @@ header {
 
 .sticky {
   position: fixed;
-  z-index: 100;
+  z-index: 401;
   top: 0; }
 
 img {
