@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="css/entypo-ie7-codes.css">
 	<link rel="stylesheet" href="css/entypo-ie7.css">
 	<link rel="stylesheet" href="css/entypo.css">
+	<link rel="stylesheet" href="css/fluidbox.css">
 
 	<script type="text/javascript" src="js/jquery-1.8.3.min.js"> </script>
  	
@@ -62,6 +63,15 @@
 	});
 	</script>
 
+	<script type="text/javascript">
+	//hooray, add fluidbox lightbox plugin to work section
+		$(document).ready(function() {
+			$(function () {
+    			$('.work a, a[rel="lightbox"]').fluidbox();
+			})
+		});
+	</script>
+
 	<!-- oh hai, google analytics -->
 	<script type="text/javascript">
 		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
@@ -99,12 +109,19 @@
 		<div class="piece">
 
 			<div class="work">
-				<a href="images/trulia-search-list.png" title="" data-fluidbox>
+				
+				<a href="images/trulia-search-list.png">
 					<img src="images/trulia-search-list.png" title="" alt="" />
 				</a>
-				<img src="images/trulia-search-
-				photo.png" />
-				<img src="images/trulia-oocss-txl.png" />
+
+				<a href="images/trulia-search-photo.png">
+					<img src="images/trulia-search-
+				photo.png" title="" alt="" />
+				</a>
+				
+				<a href="images/trulia-oocss-txl.png" />
+					<img src="images/trulia-oocss-txl.png" title="" alt="" />
+				</a>
 			</div>
 
 			<p>
