@@ -222,7 +222,8 @@ img {
       width: 500px;
       margin: 0 auto 5px;
       text-align: left;
-      font-family: "Rooney Light", "rooney-web-1", "rooney-web-2", serif; }
+      font-family: "Rooney Light", "rooney-web-1", "rooney-web-2", serif;
+      font-weight: 300; }
     #content .piece p.button {
       font-weight: 300;
       margin: 30px auto 70px; }
