@@ -1,3 +1,8 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
 @font-face {
   font-family: "Pluto Sans Cond Light";
   src: url("../fonts/pluto-sans.eot");
@@ -8,26 +13,26 @@ body {
   margin: 0;
   padding: 0;
   color: #555555;
-  font-size: 14px;
+  font-size: 16px;
   font-family: "Pluto Sans Cond Light", sans-serif;
   text-align: center;
-  line-height: 28px; }
+  line-height: 32px; }
 
 h1 {
   font-size: 48px;
-  line-height: 36px; }
+  line-height: 96px; }
 
 h2 {
   font-size: 32px;
   line-height: 48px; }
 
 h3 {
-  font-size: 18px;
+  font-size: 22px;
   line-height: 48px; }
 
 h6 {
   font-size: 14px;
-  color: #758691;
+  color: #aeb8be;
   line-height: 32px;
   text-align: left;
   width: 500px;
@@ -56,7 +61,7 @@ a {
     border: 0; }
 
 a.btn {
-  font-size: 18px;
+  font-size: 22px;
   color: white;
   text-shadow: 0 0 0;
   background: #21dcc7;
@@ -108,21 +113,24 @@ header {
 
 #subnav {
   width: 100%;
-  background: white; }
+  background: white;
+  font-size: 14px; }
   #subnav ul {
     margin: 0 auto;
     width: 500px;
     background: white;
-    height: 36px;
-    padding-top: 8px;
+    height: 45px;
+    padding-top: 6px;
     border-bottom: 1px dotted #d8dde0; }
     #subnav ul li {
       float: left;
       margin-right: 20px; }
-    #subnav ul li:last-child {
-      float: right;
-      margin-right: 0; }
-      #subnav ul li:last-child .go-top {
+      #subnav ul li:last-child {
+        float: right;
+        margin-right: 0; }
+      #subnav ul li.active a {
+        color: #f25f60; }
+      #subnav ul li .go-top {
         border-radius: 10px;
         text-decoration: none;
         color: white;
@@ -131,9 +139,9 @@ header {
         display: none;
         opacity: 0.5;
         font-size: 14px; }
-        #subnav ul li:last-child .go-top:hover {
+        #subnav ul li .go-top:hover {
           opacity: 1; }
-        #subnav ul li:last-child .go-top:active {
+        #subnav ul li .go-top:active {
           position: relative;
           top: 1px;
           border: 0; }
@@ -153,41 +161,92 @@ img {
     width: 500px;
     margin: 40px auto;
     padding-bottom: 20px;
-    border-bottom: 1px dotted #d8dde0; }
+    border-bottom: 1px dotted #d8dde0;
+    text-align: left; }
     #content section p {
       font-family: "Pluto Sans Cond Light", sans-serif;
-      font-size: 14px;
+      font-size: 16px;
       width: 500px;
       margin-bottom: 10px; }
     #content section ul {
       float: left;
-      width: 33%; }
+      width: 33%;
+      font-size: 14px;
+      line-height: 28px; }
+  #content .bordered-piece {
+    border-top: 1px dotted #d8dde0; }
   #content .piece {
-    border-bottom: 1px dotted #d8dde0;
-    padding: 40px 0 60px;
+    padding: 45px 0 60px;
     text-align: center; }
     #content .piece .work {
       margin: 20px auto;
       padding: 0 20px;
-      width: 700px; }
+      *zoom: 1;
+      max-width: 68em;
+      margin-left: auto;
+      margin-right: auto; }
+      #content .piece .work:before, #content .piece .work:after {
+        content: " ";
+        display: table; }
+      #content .piece .work:after {
+        clear: both; }
+      #content .piece .work .work-1 {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%; }
+        #content .piece .work .work-1:last-child {
+          margin-right: 0; }
+      #content .piece .work .work-2 {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%; }
+        #content .piece .work .work-2:last-child {
+          margin-right: 0; }
+      #content .piece .work .work-3 {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 31.76157%; }
+        #content .piece .work .work-3:last-child {
+          margin-right: 0; }
+      #content .piece .work .work-4 {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 23.23176%; }
+        #content .piece .work .work-4:last-child {
+          margin-right: 0; }
     #content .piece p {
       width: 500px;
-      margin: 0 auto;
-      text-align: left; }
+      margin: 0 auto 5px;
+      text-align: left;
+      font-family: "Rooney Light", "rooney-web-1", "rooney-web-2", serif; }
     #content .piece p.button {
       font-weight: 300;
       margin: 30px auto 70px; }
+    #content .piece a:hover {
+      text-decoration: underline; }
   #content .dark {
     background: #111111;
     color: #aeb8be;
-    line-height: 30px; }
+    line-height: 36px; }
     #content .dark p {
       margin-top: 10px; }
+  #content .piece:last-of-type {
+    padding-bottom: 30px; }
+
+.beige {
+  background: #f5f4f1; }
+
+.mint {
+  background: #edfbf7; }
 
 footer {
   font-size: 12px;
   color: #aeb8be;
-  margin-bottom: 20px; }
+  padding-bottom: 80px; }
 
 .heart {
   color: #f25f60; }
@@ -207,7 +266,7 @@ footer {
   color: white;
   text-shadow: 0 0 0; }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 568px) {
   header, #content section, #content .piece p, #content section p {
     width: 300px;
     transition: 0.3s width;
@@ -225,9 +284,39 @@ footer {
     line-height: 32px;
     margin-bottom: 10px; }
 
+  h6 {
+    width: 100%;
+    text-align: center; }
+
   #subnav {
     visibility: hidden;
     margin-top: -50px; }
 
   #content .piece .work {
-    width: 320px; } }
+    width: 320px; }
+
+  .video-container {
+    position: relative;
+    margin: 0 auto;
+    padding-bottom: 89%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    max-width: 548px; }
+    .video-container iframe, .video-container object, .video-container embed {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      ceheight: 100%; }
+
+  #speaker-deck {
+    display: none; } }
+@media screen and (max-width: 480px) {
+  .video-container {
+    padding-bottom: 105%;
+    max-width: 460px; } }
+@media screen and (max-width: 320px) {
+  .video-container {
+    padding-bottom: 155%;
+    max-width: 300px; } }

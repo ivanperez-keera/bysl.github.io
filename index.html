@@ -16,12 +16,15 @@
 	<link rel="stylesheet" href="css/fluidbox.css">
 
 	<script type="text/javascript" src="js/jquery-1.8.3.min.js"> </script>
- 	
+
+	<script type="text/javascript" src="http://use.typekit.com/bku8hxc.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
 	<link rel="SHORTCUT ICON" href="favicon.ico">
 
 	<title>design by susan</title>
 
-	<meta name="p:domain_verify" content="766c1df40cfdc1ba812d5b2668f45ede"/>
+	<meta name="p:domain_verify" content="766c1df40cfdc1ba812d5b2668f45ede">
 
 	<script type="text/javascript">
 	
@@ -33,9 +36,9 @@
 				var scrollTop = $(window).scrollTop();  
 
 				if (scrollTop > stickyNavTop) {   
-					$('#subnav').addClass('sticky');  
+					$('#subnav').addClass('sticky'); 
 				} else {  
-					$('#subnav').removeClass('sticky');   
+					$('#subnav').removeClass('sticky');
 				}  
 			};  
 
@@ -45,11 +48,11 @@
 				stickyNav();  
 			});  
 		});  
-	
-	</script>
 
-	<script type="text/javascript">
-	$(document).ready(function() {
+		</script>
+
+		<script type="text/javascript">
+		$(document).ready(function() {
 
 		// Show or hide the sticky footer button
 		$(window).scroll(function() {
@@ -61,27 +64,27 @@
 		});
 
 	});
-	</script>
+		</script>
 
-	<script type="text/javascript">
+		<script type="text/javascript">
 	//hooray, add fluidbox lightbox plugin to work section
-		$(document).ready(function() {
-			$(function () {
-    			$('.work a, a[rel="lightbox"]').fluidbox();
-			})
-		});
+	$(document).ready(function() {
+		$(function () {
+			$('.work a, a[rel="lightbox"]').fluidbox();
+		})
+	});
 	</script>
 
 	<!-- oh hai, google analytics -->
 	<script type="text/javascript">
-		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
 	</script>
 	<script type="text/javascript">
-		try {
-			var pageTracker = _gat._getTracker("UA-7365280-1");
-			pageTracker._trackPageview();
-		} catch(err) {}
+	try {
+		var pageTracker = _gat._getTracker("UA-7365280-1");
+		pageTracker._trackPageview();
+	} catch(err) {}
 	</script>
 
 </head>
@@ -90,161 +93,291 @@
 
 	<a name="top"></a>
 
-	<header> <!-- masthead --> </header>
+	<header class="animate fadeIn"> <!-- masthead --> </header>
 
 	<div id="subnav" class="">
 		<ul>
 			<li class="typeLowlight"> design by susan </li>
-			<li> <a href="#work">work</a> </li>
-			<li> <a href="#talks">talks</a> </li>
-			<li> <a href="#contact">about</a> </li>
-			<li> <a href="http://sketch.bysusanlin.com"> blog<i class="icon-popup"></i></a> </li>
+			<li class=""> <a href="#work">work</a> </li>
+			<li class=""> <a href="#talks">talks</a> </li>
+			<li class=""> <a href="#about">about</a> </li>
+			<li> <a href="http://sketch.bysusanlin.com"> blog</a> </li>
 			<li> <a href="#top" class="go-top">&uarr;</a> </li>
 		</ul>
 	</div>
 
 	<div id="content">
 
-		<a name="work"></a>
+		<a name="work" id="work"></a>
+
 		<div class="piece">
 
 			<div class="work">
-				
-				<a href="images/trulia-search-list.png">
-					<img src="images/trulia-search-list.png" title="" alt="" />
-				</a>
+				<div class="work-1">
+					<a href="images/trulia-search.gif">
+						<img src="images/trulia-search-list.png" title="" alt="">
+					</a>
+				</div>
+			</div> <!-- //work -->
 
-				<a href="images/trulia-search-photo.png">
-					<img src="images/trulia-search-
-				photo.png" title="" alt="" />
-				</a>
+			<div class="work">
+
+				<div class="work-3">
+					<a href="images/trulia-search-sketch.png">
+						<img src="images/trulia-search-sketch.png" title="" alt="" >
+					</a>
+				</div>
+
+				<div class="work-3">
+					<a href="images/trulia-search-mock.png">
+						<img src="images/trulia-search-
+						mock.png" title="" alt="" >
+					</a>
+				</div>
 				
-				<a href="images/trulia-oocss-txl.png" />
-					<img src="images/trulia-oocss-txl.png" title="" alt="" />
-				</a>
-			</div>
+				<div class="work-3">
+					<a href="images/trulia-search-supermock.png" >
+						<img src="images/trulia-search-supermock.png" title="" alt="" >
+					</a>
+				</div>
+
+			</div> <!-- //work -->
 
 			<p>
-				UXD @ Trulia. I lead UX on consumer products from conception, flow, visuals, to implementation. Pictured, the Search Results Page embodying our latest, <a href="http://1000watt.net/2013/04/portal-report-card-zillow-tweets-trulia-and-redfin-get-facelifts-realtor-com-gets-smart/">well received<i class="icon-popup"></i></a>, experience language. I had a hand with the beta version of <a href="http://www.trulia.com/account/suggestions/">Suggestions<i class="icon-popup"></i></a>. My personal growth mission has been to be better versed in HTML/Sass. I'm currently on the internal <a href="http://coding.smashingmagazine.com/2011/12/12/an-introduction-to-object-oriented-css-oocss/">OOCSS<i class="icon-popup"></i></a> library team. I support mostly the Consumer Search, Rentals, and Android products.
+				<b>Consumer UX @ Trulia.</b> I lead user experience on consumer facing products from conception, flow, visuals, to implementation. The List &amp; Photo Search Results Page embodied the recently developed <a href="http://1000watt.net/2013/04/portal-report-card-zillow-tweets-trulia-and-redfin-get-facelifts-realtor-com-gets-smart/">well received</a> experience language. Search List was the pilot project for the <a href="http://coding.smashingmagazine.com/2011/12/12/an-introduction-to-object-oriented-css-oocss/">OOCSS</a> library. In addition to Search, I also supported the Rentals and Android teams.
 			</p>
 
-		</div> <!-- //piece -->
+		</div> <!-- //piece -->		
 
-		<a name="talks"> </a>
+		<div class="piece mint">
+
+			<div class="work">
+				<div class="work-1">
+					<a href="images/trulia-oocss-txl.png" >
+						<img src="images/trulia-oocss-txl.png" title="" alt="" >
+					</a>
+				</div>
+			</div> <!-- //work -->
+
+			<div class="work">
+
+				<div class="work-3">
+					<a href="images/trulia-oocss-hologram.png">
+						<img src="images/trulia-oocss-hologram.png" title="" alt="" >
+					</a>
+				</div>
+
+				<div class="work-3">
+					<a href="images/trulia-oocss-legos.png">
+						<img src="images/trulia-oocss-
+						legos.png" title="" alt="" >
+					</a>
+				</div>
+				
+				<div class="work-3">
+					<a href="images/trulia-oocss-logo.png" >
+						<img src="images/trulia-oocss-logo.png" title="" alt="" >
+					</a>
+				</div>
+
+			</div> <!-- //work -->
+
+			<p>
+				<b>Object Oriented CSS @ Trulia.</b> I was a core member of the internal team which built the living style guide using Sass. The team released <a href="http://trulia.github.io/hologram/">Hologram,</a> a ruby gem that generates style guides from HTML comments. See <a href="http://trulia.github.io/hologram-example/">an example style guide</a> generated from Hologram. 
+			</p>
+
+		</div> <!-- //piece -->		
+
+		<div class="piece">
+
+			<div class="work">
+
+				<div class="work-3">
+					<a href="images/misc-animated.gif">
+						<img src="images/misc-animated.gif" title="" alt="" >
+					</a>
+				</div>
+
+				<div class="work-3">
+					<a href="images/misc-illustrator.gif">
+						<img src="images/misc-illustrator.gif" title="" alt="" >
+					</a>
+				</div>
+				
+				<div class="work-3">
+					<a href="images/misc-painting.png" >
+						<img src="images/misc-painting.png" title="" alt="" >
+					</a>
+				</div>
+
+			</div> <!-- //work -->
+			<div class="work">
+
+				<div class="work-3">
+					<a href="images/misc-watercolor.jpg">
+						<img src="images/misc-watercolor.jpg" title="" alt="" >
+					</a>
+				</div>
+
+				<div class="work-3">
+					<a href="images/misc-pc.png">
+						<img src="images/misc-pc.png" title="" alt="" >
+					</a>
+				</div>
+				
+				<div class="work-3">
+					<a href="images/misc-pcfooter.jpg" >
+						<img src="images/misc-pcfooter.jpg" title="" alt="" >
+					</a>
+				</div>
+
+			</div> <!-- //work -->
+			<div class="work">
+
+				<div class="work-3">
+					<a href="images/misc-pixelart.gif">
+						<img src="images/misc-pixelart.gif" title="" alt="" >
+					</a>
+				</div>
+
+				<div class="work-3">
+					<a href="images/misc-scllstmob.png">
+						<img src="images/misc-scllstmob.png" title="" alt="" >
+					</a>
+				</div>
+				
+				<div class="work-3">
+					<a href="images/misc-sketchnote.jpg" >
+						<img src="images/misc-sketchnote.jpg" title="" alt="" >
+					</a>
+				</div>
+
+			</div> <!-- //work -->
+
+			<p>
+				<b>Everywhere @ Self.</b> I'm constantly immersed in a side or weekend freelance project. These are just some highlights from sketches to visual design to indie games and the occasional painting. For a more up-to-date log of what I'm working on, see <a href="http://sketch.bysusanlin.com">sketch by susan.</a>
+			</p>
+
+		</div> <!-- //piece -->		
+
+		<a name="talks" id="talks"> </a>
 		<div class="piece dark">
 
 			<h6> &lt;!-- talks --&gt; </h6>
 			
-			<iframe width="700" height="525" src="//www.youtube.com/embed/KWPnozbp4us" frameborder="0" allowfullscreen></iframe>
+			<div class="video-container">
+				<iframe width="700" height="525" src="//www.youtube.com/embed/KWPnozbp4us" frameborder="0" allowfullscreen></iframe>
+			</div>
 
-			<div style="width:700px; margin: 10px auto 0;">
+			<div id="speaker-deck" style="width:700px; margin: 10px auto 0;">
 				<script async class="speakerdeck-embed" data-id="e894bcf0e2ee01302bc5765f3158560b" data-ratio="1.29456384323641" src="//speakerdeck.com/assets/embed.js"></script>
 			</div>
 			
 			<p>
-				 Designers venture into the world of Engineering. I spoke about the value of having a component library and the design process where it touches implementation, seeing your gorgeous mocks through the final 10% to shipping. I argued that designers need to understand code to best communicate with the awesome people building who build our designs. The end goal isn't to replace our engineers, but to speak the medium's language. 
+				Designers venture into the world of Engineering. I spoke about the value of having a component library and the design process where it touches implementation, seeing your mocks to shipping. I argued that designers need to understand code to best communicate with the awesome people building who build our designs. The end goal isn't to replace our engineers, but to speak the medium's language. 
 			</p>
 			<p>
-				This 15 minute deck was made for <a href="http://ixdasf.ning.com">IxDA SF<i class="icon-popup"></i></a> on a night of <a href="ixdasf.ning.com/events/designdoing">Design Doing<i class="icon-popup"></i></a> 
-				 <br/>
-				 Previously, I've spoken privately for a visual design studio class and on a <a href="http://sketch.bysusanlin.com/post/45977847470/speaking-with-the-cmu-bxa-panel">Carnegie Mellon BXA alumni panel<i class="icon-popup"></i></a>
+				This 15 minute deck was made for <a href="http://ixdasf.ning.com">IXDASF</a> on a night of <a href="ixdasf.ning.com/events/designdoing">Design Doing</a> 
+				<br>
+				Previously, I've spoken privately for a visual design studio class and on a <a href="http://sketch.bysusanlin.com/post/45977847470/speaking-with-the-cmu-bxa-panel">Carnegie Mellon BXA alumni panel.</a>
 			</p>
 
 		</div> <!-- //piece -->
 
-		<section>
+		<a name="about" id="about"></a>
+		<div class="piece">
+			<section>
+				<img src="images/bysusanlin-portrait.png">
 
-			<img src="images/bysusanlin-portrait.png"/>
-		
-			<h2> Susan Lin <span class="h5 typeLowlight"> <i class="icon-location"></i>San Francisco</span> </h2>
-			<h3> Coding Designerd &amp; Sketching Robot </h3>
+				<h2> Susan Lin <span class="h5 typeLowlight"> <i class="icon-location"></i>San Francisco</span> </h2>
+				<h3> Coding Designerd &amp; Sketching Robot </h3>
 
-			<p>
-				Once upon a time, Susan was an oil painter. Then she fell in love with technology and the people who built it during her time at <a href="http://cmu.edu"><i class="icon-graduation-cap"></i>Carnegie Mellon.</a>
-			</p>
-			<p>
-				She's currently freelancing and formerly Senior Visual UX Designer at <a href="#work">Trulia.</a>
-			</p>
-			<p>
-				She believes great designs are created from <a href="#talks">those who truly know the medium.</a> Or simply said, to design for internet, you have to use the internet. 
-			</p>
+				<p>
+					Once upon a time, Susan was a painter.
+				</p>
+				<p>
+					Then she fell in love with technology and the people who built it during her time at <a href="http://cmu.edu"><i class="icon-graduation-cap"></i>Carnegie Mellon.</a>
+				</p>
+				<p>
+					She believes designs are best created from <a href="#talks">knowing the medium.</a>
+				</p>
 
-		</section>
+			</section>
 
-		<a name="contact"></a>
-		<section>
-			<ul>
-				<li>
-					<script type="text/javascript">
+			<section>
+				<ul>
+					<li>
+						<script type="text/javascript">
 						//<![CDATA[
 						<!--
 						var x="function f(x){var i,o=\"\",l=x.length;for(i=0;i<l;i+=2) {if(i+1<l)o+=" +
 						"x.charAt(i+1);try{o+=x.charAt(i);}catch(e){}}return o;}f(\"ufcnitnof x({)av" +
-						" r,i=o\\\"\\\"o,=l.xelgnhtl,o=;lhwli(e.xhcraoCedtAl(1/)3=!84{)rt{y+xx=l;=+;" +
-						"lc}tahce({)}}of(r=i-l;1>i0=i;--{)+ox=c.ahAr(t)i};erutnro s.buts(r,0lo;)f}\\" +
-						"\"(4)10\\\\,;\\\"FNYU0D03\\\\\\\\KW32\\\\04\\\\03\\\\\\\\25\\\\06\\\\03\\\\" +
-						"\\\\O731\\\\0@\\\\SR7N30\\\\04\\\\01\\\\\\\\00\\\\03\\\\02\\\\\\\\07\\\\00\\"+
-						"\\00\\\\\\\\02\\\\0N\\\\14\\\\06\\\\01\\\\\\\\03\\\\06\\\\1|00\\\\\\\\(a8)4" +
-						"4<vmhrp\\\\\\\\&< /k) $)$6'01#;cb03\\\\0X\\\\OPMS30\\\\05\\\\02\\\\\\\\4j02" +
-						"\\\\\\\\_[T^2X02\\\\\\\\NZAI\\\\H\\\\\\\\[\\\\30\\\\0K\\\\GJ\\\\rN\\\\AHyrq" +
-						"]ytwm=s}{77\\\\1|\\\\cp}znte1d}gn&h?_eg14\\\\05\\\\02\\\\\\\\\\\\\\\\\\\\\\" +
-						"\\32\\\\0F\\\\P[31\\\\02\\\\03\\\\\\\\20\\\\00\\\\00\\\\\\\\32\\\\00\\\\00\\"+
-						"\\\\\\06\\\\0^\\\\33\\\\00\\\\00\\\\\\\\10\\\\01\\\\00\\\\\\\\36\\\\0t\\\\\\"+
-						"\\\\\\06\\\\04\\\\01\\\\\\\\\\\"\\\\f(;} ornture;}))++(y)^(iAtdeCoarchx.e(o" +
-						"drChamCro.fngriSt+=;o27=1y%2;*=)yy)4+10>((iif){++;i<l;i=0(ior;fthnglex.l=\\" +
-						"\\,\\\\\\\"=\\\",o iar{vy)x,f(n ioctun\\\"f)\")"                             ;
-						while(x=eval(x));
+							" r,i=o\\\"\\\"o,=l.xelgnhtl,o=;lhwli(e.xhcraoCedtAl(1/)3=!84{)rt{y+xx=l;=+;" +
+							"lc}tahce({)}}of(r=i-l;1>i0=i;--{)+ox=c.ahAr(t)i};erutnro s.buts(r,0lo;)f}\\" +
+							"\"(4)10\\\\,;\\\"FNYU0D03\\\\\\\\KW32\\\\04\\\\03\\\\\\\\25\\\\06\\\\03\\\\" +
+							"\\\\O731\\\\0@\\\\SR7N30\\\\04\\\\01\\\\\\\\00\\\\03\\\\02\\\\\\\\07\\\\00\\"+
+							"\\00\\\\\\\\02\\\\0N\\\\14\\\\06\\\\01\\\\\\\\03\\\\06\\\\1|00\\\\\\\\(a8)4" +
+							"4<vmhrp\\\\\\\\&< /k) $)$6'01#;cb03\\\\0X\\\\OPMS30\\\\05\\\\02\\\\\\\\4j02" +
+"\\\\\\\\_[T^2X02\\\\\\\\NZAI\\\\H\\\\\\\\[\\\\30\\\\0K\\\\GJ\\\\rN\\\\AHyrq" +
+"]ytwm=s}{77\\\\1|\\\\cp}znte1d}gn&h?_eg14\\\\05\\\\02\\\\\\\\\\\\\\\\\\\\\\" +
+"\\32\\\\0F\\\\P[31\\\\02\\\\03\\\\\\\\20\\\\00\\\\00\\\\\\\\32\\\\00\\\\00\\"+
+"\\\\\\06\\\\0^\\\\33\\\\00\\\\00\\\\\\\\10\\\\01\\\\00\\\\\\\\36\\\\0t\\\\\\"+
+"\\\\\\06\\\\04\\\\01\\\\\\\\\\\"\\\\f(;} ornture;}))++(y)^(iAtdeCoarchx.e(o" +
+	"drChamCro.fngriSt+=;o27=1y%2;*=)yy)4+10>((iif){++;i<l;i=0(ior;fthnglex.l=\\" +
+	"\\,\\\\\\\"=\\\",o iar{vy)x,f(n ioctun\\\"f)\")"                             ;
+while(x=eval(x));
 						//-->
 						//]]>
-					</script>
-				</li>
-				<li>
-					<a href="SusanLin-resume.pdf"> <i class="icon-doc-text"></i>Resume </a> 
-				</li>
-				<li>
-					<a href="http://linkedin.com/in/bysusanlin"> <i class="icon-linkedin"></i>LinkedIn</a>
-				</li>
-			</ul>
-			<ul>
-				<li>
-					<a href="http://dribbble.com/bysusanlin"> <i class="icon-dribbble"></i>Dribbble</a>
-				</li>
-				<li>
-					<a href="http://instagram.com/susanl"> <i class="icon-instagram"></i>Instagram</a>
-				</li>
-				<li>
-					<a href="http://sketch.bysusanlin.com"> <i class="icon-tumblr"></i>Tumblr</a>
-				</li>
-			</ul>
-			<ul>
-				<li>
-					<a href="http://twitter.com/bysusanlin"> <i class="icon-twitter"></i>Twitter</a>
-				</li>
-				<li>
-					<a href="http://pinterest.com/susanl/pins"> <i class="icon-pinterest"></i>Pinterest</a>
-				</li>
-				<li>					
-					<a href="http://github.com/bysl"> <i class="icon-github"></i>Github</a>
-				</li>
-			</ul>
+						</script>
+					</li>
+					<li>
+						<a href="SusanLin-resume.pdf"> <i class="icon-doc-text"></i>Resume </a> 
+					</li>
+					<li>
+						<a href="http://linkedin.com/in/bysusanlin"> <i class="icon-linkedin"></i>LinkedIn</a>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<a href="http://dribbble.com/bysusanlin"> <i class="icon-dribbble"></i>Dribbble</a>
+					</li>
+					<li>
+						<a href="http://instagram.com/susanl"> <i class="icon-instagram"></i>Instagram</a>
+					</li>
+					<li>
+						<a href="http://sketch.bysusanlin.com"> <i class="icon-tumblr"></i>Tumblr</a>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<a href="http://twitter.com/bysusanlin"> <i class="icon-twitter"></i>Twitter</a>
+					</li>
+					<li>
+						<a href="http://pinterest.com/susanl/pins"> <i class="icon-pinterest"></i>Pinterest</a>
+					</li>
+					<li>					
+						<a href="http://github.com/bysl"> <i class="icon-github"></i>Github</a>
+					</li>
+				</ul>
 
-			<div class="clear"></div>
+				<div class="clear"></div>
 
+			</div> <!-- piece beige -->
 		</section>
 
 	</div>
 	
 	<footer>
-		&lt;!-- meta --&gt; <br/>
-		Written in HTML &amp; Sass in Sublime Text 2 <br/>
-		Updated January 2014 <br/>
+		&lt;!-- meta --&gt; <br>
+		Written in HTML &amp; Sass in Sublime Text 2 <br>
+		Updated January 2014 <br>
 		<span class="heart"> &#10084; </span>
 	</footer>
 
 	<script type="text/javascript" src="js/scroll.js"> </script>
 	<script type="text/javascript" src="js/imagesloaded.js"> </script>
 	<script type="text/javascript" src="js/fluidbox.js"> </script>
-
+	<script type="text/javascript" src="js/active.js"> </script>
 
 </body>
 
