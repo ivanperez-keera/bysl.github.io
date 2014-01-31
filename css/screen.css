@@ -224,11 +224,11 @@ img {
       text-align: left;
       font-family: "Rooney Light", "rooney-web-1", "rooney-web-2", serif;
       font-weight: 300; }
+      #content .piece p a:hover {
+        text-decoration: underline; }
     #content .piece p.button {
       font-weight: 300;
       margin: 30px auto 70px; }
-    #content .piece a:hover {
-      text-decoration: underline; }
   #content .dark {
     background: #111111;
     color: #aeb8be;
