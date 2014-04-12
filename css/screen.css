@@ -249,6 +249,8 @@ footer {
 
 .heart {
   color: #f25f60; }
+  .heart a {
+    color: #f25f60; }
 
 .clear {
   margin: 0;
