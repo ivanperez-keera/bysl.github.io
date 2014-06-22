@@ -7,6 +7,7 @@
   font-family: "Pluto Sans Cond Light";
   src: url("../fonts/pluto-sans.eot");
   src: url("../fonts/pluto-sans.eot?#iefix") format("embedded-opentype"), url("../fonts/pluto-sans.woff") format("woff"), url("../fonts/pluto-sans.ttf") format("truetype"); }
+
 body {
   background: white;
   margin: 0;
@@ -15,7 +16,9 @@ body {
   font-size: 16px;
   font-family: "Pluto Sans Cond Light", sans-serif;
   text-align: center;
-  line-height: 32px; }
+  line-height: 32px;
+  border-left: 20px solid white;
+  border-right: 20px solid white; }
 
 h1 {
   font-size: 48px;
@@ -27,7 +30,7 @@ h2 {
 
 h3 {
   font-size: 22px;
-  line-height: 48px; }
+  line-height: 66px; }
 
 h6 {
   font-size: 14px;
@@ -46,8 +49,14 @@ h6 {
 .typeLowlight {
   color: #aeb8be; }
 
+.typeHighlight {
+  color: #21dcc7; }
+
+.brandFont {
+  font-family: "Pluto Sans Cond Light", sans-serif !important; }
+
 b {
-  color: black; }
+  color: #111111; }
 
 a {
   text-decoration: none;
@@ -60,11 +69,13 @@ a {
     border: 0; }
 
 a.btn {
-  font-size: 22px;
+  font-size: 16px;
+  font-family: "Pluto Sans Cond Light", sans-serif;
+  line-height: 96px;
   color: white;
   text-shadow: 0 0 0;
-  background: #21dcc7;
-  box-shadow: 0 3px 0 #1ab09f;
+  background: #f25f60;
+  box-shadow: 0 3px 0 #ee3031;
   border-radius: 3px;
   padding: 20px 30px 19px;
   cursor: pointer;
@@ -79,12 +90,22 @@ a.btn {
   -ms-transition-delay: 0;
   -o-transition-delay: 0; }
   a.btn:hover {
-    background: #42eedb; }
+    background: #fc8889;
+    text-decoration: none !important; }
   a.btn:active {
     position: relative;
     top: 3px;
     border: 0;
     box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.15); }
+
+.btn-nope {
+  background: #aeb8be;
+  box-shadow: 0 0 0; }
+  .btn-nope:hover {
+    background: #aeb8be; }
+  .btn-nope:active {
+    top: 0;
+    box-shadow: 0 0 0; }
 
 hr {
   border: 0;
@@ -95,51 +116,34 @@ header {
   width: 700px;
   height: 170px;
   padding-bottom: 42px;
-  border-bottom: 1px dotted #d8dde0;
-  transition: 0.2s opacity;
-  -webkit-transition: 0.2s opacity;
-  -moz-transition: 0.2s opacity;
-  -ms-transition: 0.2s opacity;
-  -o-transition: 0.2s opacity;
-  transition-delay: 0;
-  -webkit-transition-delay: 0;
-  -moz-transition-delay: 0;
-  -ms-transition-delay: 0;
-  -o-transition-delay: 0; }
-  header:hover {
-    opacity: 0.8; }
+  border-bottom: 1px dotted #d8dde0; }
 
-#subnav {
+nav {
   width: 100%;
   background: white;
   font-size: 14px; }
-  #subnav ul {
+  nav ul {
     margin: 0 auto;
     width: 500px;
     background: white;
     height: 45px;
     padding-top: 6px;
     border-bottom: 1px dotted #d8dde0; }
-    #subnav ul li {
+    nav ul li {
       float: left;
       margin-right: 20px; }
-      #subnav ul li:last-child {
+      nav ul li:last-child {
         float: right;
         margin-right: 0; }
-      #subnav ul li.active a {
+      nav ul li.active a {
         color: #f25f60; }
-      #subnav ul li .go-top {
+      nav ul li .go-top {
         border-radius: 10px;
         text-decoration: none;
-        color: white;
-        background-color: #21dcc7;
         padding: 8px 10px 7px;
         display: none;
-        opacity: 0.5;
         font-size: 14px; }
-        #subnav ul li .go-top:hover {
-          opacity: 1; }
-        #subnav ul li .go-top:active {
+        nav ul li .go-top:active {
           position: relative;
           top: 1px;
           border: 0; }
@@ -147,7 +151,8 @@ header {
 .sticky {
   position: fixed;
   z-index: 401;
-  top: 0; }
+  top: 0;
+  left: 0; }
 
 img {
   max-width: 100%; }
@@ -233,8 +238,6 @@ img {
     line-height: 36px; }
     #content .dark p {
       margin-top: 10px; }
-  #content .piece:last-of-type {
-    padding-bottom: 30px; }
 
 .beige {
   background: #f5f4f1; }
@@ -242,10 +245,19 @@ img {
 .mint {
   background: #edfbf7; }
 
+.pr-photo {
+  background: url(../images/bysusanlin.jpg) center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 500px; }
+
 footer {
   font-size: 12px;
   color: #aeb8be;
-  padding-bottom: 80px; }
+  padding: 45px 0 60px; }
 
 .heart {
   color: #f25f60; }
@@ -288,10 +300,6 @@ footer {
   h6 {
     width: 100%;
     text-align: center; }
-
-  #subnav {
-    visibility: hidden;
-    margin-top: -50px; }
 
   #content .piece .work {
     width: 320px; }

@@ -22,7 +22,7 @@
 
 	<link rel="SHORTCUT ICON" href="favicon.ico">
 
-	<title>design by susan</title>
+	<title>bysusanlin &#10084;</title>
 
 	<meta name="p:domain_verify" content="766c1df40cfdc1ba812d5b2668f45ede">
 
@@ -30,15 +30,15 @@
 	
 		//hooray, sticky navs?
 		$(document).ready(function() {  
-			var stickyNavTop = $('#subnav').offset().top;  
+			var stickyNavTop = $('nav').offset().top;  
 
 			var stickyNav = function(){  
 				var scrollTop = $(window).scrollTop();  
 
 				if (scrollTop > stickyNavTop) {   
-					$('#subnav').addClass('sticky'); 
+					$('nav').addClass('sticky'); 
 				} else {  
-					$('#subnav').removeClass('sticky');
+					$('nav').removeClass('sticky');
 				}  
 			};  
 
@@ -76,6 +76,8 @@
 	</script>
 
 	<!-- oh hai, google analytics -->
+	<!--
+
 	<script type="text/javascript">
 	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
@@ -86,77 +88,42 @@
 		pageTracker._trackPageview();
 	} catch(err) {}
 	</script>
-
+-->
 </head>
 
 <body>
 
 	<a name="top"></a>
 
-	<header class="animated fadeIn">
-		<img src="images/bysusanlin-totoro.svg" width="150px">
+
+	<header>
+		
+		<object data="images/bysusanlin-totoro.svg" type="image/svg+xml" width="150px">
+  		<img src="images/bysusanlin-totoro.png" width="150px"/>
+		</object>
+
 	</header>
 
-	<div id="subnav" class="">
+	<nav>
 		<ul>
-			<li class="typeLowlight"> design by susan </li>
-			<li class=""> <a href="#work">work</a> </li>
-			<li class=""> <a href="#talks">talks</a> </li>
-			<li class=""> <a href="#about">about</a> </li>
-			<li> <a href="http://sketch.bysusanlin.com"><i class="icon-popup"></i>blog</a> </li>
-			<li> <a href="http://cargocollective.com/susan"><i class="icon-popup"></i>art</a> </li>
-			<li> <a href="#top" class="go-top">&uarr;</a> </li>
+			<li> bysusanlin
+			<li> <span class="heart">&#10084;</span>
+			<li> <a href="#design"> design </a>
+			<li> <a href="#talks"> talks </a>
+			<li> <a href="#illustration"> illustration </a>
+			<li> <a href="#sketchnotes"> sketchnotes </a>
+			<li> <a href="#about"> who? </a>
+			<li> <a href="#top" class="go-top">&uarr;</a> 
 		</ul>
-	</div>
+	</nav>
+
 
 	<div id="content">
-
-		<a name="work" id="work"></a>
-
+		
+		<a name="design"></a>
 		<div class="piece">
 
-			<p> 
-				Susan is a Coding Designerd and Sketching Robot with a rather dated portfolio site. Her <a href="http://sketch.bysusanlin.com/">blog</a> is up to date and so is her <a href="http://twitter.com/bysusanlin">twitter!</a> Looking for sketchnotes? <a href="http://sketch.bysusanlin.com/tagged/sketchnotes"> Over here &rarr;</a>  <br><br>
-			</p>
-
-			<div class="work">
-				<div class="work-1">
-					<a href="images/trulia-search.gif">
-						<img src="images/trulia-search-list.png" title="" alt="">
-					</a>
-				</div>
-			</div> <!-- //work -->
-
-			<div class="work">
-
-				<div class="work-3">
-					<a href="images/trulia-search-sketch.png">
-						<img src="images/trulia-search-sketch.png" title="" alt="" >
-					</a>
-				</div>
-
-				<div class="work-3">
-					<a href="images/trulia-search-mock.png">
-						<img src="images/trulia-search-
-						mock.png" title="" alt="" >
-					</a>
-				</div>
-				
-				<div class="work-3">
-					<a href="images/trulia-search-supermock.png" >
-						<img src="images/trulia-search-supermock.png" title="" alt="" >
-					</a>
-				</div>
-
-			</div> <!-- //work -->
-
-			<p>
-				<b>Consumer UX @ Trulia.</b> I lead user experience on consumer facing products from conception, flow, visuals, to implementation. The List &amp; Photo Search Results Page embodied the recently developed <a href="http://1000watt.net/2013/04/portal-report-card-zillow-tweets-trulia-and-redfin-get-facelifts-realtor-com-gets-smart/">well received</a> experience language. Search List was the pilot project for the <a href="http://coding.smashingmagazine.com/2011/12/12/an-introduction-to-object-oriented-css-oocss/">OOCSS</a> library. In addition to Search, I also supported the Rentals and Android teams.
-			</p>
-
-		</div> <!-- //piece -->		
-
-		<div class="piece mint">
+			<h6> &lt;!-- design --&gt; </h6>
 
 			<div class="work">
 				<div class="work-1">
@@ -166,112 +133,31 @@
 				</div>
 			</div> <!-- //work -->
 
-			<div class="work">
-
-				<div class="work-3">
-					<a href="images/trulia-oocss-hologram.png">
-						<img src="images/trulia-oocss-hologram.png" title="" alt="" >
-					</a>
-				</div>
-
-				<div class="work-3">
-					<a href="images/trulia-oocss-legos.png">
-						<img src="images/trulia-oocss-
-						legos.png" title="" alt="" >
-					</a>
-				</div>
-				
-				<div class="work-3">
-					<a href="images/trulia-oocss-logo.png" >
-						<img src="images/trulia-oocss-logo.png" title="" alt="" >
-					</a>
-				</div>
-
-			</div> <!-- //work -->
-
 			<p>
-				<b>Object Oriented CSS @ Trulia.</b> I was a core member of the internal team which built the living style guide using Sass. The team released <a href="http://trulia.github.io/hologram/">Hologram,</a> a ruby gem that generates style guides from HTML comments. See <a href="http://trulia.github.io/hologram-example/">an example style guide</a> generated from Hologram. 
+				<b>Trulia, 2012-2014.</b> I started off focusing on UX Design and made my way onto the core team who built and maintained the living styleguide in OOCSS (Object Oriented CSS). With these experiences, I presented a 20 minute talk during an IxDA SF event: Design Doing.
 			</p>
 
-		</div> <!-- //piece -->		
-
-		<div class="piece">
-
-			<div class="work">
-
-				<div class="work-3">
-					<a href="images/misc-animated.gif">
-						<img src="images/misc-animated.gif" title="" alt="" >
-					</a>
-				</div>
-
-				<div class="work-3">
-					<a href="images/misc-illustrator.gif">
-						<img src="images/misc-illustrator.gif" title="" alt="" >
-					</a>
-				</div>
-				
-				<div class="work-3">
-					<a href="images/misc-painting.png" >
-						<img src="images/misc-painting.png" title="" alt="" >
-					</a>
-				</div>
-
-			</div> <!-- //work -->
-			<div class="work">
-
-				<div class="work-3">
-					<a href="images/misc-watercolor.jpg">
-						<img src="images/misc-watercolor.jpg" title="" alt="" >
-					</a>
-				</div>
-
-				<div class="work-3">
-					<a href="images/misc-pc.png">
-						<img src="images/misc-pc.png" title="" alt="" >
-					</a>
-				</div>
-				
-				<div class="work-3">
-					<a href="images/misc-pcfooter.jpg" >
-						<img src="images/misc-pcfooter.jpg" title="" alt="" >
-					</a>
-				</div>
-
-			</div> <!-- //work -->
-			<div class="work">
-
-				<div class="work-3">
-					<a href="images/misc-pixelart.gif">
-						<img src="images/misc-pixelart.gif" title="" alt="" >
-					</a>
-				</div>
-
-				<div class="work-3">
-					<a href="images/misc-scllstmob.png">
-						<img src="images/misc-scllstmob.png" title="" alt="" >
-					</a>
-				</div>
-				
-				<div class="work-3">
-					<a href="images/misc-sketchnote.jpg" >
-						<img src="images/misc-sketchnote.jpg" title="" alt="" >
-					</a>
-				</div>
-
-			</div> <!-- //work -->
-
 			<p>
-				<b>Everywhere @ Self.</b> I'm constantly immersed in a side or weekend freelance project. These are just some highlights from sketches to visual design to indie games and the occasional painting. For a more up-to-date log of what I'm working on, see <a href="http://sketch.bysusanlin.com">sketch by susan.</a>
+				I'm taking a break from most design right now. <br>
+				<a class="btn btn-nope">Not accepting new design projects</a>
 			</p>
 
-		</div> <!-- //piece -->		
+		</div> <!-- //piece -->
 
-		<a name="talks" id="talks"> </a>
 		<div class="piece dark">
+		<a name="talks" id="talks"> </a>
 
 			<h6> &lt;!-- talks --&gt; </h6>
+
+			<div class="work">
+				<div class="work-1">
+					<a href="images/bysusanlin-speaking.jpg" >
+						<img src="images/bysusanlin-speaking.jpg" title="" alt="" >
+					</a>
+				</div>
+			</div> <!-- //work -->
 			
+			<!--
 			<div class="video-container">
 				<iframe width="700" height="525" src="//www.youtube.com/embed/KWPnozbp4us" frameborder="0" allowfullscreen></iframe>
 			</div>
@@ -279,38 +165,79 @@
 			<div id="speaker-deck" style="width:700px; margin: 10px auto 0;">
 				<script async class="speakerdeck-embed" data-id="e894bcf0e2ee01302bc5765f3158560b" data-ratio="1.29456384323641" src="//speakerdeck.com/assets/embed.js"></script>
 			</div>
+		-->
 			
 			<p>
 				Designers venture into the world of Engineering. I spoke about the value of having a component library and the design process where it touches implementation, seeing your mocks to shipping. I argued that designers need to understand code to best communicate with the awesome people building who build our designs. The end goal isn't to replace our engineers, but to speak the medium's language. 
 			</p>
 			<p>
-				This 15 minute deck was made for <a href="http://ixdasf.ning.com">IXDASF</a> on a night of <a href="ixdasf.ning.com/events/designdoing">Design Doing</a> 
-				<br>
-				Previously, I've spoken privately for a visual design studio class and on a <a href="http://sketch.bysusanlin.com/post/45977847470/speaking-with-the-cmu-bxa-panel">Carnegie Mellon BXA alumni panel.</a>
+				This 15 minute deck was made for <a href="http://ixdasf.ning.com">IXDASF</a> on a night of <a href="ixdasf.ning.com/events/designdoing">Design Doing.</a> 
+			</p>
+				Other Speaking Experience &mdash;
+				<ol>
+					<li> Thoughtbot
+					<li> Previously, I've spoken privately for a visual design studio class
+					<li> <a href="http://sketch.bysusanlin.com/post/45977847470/speaking-with-the-cmu-bxa-panel">Carnegie Mellon BXA alumni panel.</a>
+				</ol>
+			<h2> More to come! </h2>
+			<p>
+				I'm interested in giving more talks about style guides, CSS, or how illustration has informed my design process. <br>
+				<a href="" class="btn">Invite me to speak</a>
 			</p>
 
 		</div> <!-- //piece -->
 
-		<a name="about" id="about"></a>
+		<a name="illustration"></a>
 		<div class="piece">
+			<h6> &lt;!-- illustration --&gt; </h6>
+
+			<p>
+				Yes, I can still use Photoshop and Illustrator even though I code!
+				Currently accepting illustration projects for the summer: <br>
+				<a href="" class="btn">Hire me to paint</a>
+			</p>
+			<p>
+				Want to see more? Follow my blog, instagram, or twitter for updates on my work.
+			</p>
+
+		</div> <!-- //piece -->		
+
+		<a name="sketchnotes"></a>
+		<div class="piece mint">
+			<h6> &lt;!-- sketchnotes --&gt; </h6>
+
+			<p>
+					There are so many nights out and conferences out there! I'm open to see if we can collaborate formally on visual notes for your event. <br>
+					<a href="" class="btn">Have me sketchnote your event</a>
+			</p>
+			<p>
+				Want to see more? The sketchnote section of my blog has the most thorough archive.
+			</p>
+
+		</div> <!-- //piece -->
+
+		<a name="about"></a>
+		<div class="piece">
+			<h6> &lt;!-- about --&gt; </h6>
 			<section>
-				<img src="images/bysusanlin-portrait.png">
 
-				<h2> Susan Lin <span class="h5 typeLowlight"> <i class="icon-location"></i>San Francisco</span> </h2>
-				<h3> Coding Designerd, Sketching Robot </h3>
+				<h2> Susan Lin <span class="h5 typeLowlight">Coding Designerd, Sketching Robot</span> </h2>
 
 				<p>
-					Once upon a time, Susan was <a href="http://cargocollective.com/susan">a painter.</a> <br>
+					Susan is a Visual UX Designer who codes. She strongly believes in <a href="#talks">knowing the medium.</a>
+					She is a Carnegie Mellon <a href="http://www.hcii.cmu.edu/accelerated-masters-program">MHCI</a> alum.
+				</p>
+
+				<p>
+					Susan also draws. You may know her for <a href="#sketchnotes">sketchnoting at events</a> or <a href="#illustration">watercolor paintings.</a>
+					Miyazaki inspires <a href="http://instagram.com/p/oz6ztIy4_J/">her</a> <a href="http://instagram.com/p/mt-7mSy45P/">like</a> <a href="http://instagram.com/p/m9hGpyy4xD/">no</a> <a href="http://instagram.com/p/o9VYGfy4yA/">other.</a> 
 				</p>
 				<p>
-					Then she fell in love with technology and the people who built it during her time at <a href="http://cmu.edu"><i class="icon-graduation-cap"></i>Carnegie Mellon.</a>
-				</p>
-				<p>
-					Now she is leading design at <a href="http://beyondpricing.com">a start-up.</a> She believes designs are best created from <a href="#talks">knowing the medium.</a>
+					Her hair is currently green. 
 				</p>
 
 			</section>
-
+			
 			<section>
 				<ul>
 					<li>
@@ -336,48 +263,54 @@ while(x=eval(x));
 						//-->
 						//]]>
 						</script>
-					</li>
+					
 					<li>
 						<a href="SusanLin-resume.pdf"> <i class="icon-doc-text"></i>Resume </a> 
-					</li>
+					
 					<li>
 						<a href="https://angel.co/susanl"> <i class="icon-monitor"></i>AngelList</a>
-					</li>
+					
 				</ul>
 				<ul>
 					<li>
 						<a href="http://dribbble.com/bysusanlin"> <i class="icon-dribbble"></i>Dribbble</a>
-					</li>
+					
 					<li>
 						<a href="http://instagram.com/susanl"> <i class="icon-instagram"></i>Instagram</a>
-					</li>
+					
 					<li>
 						<a href="http://sketch.bysusanlin.com"> <i class="icon-tumblr"></i>Tumblr</a>
-					</li>
+					
 				</ul>
 				<ul>
 					<li>
 						<a href="http://twitter.com/bysusanlin"> <i class="icon-twitter"></i>Twitter</a>
-					</li>
+					
 					<li>
 						<a href="http://pinterest.com/susanl/pins"> <i class="icon-pinterest"></i>Pinterest</a>
-					</li>
+					
 					<li>					
 						<a href="http://github.com/bysl"> <i class="icon-github"></i>Github</a>
-					</li>
+					
 				</ul>
 
 				<div class="clear"></div>
 
-			</div> <!-- piece beige -->
+			</div>
+
+
+		<div class="piece pr-photo">
+			<!-- meeee -->
+		</div> <!-- piece -->
+
 		</section>
 
 	</div>
 	
 	<footer>
 		&lt;!-- meta --&gt; <br>
-		Written in HTML &amp; Sass in Sublime Text 2 <br>
-		Updated April 2014 <br>
+		Written in HTML &amp; Sass in Sublime Text <br>
+		Updated June 2014 <br>
 		<span class="heart"> <a href="http://goodrobot.net">&#10084;</a> </span>
 	</footer>
 
