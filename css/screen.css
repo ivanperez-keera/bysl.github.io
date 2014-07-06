@@ -98,12 +98,14 @@ a.btn {
     border: 0;
     box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.15); }
 
-.btn-nope {
-  background: #aeb8be;
-  box-shadow: 0 0 0; }
-  .btn-nope:hover {
+a.btn-nope {
+  background: #d8dde0;
+  box-shadow: 0 0 0;
+  cursor: default;
+  padding: 19px 30px 20px; }
+  a.btn-nope:hover {
     background: #aeb8be; }
-  .btn-nope:active {
+  a.btn-nope:active {
     top: 0;
     box-shadow: 0 0 0; }
 
@@ -246,7 +248,7 @@ img {
   background: #edfbf7; }
 
 .pr-photo {
-  background: url(../images/bysusanlin.jpg) center center;
+  background: url(../images/bysusanlin.jpg) center center #aeeed9;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;

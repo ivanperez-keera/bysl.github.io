@@ -138,9 +138,11 @@ a.btn
 		border: 0
 		box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.15)
 
-.btn-nope
-	background: $grey
+a.btn-nope
+	background: lighten($grey,15%)
 	box-shadow: 0 0 0
+	cursor: default
+	padding: 19px 30px 20px
 
 	&:hover
 		background: $grey
@@ -285,7 +287,7 @@ img
 	background: lighten($lightMint, 15%)
 
 .pr-photo
-	background: url(../images/bysusanlin.jpg) center center
+	background: url(../images/bysusanlin.jpg) center center $lightMint
 	background-attachment: fixed
 	-webkit-background-size: cover
 	-moz-background-size: cover
