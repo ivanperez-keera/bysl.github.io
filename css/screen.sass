@@ -14,12 +14,10 @@ $h5: 16px
 $h6: 14px
 $h7: 12px
 
-$p: 16px
+$p: 14px
 
 $sans-serif: "Pluto Sans Cond Light", sans-serif
-$serif: "Rooney Light", "rooney-web-1","rooney-web-2", serif
-$icon: "Entypo"
-$icon-social: "Entypo Social"
+$serif: "Lora", serif
 
 $blacker: #111
 $black: #555
@@ -101,16 +99,15 @@ b
 p
 	max-width: 500px
 	margin: 0 auto
+	font-family: $serif
+	font-size: $p
 
 a 
 	text-decoration: none
-	color: $mint
-	border-bottom: $dottedBorder
-	padding-bottom: 4px
+	color: $blue
 
 	&:hover 
 		color: $coral	
-		border-bottom: 1px dotted $coral
 
 	&:active 
 		position: relative
@@ -126,29 +123,58 @@ header
 
 	p
 		width: 300px
-		font-size: $h6
+		font-size: $h5
+		font-family: $sans-serif
+
+	.social
+		margin-top: 10px
+
+		a
+			margin-right: 10px
+
+			&:last        
+				margin-left: 10px
+				margin-right: 0
+
+			&:hover
+				opacity: 0.9
 
 #content
-	margin: 25px auto 35px
-	max-width: 900px
+	margin: 30px auto
+	max-width: 90%
+
+ul
+	font-family: $serif
+	text-align: left
+	margin: 0 auto
+	max-width: 985px
 
 li
 	float: left
-	padding: 20px
-	width: 297px
+	margin: 0 15px 25px 0
+	width: 230px
+
+	a
+		color: $grey
+		display: inline-block
+
+		&:hover
+			color: $blacker
+			@include transition(0.3s, color)
+
+	.title
+		color: $blue
+		font-style: italic
 
 	p
-		text-align: left
-		width: 90%
-
-		a
-			text-transform: uppercase
-			font-size: $h7
+		border-left: $dottedBorder
+		padding-left: 20px
+		margin-top: 10px
 
 footer
 	font-size: $h7
 	color: $grey
-	padding: 45px 0 60px
+	padding: 20px 0
 
 .heart 
 	color: $coral

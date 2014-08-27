@@ -13,10 +13,10 @@ body {
   margin: 0;
   padding: 0;
   color: #555555;
-  font-size: 16px;
+  font-size: 14px;
   font-family: "Pluto Sans Cond Light", sans-serif;
   text-align: center;
-  line-height: 32px;
+  line-height: 28px;
   border-left: 20px solid white;
   border-right: 20px solid white; }
 
@@ -56,16 +56,15 @@ b {
 
 p {
   max-width: 500px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  font-family: "Lora", serif;
+  font-size: 14px; }
 
 a {
   text-decoration: none;
-  color: #21dcc7;
-  border-bottom: 1px dotted #d8dde0;
-  padding-bottom: 4px; }
+  color: #00bdff; }
   a:hover {
-    color: #f25f60;
-    border-bottom: 1px dotted #f25f60; }
+    color: #f25f60; }
   a:active {
     position: relative;
     top: 1px;
@@ -79,27 +78,59 @@ header {
   margin: 30px auto; }
   header p {
     width: 300px;
-    font-size: 14px; }
+    font-size: 16px;
+    font-family: "Pluto Sans Cond Light", sans-serif; }
+  header .social {
+    margin-top: 10px; }
+    header .social a {
+      margin-right: 10px; }
+      header .social a:last {
+        margin-left: 10px;
+        margin-right: 0; }
+      header .social a:hover {
+        opacity: 0.9; }
 
 #content {
-  margin: 25px auto 35px;
-  max-width: 900px; }
+  margin: 30px auto;
+  max-width: 90%; }
+
+ul {
+  font-family: "Lora", serif;
+  text-align: left;
+  margin: 0 auto;
+  max-width: 985px; }
 
 li {
   float: left;
-  padding: 20px;
-  width: 297px; }
+  margin: 0 15px 25px 0;
+  width: 230px; }
+  li a {
+    color: #aeb8be;
+    display: inline-block; }
+    li a:hover {
+      color: #111111;
+      transition: 0.3s color;
+      -webkit-transition: 0.3s color;
+      -moz-transition: 0.3s color;
+      -ms-transition: 0.3s color;
+      -o-transition: 0.3s color;
+      transition-delay: 0;
+      -webkit-transition-delay: 0;
+      -moz-transition-delay: 0;
+      -ms-transition-delay: 0;
+      -o-transition-delay: 0; }
+  li .title {
+    color: #00bdff;
+    font-style: italic; }
   li p {
-    text-align: left;
-    width: 90%; }
-    li p a {
-      text-transform: uppercase;
-      font-size: 12px; }
+    border-left: 1px dotted #d8dde0;
+    padding-left: 20px;
+    margin-top: 10px; }
 
 footer {
   font-size: 12px;
   color: #aeb8be;
-  padding: 45px 0 60px; }
+  padding: 20px 0; }
 
 .heart {
   color: #f25f60; }
