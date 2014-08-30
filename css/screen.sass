@@ -10,11 +10,12 @@ $h0: 60px
 $h1: 48px
 $h2: 32px
 $h3: 22px
-$h5: 16px
+$h4: 18px
+$h5: 18px
 $h6: 14px
 $h7: 12px
 
-$p: 14px
+$p: 16px
 
 $sans-serif: "Pluto Sans Cond Light", sans-serif
 $serif: "Lora", serif
@@ -71,8 +72,18 @@ h2
 	line-height: $h1
 
 h3, .h3
+	text-align: left
 	font-size: $h3
 	line-height: $h3*3
+
+h4, .h4
+	font-size: $h4
+	line-height: $h4*2
+
+h5
+	text-align: left
+	font-size: $h5
+	line-height: $h5*3
 
 h6, .h6
 	font-size: $h6
@@ -101,6 +112,7 @@ p
 	margin: 0 auto
 	font-family: $serif
 	font-size: $p
+	text-align: left
 
 a 
 	text-decoration: none
@@ -139,42 +151,94 @@ header
 			&:hover
 				opacity: 0.9
 
+nav
+	width: 100%
+	text-align: left
+	background: #ffffff
+
+	ul
+		margin: 0 auto
+		width: 500px
+		padding: 2px 0 0
+		height: 36px
+		border-bottom: $dottedBorder
+		font-size: $h7
+
+		li
+			list-style-type: none
+			float: left
+			margin-right: 20px
+
+			&:first-child
+				margin-left: 0
+
+			&:last-child
+				float: right
+				margin-right: 0
+
+			a
+				color: $black
+
+		.go-top
+			border-radius: 10px
+			text-decoration: none
+			font-size: $h7
+			display: none
+
+			&:active
+				position: relative
+				top: 1px 
+				border: 0
+
+.sticky
+	position: fixed
+	z-index: 100
+	top: 0
+	left: 0
+
+.sticky-padding
+	padding-top: 72px
+
 #content
 	margin: 30px auto
 	max-width: 90%
 
-ul
-	font-family: $serif
-	text-align: left
-	margin: 0 auto
-	max-width: 985px
+	.about
+		max-width: 500px
+		margin: 0 auto
 
-li
-	float: left
-	margin: 0 15px 25px 0
-	width: 230px
-
-	a
-		color: $black
-		display: inline-block
-
-		&:hover
-			color: $blacker
-			@include transition(0.3s, color)
-
-	.title
-		color: $blue
-		font-style: italic
+		img
+			width: 100%
 
 	p
-		border-left: $dottedBorder
-		padding-left: 20px
-		margin-top: 10px
+		margin-bottom: 20px
+
+		a
+			font-style: italic
+
+	ul
+		text-align: left
+		font-size: $h6
+		font-family: $serif
+		margin-bottom: 20px
+
+		li
+			list-style-type: disc
+			margin-left: 15px
+
+			a
+				font-style: italic
 
 footer
 	font-size: $h7
 	color: $grey
-	padding: 20px 0
+	padding: 30px 0 50px
+	border-top: $dottedBorder
+	max-width: 500px
+	margin: 0 auto
+
+	a
+		color: $grey
 
 .heart 
 	color: $coral
