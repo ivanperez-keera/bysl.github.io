@@ -16,9 +16,7 @@ body {
   font-size: 16px;
   font-family: "Pluto Sans Cond Light", sans-serif;
   text-align: center;
-  line-height: 32px;
-  border-left: 20px solid white;
-  border-right: 20px solid white; }
+  line-height: 32px; }
 
 h1 {
   font-size: 48px;
