@@ -207,6 +207,9 @@ footer {
   nav {
     display: none; }
 
+  .sticky-padding {
+    padding-top: 0; }
+
   #mob-nav {
     display: block;
     padding-top: 30px;
