@@ -1,8 +1,3 @@
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
 @font-face {
   font-family: "Pluto Sans Cond Light";
   src: url("../fonts/pluto-sans.eot");
@@ -28,8 +23,8 @@ h2 {
 
 h3, .h3 {
   text-align: left;
-  font-size: 22px;
-  line-height: 66px; }
+  font-size: 20px;
+  line-height: 60px; }
 
 h4, .h4 {
   font-size: 18px;
@@ -162,6 +157,17 @@ nav {
       margin-left: 15px; }
       #content ul li a {
         font-style: italic; }
+  #content .video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0; }
+  #content .video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
 
 footer {
   font-size: 12px;
@@ -193,3 +199,23 @@ footer {
   background: #21dcc7;
   color: white;
   text-shadow: 0 0 0; }
+
+#mob-nav {
+  display: none; }
+
+@media screen and (max-width: 500px) {
+  nav {
+    display: none; }
+
+  #mob-nav {
+    display: block;
+    padding-top: 30px;
+    margin-bottom: 30px;
+    border-top: 1px dotted #d8dde0; }
+    #mob-nav a {
+      display: block; }
+      #mob-nav a li {
+        width: 100%;
+        padding: 10px 0; }
+        #mob-nav a li:active {
+          background: #e7eaeb; } }

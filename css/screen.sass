@@ -3,13 +3,13 @@
 // Sassy
 //////////
 
-@import "bourbon/bourbon"
-@import "neat/neat"
+//@import "bourbon/bourbon"
+//@import "neat/neat"
 
 $h0: 60px
 $h1: 48px
 $h2: 32px
-$h3: 22px
+$h3: 20px
 $h4: 18px
 $h5: 18px
 $h6: 14px
@@ -27,6 +27,7 @@ $mint: #21dcc7
 $lightMint: #aeeed9
 $coral: #f25f60
 $grey: #aeb8be
+$lightGrey: #e7eaeb
 $beige: #f5f4f1
 $frenchGrey: #fffdf5
 $white: #fff
@@ -227,6 +228,19 @@ nav
 			a
 				font-style: italic
 
+	.video-wrapper
+		position: relative
+		padding-bottom: 56.25% //16:9 aspect ratio
+		padding-top: 25px
+		height: 0
+
+	.video-wrapper iframe
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+
 footer
 	font-size: $h7
 	color: $grey
@@ -259,3 +273,27 @@ footer
 	background: $mint
 	color: $white
 	text-shadow: 0 0 0
+
+#mob-nav
+	display: none
+
+@media screen and (max-width:500px)
+
+	nav
+		display: none //easier to remove this b/c of sticky
+
+	#mob-nav
+		display: block
+		padding-top: 30px
+		margin-bottom: 30px
+		border-top: $dottedBorder
+
+		a
+			display: block
+
+			li
+				width: 100%
+				padding: 10px 0
+
+				&:active
+					background: $lightGrey
