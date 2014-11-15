@@ -8,12 +8,12 @@
 	<meta name="description" content="Websites! @bysusanlin">
 	<meta name="author" content="Susan Lin, Susan L., Susan, bysusanlin, @bysusanlin">
 
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/screen.css">
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/screen.css">
+
+	<script type="text/javascript" src="../js/jquery-1.8.3.min.js"> </script>
 
 	<link href='http://fonts.googleapis.com/css?family=Lora:400,400italic,700' rel='stylesheet' type='text/css'>
-
-	<script type="text/javascript" src="js/jquery-1.8.3.min.js"> </script>
 
 	<link rel="SHORTCUT ICON" href="favicon.ico">
 
@@ -26,6 +26,7 @@
 	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
 	</script>
+
 	<script type="text/javascript">
 	try {
 		var pageTracker = _gat._getTracker("UA-7365280-1");
@@ -33,49 +34,50 @@
 	} catch(err) {}
 	</script>
     
-        <script type="text/javascript">
-        	$(document).ready(function() {  
-        		var stickyNavTop = $('nav').offset().top;  
-        
-        		var stickyNav = function(){  
-        			var scrollTop = $(window).scrollTop();  
-        
-        			if (scrollTop > stickyNavTop) {   
-        				$('nav').addClass('sticky'); 
-        				$('#content').addClass('sticky-padding');
-        			} else {  
-        				$('nav').removeClass('sticky');   
-        				$('#content').removeClass('sticky-padding');   
-        			}  
-        		};  
-        
-        		stickyNav();  
-        
-        		$(window).scroll(function() {  
-        			stickyNav();  
-        		});  
-        	});  
+  <script type="text/javascript">
+  	$(document).ready(function() {  
+  		var stickyNavTop = $('nav').offset().top;  
+  
+  		var stickyNav = function(){  
+  			var scrollTop = $(window).scrollTop();  
+  
+  			if (scrollTop > stickyNavTop) {   
+  				$('nav').addClass('sticky'); 
+  				$('#content').addClass('sticky-padding');
+  			} else {  
+  				$('nav').removeClass('sticky');   
+  				$('#content').removeClass('sticky-padding');   
+  			}  
+  		};  
+  
+  		stickyNav();  
+  
+  		$(window).scroll(function() {  
+  			stickyNav();  
+  		});  
+  	});  
 	</script>
     
    <script type="text/javascript">
     
-        $(document).ready(function() {
-			// Show or hide the sticky footer button
-			$(window).scroll(function() {
-				if ($(this).scrollTop() > 200) {
-					$('.go-top').fadeIn(500);
-				} else {
-					$('.go-top').fadeOut(500);
-				}
-			});
-			
-			// Animate the scroll to top
-			$('.go-top').click(function(event) {
-				event.preventDefault();
-				
-				$('html, body').animate({scrollTop: 0}, 300);
-			})
+    $(document).ready(function() {
+		
+		// Show or hide the sticky footer button
+		$(window).scroll(function() {
+			if ($(this).scrollTop() > 200) {
+				$('.go-top').fadeIn(500);
+			} else {
+				$('.go-top').fadeOut(500);
+			}
 		});
+		
+		// Animate the scroll to top
+		$('.go-top').click(function(event) {
+			event.preventDefault();
+			
+			$('html, body').animate({scrollTop: 0}, 300);
+		})
+	});
 		
 	</script>
     
@@ -86,9 +88,9 @@
 
 	<header>
 
-			<a href="/">
-				<img src="/images/bysusanlin-totoro.svg" height="100px">
-			</a>
+		<a href="/">
+			<img src="../images/bysusanlin-totoro.svg" height="100px">
+		</a>
 
 	</header>
 
@@ -97,8 +99,9 @@
 
 			<li> <a href="/">About</a>
 			<li> <a href="/talks/">Talks</a>
+			<li> <a href="/highlights/">Highlights</a>
 
-			<li class="heart"> &#10084;
+			<li class="heart"> &#10084; 
 
       <li> <a href="http://sketch.bysusanlin.com">Blog</a>
       <li> <a href="http://design.bysusanlin.com">Design</a>
@@ -115,33 +118,10 @@
 
 		<div class="about">			
 
-			<img src="images/bysusanlin.jpg">
+			<img src="../images/mentions.png">
 
 			<h3>
-				Susan Lin, Coding Designer &amp; Illustrator
-			</h3>
-
-			<p>
-				She is currently Freelancing and was Senior Visual UX and <a href="/talks">coding Designer at Trulia.</a> She is a <a href="https://www.hcii.cmu.edu/academics/hci-undergraduate/accelerated-masters">Carnegie Mellon MHCI</a> alumni.
-			</p>
-
-			<p>
-				Susan also draws. You may know her for <a href="http://sketch.bysusanlin.com/tagged/sketchnotes">sketchnoting at events</a> or <a href="http://instagram.com/susanl">watercolor paintings.</a>
-				Miyazaki inspires her like no other.
-			</p>
-
-			<p>
-				For her full work history, see her <a href="/SusanLin-resume.pdf">pretty PDF resume.</a>
-			</p>
-
-			<hr>
-
-			<br>
-
-			<img src="images/mentions.png">
-
-			<h3>
-				Mentions
+				Highlights
 			</h3>
 
 			<ul>
@@ -184,17 +164,6 @@
 				<li> #DesignTalk <a href="http://padlet.com/norisjavier/designtalk"> Virtual Panel about design, creativity, &amp; collaboration</a>
 
 			</ul>
-
-			<hr>
-
-			<h3>Contact</h3>
-
-			<p>
-				You may send me an <a href="mailto:bysusanlin@gmail.com">email.</a> Sometimes you may have better luck tweeting <a href="http://twitter.com/bysusanlin">@bysusanlin.</a>
-
-				I frequent <a href="http://instagram.com/susanl">Instagram</a>, <a href="http://dribbble.com/bysusanlin">Dribbble</a>, and <a href="http://pinterest.com/susanl/pins">Pinterest.</a>
-
-			</p>
 
 		</div> <!-- about -->
 
@@ -263,9 +232,10 @@
 		
 		<br>
 		
-		<img src="images/earthbound.gif" width="42px"> 
+		<img src="../images/earthbound.gif" width="42px"> 
 
 	</footer>
+
 
 </body>
 

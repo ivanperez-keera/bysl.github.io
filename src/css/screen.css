@@ -2,12 +2,11 @@
   font-family: "Pluto Sans Cond Light";
   src: url("../fonts/pluto-sans.eot");
   src: url("../fonts/pluto-sans.eot?#iefix") format("embedded-opentype"), url("../fonts/pluto-sans.woff") format("woff"), url("../fonts/pluto-sans.ttf") format("truetype"); }
-
 body {
-  background: white;
+  background: #fff;
   margin: 0;
   padding: 0;
-  color: #555555;
+  color: #555;
   font-size: 16px;
   font-family: "Pluto Sans Cond Light", sans-serif;
   text-align: center;
@@ -78,6 +77,16 @@ hr {
   border: 0;
   border-bottom: 1px dotted #d8dde0; }
 
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.grid-cell {
+  flex: 1; }
+
 header {
   margin: 30px auto; }
   header p {
@@ -97,7 +106,7 @@ header {
 nav {
   width: 100%;
   text-align: left;
-  background: white; }
+  background: #ffffff; }
   nav ul {
     margin: 0 auto;
     width: 500px;
@@ -115,7 +124,7 @@ nav {
         float: right;
         margin-right: 0; }
       nav ul li a {
-        color: #555555; }
+        color: #555; }
     nav ul .go-top {
       border-radius: 10px;
       text-decoration: none;
@@ -142,7 +151,8 @@ nav {
     max-width: 500px;
     margin: 0 auto; }
     #content .about img {
-      width: 100%; }
+      width: 100%;
+      height: auto; }
   #content p {
     margin-bottom: 20px; }
     #content p a {
@@ -169,15 +179,17 @@ nav {
     width: 100%;
     height: 100%; }
 
+.container {
+  padding: 4.5em 3em 6em; }
+
 footer {
+  background: #f5f4f1;
   font-size: 12px;
-  color: #aeb8be;
-  padding: 30px 0 50px;
-  border-top: 1px dotted #d8dde0;
-  max-width: 500px;
-  margin: 0 auto; }
-  footer a {
-    color: #aeb8be; }
+  margin: 80px auto 0;
+  text-align: left; }
+  footer p {
+    font-size: 14px;
+    max-width: 20em; }
 
 .heart {
   color: #f25f60; }
@@ -192,12 +204,12 @@ footer {
 
 ::selection {
   background: #21dcc7;
-  color: white;
+  color: #fff;
   text-shadow: 0 0 0; }
 
 ::-moz-selection {
   background: #21dcc7;
-  color: white;
+  color: #fff;
   text-shadow: 0 0 0; }
 
 #mob-nav {
@@ -222,3 +234,5 @@ footer {
         padding: 10px 0; }
         #mob-nav a li:active {
           background: #e7eaeb; } }
+
+/*# sourceMappingURL=screen.css.map */
