@@ -48,7 +48,7 @@ h6, .h6 {
   color: #aeb8be; }
 
 .typeHighlight {
-  color: #21dcc7; }
+  color: #00bdff; }
 
 .brandFont {
   font-family: "Pluto Sans Cond Light", sans-serif !important; }
@@ -77,16 +77,6 @@ hr {
   border: 0;
   border-bottom: 1px dotted #d8dde0; }
 
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-
-.grid-cell {
-  flex: 1; }
-
 header {
   margin: 30px auto; }
   header p {
@@ -111,7 +101,7 @@ nav {
     margin: 0 auto;
     width: 500px;
     padding: 2px 0 0;
-    height: 36px;
+    height: 34px;
     border-bottom: 1px dotted #d8dde0;
     font-size: 12px; }
     nav ul li {
@@ -180,16 +170,31 @@ nav {
     height: 100%; }
 
 .container {
-  padding: 4.5em 3em 6em; }
+  padding: 4.5em 3em; }
 
 footer {
   background: #f5f4f1;
   font-size: 12px;
   margin: 80px auto 0;
-  text-align: left; }
+  text-align: center; }
+  footer .footer-container {
+    max-width: 500px;
+    margin: 0 auto; }
   footer p {
     font-size: 14px;
-    max-width: 20em; }
+    text-align: left; }
+  footer #tlemail {
+    background: #f5f4f1;
+    border: 2px solid #aeb8be;
+    border-radius: 20px;
+    font-family: "Pluto Sans Cond Light", sans-serif;
+    font-size: 12px;
+    padding: 8px 14px 7px; }
+  footer #tlesubmit {
+    background: none repeat scroll 0% 0% #f5f4f1;
+    color: #00bdff;
+    border: 2px solid #00bdff;
+    cursor: pointer; }
 
 .heart {
   color: #f25f60; }
@@ -233,6 +238,9 @@ footer {
         width: 100%;
         padding: 10px 0; }
         #mob-nav a li:active {
-          background: #e7eaeb; } }
+          background: #e7eaeb; }
+
+  footer {
+    margin-top: 40px; } }
 
 /*# sourceMappingURL=screen.css.map */
