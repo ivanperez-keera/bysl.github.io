@@ -32,15 +32,15 @@ h4, .h4 {
 
 h5 {
   text-align: left;
-  font-size: 18px;
-  line-height: 54px; }
+  font-size: 16px;
+  line-height: 48px; }
 
 h6, .h6 {
   font-size: 14px;
   line-height: 21px; }
 
 .h5 {
-  font-size: 18px; }
+  font-size: 16px; }
 
 .h7 {
   font-size: 12px; }
@@ -82,7 +82,7 @@ header {
   margin: 30px auto; }
   header p {
     width: 300px;
-    font-size: 18px;
+    font-size: 16px;
     font-family: "Pluto Sans Cond Light", sans-serif; }
   header .social {
     margin-top: 10px; }
