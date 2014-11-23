@@ -6,7 +6,8 @@ body {
   background: #fff;
   margin: 0;
   padding: 0;
-  color: #555;
+  color: #434343;
+  font-weight: 300;
   font-size: 16px;
   font-family: "Pluto Sans Cond Light", sans-serif;
   text-align: center;
@@ -22,24 +23,25 @@ h2 {
 
 h3, .h3 {
   text-align: left;
-  font-size: 20px;
-  line-height: 60px; }
+  font-size: 24px;
+  line-height: 72px; }
 
 h4, .h4 {
-  font-size: 18px;
-  line-height: 36px; }
+  text-align: left;
+  font-size: 21px;
+  line-height: 42px; }
 
 h5 {
   text-align: left;
-  font-size: 18px;
-  line-height: 54px; }
+  font-size: 16px;
+  line-height: 48px; }
 
 h6, .h6 {
   font-size: 14px;
   line-height: 21px; }
 
 .h5 {
-  font-size: 18px; }
+  font-size: 16px; }
 
 .h7 {
   font-size: 12px; }
@@ -59,7 +61,7 @@ b {
 p {
   max-width: 500px;
   margin: 0 auto;
-  font-family: "Lora", serif;
+  font-family: "rooney-web-1", "rooney-web-2", "Lora", serif;
   font-size: 16px;
   text-align: left; }
 
@@ -81,7 +83,7 @@ header {
   margin: 30px auto; }
   header p {
     width: 300px;
-    font-size: 18px;
+    font-size: 16px;
     font-family: "Pluto Sans Cond Light", sans-serif; }
   header .social {
     margin-top: 10px; }
@@ -96,14 +98,14 @@ header {
 nav {
   width: 100%;
   text-align: left;
-  background: #ffffff; }
+  background: #ffffff;
+  font-size: 12px; }
   nav ul {
     margin: 0 auto;
     width: 500px;
     padding: 2px 0 0;
     height: 33px;
-    border-bottom: 1px dotted #d8dde0;
-    font-size: 12px; }
+    border-bottom: 1px dotted #d8dde0; }
     nav ul li {
       list-style-type: none;
       float: left;
@@ -114,7 +116,7 @@ nav {
         float: right;
         margin-right: 0; }
       nav ul li a {
-        color: #555; }
+        color: #434343; }
     nav ul .go-top {
       border-radius: 10px;
       text-decoration: none;
@@ -145,18 +147,12 @@ nav {
       height: auto; }
   #content p {
     margin-bottom: 20px; }
-    #content p a {
-      font-style: italic; }
   #content ul {
     text-align: left;
-    font-size: 14px;
-    font-family: "Lora", serif;
+    font-family: "rooney-web-1", "rooney-web-2", "Lora", serif;
     margin-bottom: 20px; }
     #content ul li {
-      list-style-type: disc;
-      margin-left: 15px; }
-      #content ul li a {
-        font-style: italic; }
+      list-style-type: none; }
   #content .video-wrapper {
     position: relative;
     padding-bottom: 56.25%;
@@ -174,7 +170,6 @@ nav {
 
 footer {
   background: #f5f4f1;
-  font-size: 12px;
   margin: 80px auto 0;
   text-align: center; }
   footer .footer-container {
@@ -182,19 +177,8 @@ footer {
     margin: 0 auto; }
   footer p {
     font-size: 14px;
-    text-align: left; }
-  footer #tlemail {
-    background: #f5f4f1;
-    border: 2px solid #aeb8be;
-    border-radius: 20px;
-    font-family: "Pluto Sans Cond Light", sans-serif;
-    font-size: 12px;
-    padding: 8px 14px 7px; }
-  footer #tlesubmit {
-    background: none repeat scroll 0% 0% #f5f4f1;
-    color: #00bdff;
-    border: 2px solid #00bdff;
-    cursor: pointer; }
+    text-align: left;
+    font-family: "Pluto Sans Cond Light", sans-serif; }
 
 .heart {
   color: #f25f60; }
