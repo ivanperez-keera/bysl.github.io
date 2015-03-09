@@ -44,6 +44,16 @@ $dottedBorder: 1px dotted lighten($grey, 15%)
 	-ms-transition-delay: $delay
 	-o-transition-delay: $delay
 
+@mixin animation($duration, $delay: all) 
+	-webkit-animation-duration: $duration
+	-moz-animation-duration: $duration
+	-ms-animation-duration: $duration
+	-o-animation-duration: $duration
+	-webkit-animation-delay: $delay
+	-moz-animation-delay: $delay
+	-ms-animation-delay: $delay
+	-o-animation-delay: $delay
+
 body 
 	background: $white
 	margin: 0
@@ -203,7 +213,7 @@ nav
 		img
 			width: 100%
 			height: auto
-
+			
 	p
 		margin-bottom: 20px
 
