@@ -1,230 +1,253 @@
 @font-face {
-  font-family: "Pluto Sans Cond Light";
+  font-family: 'Pluto Sans Cond Light';
   src: url("../fonts/pluto-sans.eot");
   src: url("../fonts/pluto-sans.eot?#iefix") format("embedded-opentype"), url("../fonts/pluto-sans.woff") format("woff"), url("../fonts/pluto-sans.ttf") format("truetype"); }
 body {
-  background: #fff;
   margin: 0;
-  padding: 0;
-  color: #434343;
+  font-family: "Rooney", serif;
+  font-size: 16px;
   font-weight: 300;
-  font-size: 16px;
-  font-family: "Pluto Sans Cond Light", sans-serif;
-  text-align: center;
-  line-height: 32px; }
+  line-height: 1.8em;
+  color: #434343;
+  background: #fff; }
+  body.home nav a {
+    color: #fff; }
 
-h1 {
-  font-size: 48px;
-  line-height: 96px; }
+#earthbounded {
+  width: 54px;
+  height: 58px;
+  position: absolute;
+  top: 828px;
+  left: 50%;
+  margin-left: -27px;
+  margin-top: -29px;
+  display: block; }
+  #earthbounded.fp {
+    background: url("../images/sprite-fp.png"); }
+  #earthbounded.left {
+    background: url("../images/sprite-left.png"); }
+  #earthbounded.right {
+    background: url("../images/sprite-right.png"); }
 
-h2 {
-  font-size: 32px;
-  line-height: 48px; }
-
-h3, .h3 {
-  text-align: left;
-  font-size: 24px;
-  line-height: 72px; }
-
-h4, .h4 {
-  text-align: left;
-  font-size: 21px;
-  line-height: 42px; }
-
-h5 {
-  text-align: left;
-  font-size: 16px;
-  line-height: 48px; }
-
-h6, .h6 {
-  font-size: 14px;
-  line-height: 21px; }
-
-.h5 {
-  font-size: 16px; }
-
-.h7 {
-  font-size: 12px; }
-
-.typeLowlight {
-  color: #aeb8be; }
-
-.typeHighlight {
-  color: #00bdff; }
-
-.brandFont {
-  font-family: "Pluto Sans Cond Light", sans-serif !important; }
-
-b {
-  color: #f25f60; }
-
-p {
-  max-width: 500px;
-  margin: 0 auto;
-  font-family: "rooney-web-1", "rooney-web-2", "Lora", serif;
-  font-size: 16px;
-  text-align: left; }
+#ufo {
+  width: 88px;
+  height: 86px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -44px;
+  margin-top: -43px; }
+  #ufo.flying {
+    background: url("../images/ufo.png"); }
 
 a {
-  text-decoration: none;
-  color: #00bdff; }
+  color: #36b5ab;
+  text-decoration: none; }
   a:hover {
-    color: #f25f60; }
+    color: #f194c9; }
   a:active {
     position: relative;
     top: 1px;
     border: 0; }
 
-hr {
-  border: 0;
-  border-bottom: 1px dotted #d8dde0; }
-
 header {
-  margin: 30px auto; }
-  header p {
-    width: 300px;
-    font-size: 16px;
-    font-family: "Pluto Sans Cond Light", sans-serif; }
-  header .social {
-    margin-top: 10px; }
-    header .social a {
-      margin-right: 10px; }
-      header .social a:last {
-        margin-left: 10px;
-        margin-right: 0; }
-      header .social a:hover {
-        opacity: 0.9; }
+  background: #f5f4f1;
+  text-align: center; }
+  header img {
+    margin: 15px 25px 10px; }
 
 nav {
-  width: 100%;
-  text-align: left;
-  background: #ffffff;
-  font-size: 12px; }
-  nav ul {
-    margin: 0 auto;
-    width: 500px;
-    padding: 2px 0 0;
-    height: 33px;
-    border-bottom: 1px dotted #d8dde0; }
-    nav ul li {
-      list-style-type: none;
-      float: left;
-      margin-right: 20px; }
-      nav ul li:first-child {
-        margin-left: 0; }
-      nav ul li:last-child {
-        float: right;
-        margin-right: 0; }
-      nav ul li a {
-        color: #434343; }
-    nav ul .go-top {
-      border-radius: 10px;
-      text-decoration: none;
-      font-size: 12px;
-      display: none; }
-      nav ul .go-top:active {
-        position: relative;
-        top: 1px;
-        border: 0; }
-
-.sticky {
   position: fixed;
-  z-index: 100;
-  top: 0;
+  top: 10px;
   left: 0; }
+  nav ul {
+    text-align: center; }
+    nav ul a {
+      font-family: "Pluto Sans Cond Light", sans-serif;
+      text-transform: uppercase;
+      font-size: 12px; }
+      nav ul a li {
+        list-style-type: none; }
 
-.sticky-padding {
-  padding-top: 72px; }
+#onett {
+  background: url("../images/onett.png") top center;
+  height: 1730px;
+  width: 100%; }
+  #onett #trees {
+    background: url("../images/z-trees.png") bottom center;
+    height: 1730px;
+    width: 100%;
+    position: absolute; }
 
-#content {
-  margin: 30px auto;
-  max-width: 90%; }
-  #content .about {
+#saturn {
+  background: url("../images/saturn-valley.png") center center;
+  height: 2300px;
+  width: 100%; }
+  #saturn #valley {
+    background: url("../images/z-saturn.png") center center;
+    height: 950px;
+    width: 100%;
+    position: absolute; }
+  #saturn #distorter {
+    height: 2300px;
+    width: 100%;
+    position: absolute; }
+    #saturn #distorter.phased1 {
+      background: url("../images/ufo1.png") center center; }
+    #saturn #distorter.phased2 {
+      background: url("../images/ufo2.png") center center; }
+    #saturn #distorter.phased3 {
+      background: url("../images/ufo3.png") center center; }
+
+#lostworld {
+  background: url("../images/lostworld.png") center center;
+  width: 100%;
+  height: 100px; }
+
+#pinkcloud {
+  background: url("../images/sky.png") center center;
+  width: 100%;
+  height: 1840px; }
+  #pinkcloud #clouds {
+    background: url("../images/z-clouds.png") center center;
+    height: 1840px;
+    width: 100%;
+    position: absolute; }
+
+#moonside {
+  width: 100%;
+  height: 1434px;
+  background: url("../images/moonside.png") center center; }
+  #moonside #ending {
+    height: 580px;
+    width: 100%;
+    position: absolute; }
+    #moonside #ending.show {
+      background: url("../images/ending.png") center center; }
+
+#work div {
+  padding: 8% 20% 10%;
+  border-bottom: 1px dotted #dadee2; }
+  #work div:last-child {
+    border-bottom: 0; }
+  #work div p {
     max-width: 500px;
-    margin: 0 auto; }
-    #content .about img {
-      width: 100%;
-      height: auto; }
-  #content p {
-    margin-bottom: 20px; }
-  #content ul {
-    text-align: left;
-    font-family: "rooney-web-1", "rooney-web-2", "Lora", serif;
-    margin-bottom: 20px; }
-    #content ul li {
-      list-style-type: none; }
-  #content .video-wrapper {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 25px;
-    height: 0; }
-  #content .video-wrapper iframe {
+    font-size: 16px;
+    font-weight: 300; }
+  #work div img {
+    max-width: 100%; }
+#work h2 {
+  font-size: 32px;
+  font-family: "Pluto Sans Cond Light", sans-serif;
+  font-weight: 300;
+  line-height: 48px; }
+#work .intro {
+  padding: 3% 20% 6%; }
+
+#talks div {
+  padding: 3% 20% 6%;
+  border-bottom: 1px dotted #dadee2; }
+  #talks div:last-child {
+    border-bottom: 0; }
+  #talks div p {
+    max-width: 500px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28.8px; }
+  #talks div img {
+    max-width: 100%; }
+#talks h2 {
+  font-size: 32px;
+  font-family: "Pluto Sans Cond Light", sans-serif;
+  font-weight: 300;
+  line-height: 48px; }
+#talks .video .video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0; }
+  #talks .video .video-wrapper iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%; }
 
-.container {
-  padding: 4.5em 3em; }
-
-footer {
-  background: #f5f4f1;
-  margin: 80px auto 0;
-  text-align: center; }
-  footer .footer-container {
-    max-width: 500px;
-    margin: 0 auto; }
-  footer p {
-    font-size: 14px;
-    text-align: left;
-    font-family: "Pluto Sans Cond Light", sans-serif; }
-
-.heart {
-  color: #f25f60; }
-  .heart a {
-    color: #f25f60;
-    border-bottom: 0; }
-
 .clear {
   margin: 0;
   padding: 0;
   clear: both; }
 
-::selection {
-  background: #21dcc7;
+footer {
+  background: #0c2b3c;
   color: #fff;
-  text-shadow: 0 0 0; }
+  font-family: "Pluto Sans Cond Light", sans-serif;
+  padding: 2em 0 1.5em; }
+  footer ul a {
+    color: #36b5ab; }
+  footer ul li {
+    float: left;
+    display: block;
+    list-style-type: none;
+    width: 33.33%;
+    height: 50px; }
+  footer .footnote {
+    margin: 2em 0 0 40px;
+    font-family: "Pluto Sans Cond Light", sans-serif;
+    font-size: 12px;
+    color: #afb9c0; }
 
-::-moz-selection {
-  background: #21dcc7;
-  color: #fff;
-  text-shadow: 0 0 0; }
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0c2b3c;
+  filter: alpha(opacity=95);
+  -moz-opacity: 0.95;
+  -khtml-opacity: 0.95;
+  opacity: 0.95;
+  z-index: 10000; }
 
-#mob-nav {
-  display: none; }
+.about {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10001;
+  text-align: centered; }
+  .about #closeOverlay {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 48px; }
+  .about p {
+    margin: 12% auto 15%;
+    padding: 0 10%;
+    max-width: 500px;
+    color: #fff; }
+
+.typeHighlight {
+  color: #f194c9 !important; }
 
 @media screen and (max-width: 500px) {
+  .about {
+    overflow: auto; }
+
   nav {
     display: none; }
 
-  .sticky-padding {
-    padding-top: 0; }
+  #work div, #talks div {
+    padding: 8% 10% 10%; }
 
-  #mob-nav {
-    display: block;
-    padding-top: 30px;
-    margin-bottom: 30px;
-    border-top: 1px dotted #d8dde0; }
-    #mob-nav a {
-      display: block; }
-      #mob-nav a li {
-        width: 100%;
-        padding: 10px 0; }
-        #mob-nav a li:active {
-          background: #e7eaeb; }
+  #work .intro, #talks .intro {
+    padding: 3% 10% 6%; }
 
-  footer {
-    margin-top: 40px; } }
+  footer ul li {
+    width: 100%; } }
 
 /*# sourceMappingURL=screen.css.map */
