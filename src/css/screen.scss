@@ -11,8 +11,8 @@ $h7: 12px;
 $p: 16px;
 
 //type faces
-$plutosans: "Pluto Sans Cond Light", sans-serif;
-$rooney: "rooney-web-1","rooney-web-2", serif;
+$plutosans: "Pluto Sans Cond Light", Helvetica, Arial, sans-serif;
+$rooney: "rooney-web-1","rooney-web-2", "Lora", Georgia, serif;
 
 //colors
 $blacker: #111;
@@ -69,7 +69,7 @@ $dottedBorder: 1px dotted lighten($grey, 15%);
 }
 body {
 	margin: 0;
-	font-family: "Rooney", serif;
+	font-family: $rooney;
 	font-size: $p;
 	font-weight: 300;
 	line-height: 1.8em;
