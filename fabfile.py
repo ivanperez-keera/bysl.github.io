@@ -45,7 +45,7 @@ def generate():
 @task
 def css():
     local('mkdir -p ./build/css')
-    local('sassc ./src/css/screen.sass ./build/css/screen.css')
+    local('sassc ./src/css/screen.scss ./build/css/screen.css')
 
 
 @task
