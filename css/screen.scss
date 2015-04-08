@@ -100,15 +100,15 @@ body {
 	display: block;
 
 	&.fp {
-		background: url('/images/sprite-fp.png');
+		background: url('/images/sprite-fp.png') 54px 58px;
 	}
 
 	&.left {
-		background: url('/images/sprite-left.png');
+		background: url('/images/sprite-left.png') 54px 58px;
 	}
 
 	&.right {
-		background: url('/images/sprite-right.png');
+		background: url('/images/sprite-right.png') 54px 58px;
 	}
 
 }
@@ -123,7 +123,7 @@ body {
 	margin-top: -43px;
 
 	&.flying {
-		background: url('/images/ufo.png');
+		background: url('/images/ufo.png') 88px 86px;
 	}
 
 }

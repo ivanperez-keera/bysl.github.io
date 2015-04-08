@@ -25,11 +25,11 @@ body {
   margin-top: -29px;
   display: block; }
   #earthbounded.fp {
-    background: url("/images/sprite-fp.png"); }
+    background: url("/images/sprite-fp.png") 54px 58px; }
   #earthbounded.left {
-    background: url("/images/sprite-left.png"); }
+    background: url("/images/sprite-left.png") 54px 58px; }
   #earthbounded.right {
-    background: url("/images/sprite-right.png"); }
+    background: url("/images/sprite-right.png") 54px 58px; }
 
 #ufo {
   width: 88px;
@@ -40,7 +40,7 @@ body {
   margin-left: -44px;
   margin-top: -43px; }
   #ufo.flying {
-    background: url("/images/ufo.png"); }
+    background: url("/images/ufo.png") 88px 86px; }
 
 a {
   color: #36b5ab;
