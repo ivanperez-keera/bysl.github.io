@@ -278,42 +278,63 @@ footer {
   				background: url('/images/ufo@2x.png') 88px 86px;
   			}
   		} 
-  		*/
-  #onett {
-    background-image: url("/images/onett@2x.png");
-    background-size: 4316px 1730px; }
-    #onett #trees {
-      background-image: url("/images/z-trees@2x.png");
-      background-size: 4316px 1730px; }
-
-  #saturn {
-    background-image: url("/images/saturn-valley@2x.png");
-    background-size: 3360px 2300px; }
-    #saturn #valley {
-      background-image: url("/images/z-saturn@2x.png");
-      background-size: 3360px 950px; }
-    #saturn #distorter.phased1 {
-      background-image: url("/images/ufo1@2x.png");
-      background-size: 3360px 2300px; }
-    #saturn #distorter.phased2 {
-      background-image: url("/images/ufo2@2x.png");
-      background-size: 3360px 2300px; }
-    #saturn #distorter.phased3 {
-      background-image: url("/images/ufo3@2x.png");
-      background-size: 3360px 2300px; }
-
-  #pinkcloud {
-    background-image: url("/images/sky@2x.png");
-    background-size: 1440px 1840px; }
-    #pinkcloud #clouds {
-      background-image: url("/images/z-clouds@2x.png");
-      background-size: 1440px 1840px; }
-
-  #moonside {
-    background-image: url("/images/moonside@2x.png");
-    background-size: 2184px 1434px; }
-    #moonside #ending.show {
-      background-image: url("/images/ending@2x.png");
-      background-size: 2184px 580px; } }
+  		
+  
+  		#onett {
+  			background-image: url('/images/onett@2x.png');
+  			background-size: 4316px 1730px;
+  
+  			#trees {
+  				background-image: url('/images/z-trees@2x.png');
+  				background-size: 4316px 1730px;
+  			}
+  		}
+  
+  	#saturn {
+  		background-image: url('/images/saturn-valley@2x.png');
+  		background-size: 3360px 2300px;
+  		
+  		#valley {
+  			background-image: url('/images/z-saturn@2x.png');
+  			background-size: 3360px 950px;
+  		}	
+  
+  		#distorter {
+  			&.phased1 {
+  				background-image: url('/images/ufo1@2x.png');
+  				background-size: 3360px 2300px;
+  			}
+  
+  			&.phased2 {
+  				background-image: url('/images/ufo2@2x.png');
+  				background-size: 3360px 2300px;
+  			}			
+  
+  			&.phased3 {
+  				background-image: url('/images/ufo3@2x.png');
+  				background-size: 3360px 2300px;
+  			}
+  		}
+  	}
+  
+  	#pinkcloud {
+  		background-image: url('/images/sky@2x.png');
+  		background-size: 1440px 1840px;
+  		#clouds {
+  			background-image: url('/images/z-clouds@2x.png');
+  			background-size: 1440px 1840px;
+  		}
+  	}
+  
+  	#moonside {
+  		background-image: url('/images/moonside@2x.png');
+  		background-size: 2184px 1434px;
+  		#ending {
+  			&.show {
+  				background-image: url('/images/ending@2x.png');
+  				background-size: 2184px 580px;
+  			}
+  		}
+  	} */ }
 
 /*# sourceMappingURL=screen.css.map */
