@@ -12,7 +12,7 @@ $p: 16px;
 
 //type faces
 $plutosans: "Pluto Sans Cond Light", Helvetica, sans-serif;
-$rooney: "rooney-web-1","rooney-web-2", "Lora", Georgia, serif
+$rooney: "rooney-web-1","rooney-web-2", "Lora", Georgia, serif;
 
 //colors
 $blacker: #111;
@@ -295,36 +295,6 @@ nav {
 			padding: 3% 20% 6%;
 		}
 
-		.opentable {
-		}
-
-		.blippy {
-		}		
-
-		.beyond {
-		}
-
-		.trulia {
-		}
-
-		.styleguides {
-		}
-
-		.library {
-		}
-
-		.daily {
-		}
-
-		.articles {
-		}
-
-		.sketchnotes {
-		}
-
-		.old {
-		}
-
 	}
 
 	//////////////////////////////////////////////////////////
@@ -333,7 +303,7 @@ nav {
 	#talks {
 
 		div {
-			padding: 3% 20% 6%;
+			padding: 8% 20% 6%;
 			border-bottom: $dottedBorder;
 
 			&:last-child {
@@ -361,6 +331,7 @@ nav {
 		}
 
 		.intro {
+			padding: 3% 20% 6%;
 		}
 
 		.video {
