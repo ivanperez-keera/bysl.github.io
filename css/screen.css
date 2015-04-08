@@ -259,40 +259,39 @@ footer {
     width: 100%; } }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
   #earthbounded.fp {
-    background: url("/images/sprite-fp@2x.png"); }
+    background: url("/images/sprite-fp@2x.png") 54px 58px; }
   #earthbounded.left {
-    background: url("/images/sprite-left@2x.png"); }
+    background: url("/images/sprite-left@2x.png") 54px 58px; }
   #earthbounded.right {
-    background: url("/images/sprite-right@2x.png"); }
+    background: url("/images/sprite-right@2x.png") 54px 58px; }
 
   #ufo.flying {
-    background: url("/images/ufo@2x.png"); }
+    background: url("/images/ufo@2x.png") 88px 86px; }
 
   #onett {
-    background: url("/images/onett@2x.png") top center; }
+    background: url("/images/onett@2x.png") top center 4316px 1730px; }
     #onett #trees {
-      background: url("/images/z-trees@2x.png") bottom center; }
+      background: url("/images/z-trees@2x.png") bottom center 4316px 1730px; }
 
   #saturn {
-    background: url("/images/saturn-valley@2x.png") center center; }
+    background: url("/images/saturn-valley@2x.png") center center 3360px 2300px; }
     #saturn #valley {
-      background: url("/images/z-saturn@2x.png") center center; }
-
-  #distorter.phased1 {
-    background: url("/images/ufo1@2x.png") center center; }
-  #distorter.phased2 {
-    background: url("/images/ufo2@2x.png") center center; }
-  #distorter.phased3 {
-    background: url("/images/ufo3@2x.png") center center; }
+      background: url("/images/z-saturn@2x.png") center center 3360px 950px; }
+    #saturn #distorter.phased1 {
+      background: url("/images/ufo1@2x.png") center center 3360px 2300px; }
+    #saturn #distorter.phased2 {
+      background: url("/images/ufo2@2x.png") center center 3360px 2300px; }
+    #saturn #distorter.phased3 {
+      background: url("/images/ufo3@2x.png") center center 3360px 2300px; }
 
   #pinkcloud {
-    background: url("/images/sky@2x.png") center center; }
+    background: url("/images/sky@2x.png") center center 1440px 1840px; }
     #pinkcloud #clouds {
-      background: url("/images/z-clouds@2x.png") center center; }
+      background: url("/images/z-clouds@2x.png") center center 1440px 1840px; }
 
   #moonside {
-    background: url("/images/moonside@2x.png") center center; }
+    background: url("/images/moonside@2x.png") center center 2184px 1434px; }
     #moonside #ending.show {
-      background: url("/images/ending@2x.png") center center; } }
+      background: url("/images/ending@2x.png") center center 2184px 580px; } }
 
 /*# sourceMappingURL=screen.css.map */
