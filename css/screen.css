@@ -165,18 +165,19 @@ nav {
   line-height: 48px; }
 #talks .intro {
   padding: 3% 20% 6%; }
-#talks .video .video-wrapper {
-  position: relative;
-  padding-bottom: 56.25%;
-  padding-top: 25px;
-  height: 0;
+#talks .video {
   max-width: 1200px; }
-  #talks .video .video-wrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; }
+  #talks .video .video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0; }
+    #talks .video .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
 #talks .speakerdeck-wrapper {
   padding-left: 0; }
 
