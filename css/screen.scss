@@ -469,4 +469,75 @@ nav {
 
 	}
 
-	
+	// Load retina graphics...
+	@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min--moz-device-pixel-ratio: 1.5),
+    only screen and (min-device-pixel-ratio: 1.5) {
+		
+		#earthbounded {
+			&.fp {
+				background: url('/images/sprite-fp@2x.png');
+			}
+
+			&.left {
+				background: url('/images/sprite-left@2x.png');
+			}
+
+			&.right {
+				background: url('/images/sprite-right@2x.png');
+			}
+		}
+
+		#ufo {
+			&.flying {
+				background: url('/images/ufo@2x.png');
+			}
+		}
+
+		#onett {
+			background: url('/images/onett@2x.png') top center;
+			#trees {
+				background: url('/images/z-trees@2x.png') bottom center;
+			}
+		}
+
+	#saturn {
+		background: url('/images/saturn-valley@2x.png') center center;
+		
+		#valley {
+			background: url('/images/z-saturn@2x.png') center center;
+		}
+	}		
+
+		#distorter {
+			&.phased1 {
+				background: url('/images/ufo1@2x.png') center center;
+			}
+
+			&.phased2 {
+				background: url('/images/ufo2@2x.png') center center;
+			}			
+
+			&.phased3 {
+				background: url('/images/ufo3@2x.png') center center;
+			}
+		}
+
+	#pinkcloud {
+		background: url('/images/sky@2x.png') center center;
+		#clouds {
+			background: url('/images/z-clouds@2x.png') center center;
+		}
+	}
+
+	#moonside {
+		background: url('/images/moonside@2x.png') center center;
+		#ending {
+			&.show {
+				background: url('/images/ending@2x.png') center center;
+			}
+		}
+	}
+
+}
