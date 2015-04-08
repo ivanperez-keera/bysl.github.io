@@ -498,46 +498,58 @@ nav {
 		*/
 
 		#onett {
-			background: url('/images/onett@2x.png') top center 4316px 1730px;
+			background-image: url('/images/onett@2x.png');
+			background-size: 4316px 1730px;
+
 			#trees {
-				background: url('/images/z-trees@2x.png') bottom center 4316px 1730px;
+				background-image: url('/images/z-trees@2x.png');
+				background-size: 4316px 1730px;
 			}
 		}
 
 	#saturn {
-		background: url('/images/saturn-valley@2x.png') center center 3360px 2300px;
+		background-image: url('/images/saturn-valley@2x.png');
+		background-size: 3360px 2300px;
 		
 		#valley {
-			background: url('/images/z-saturn@2x.png') center center 3360px 950px;
+			background-image: url('/images/z-saturn@2x.png');
+			background-size: 3360px 950px;
 		}	
 
 		#distorter {
 			&.phased1 {
-				background: url('/images/ufo1@2x.png') center center 3360px 2300px;
+				background-image: url('/images/ufo1@2x.png');
+				background-size: 3360px 2300px;
 			}
 
 			&.phased2 {
-				background: url('/images/ufo2@2x.png') center center 3360px 2300px;
+				background-image: url('/images/ufo2@2x.png');
+				background-size: 3360px 2300px;
 			}			
 
 			&.phased3 {
-				background: url('/images/ufo3@2x.png') center center 3360px 2300px;
+				background-image: url('/images/ufo3@2x.png');
+				background-size: 3360px 2300px;
 			}
 		}
 	}
 
 	#pinkcloud {
-		background: url('/images/sky@2x.png') center center 1440px 1840px;
+		background-image: url('/images/sky@2x.png');
+		background-size: 1440px 1840px;
 		#clouds {
-			background: url('/images/z-clouds@2x.png') center center 1440px 1840px;
+			background-image: url('/images/z-clouds@2x.png');
+			background-size: 1440px 1840px;
 		}
 	}
 
 	#moonside {
-		background: url('/images/moonside@2x.png') center center 2184px 1434px;
+		background-image: url('/images/moonside@2x.png');
+		background-size: 2184px 1434px;
 		#ending {
 			&.show {
-				background: url('/images/ending@2x.png') center center 2184px 580px;
+				background-image: url('/images/ending@2x.png');
+				background-size: 2184px 580px;
 			}
 		}
 	}
