@@ -79,6 +79,11 @@ body {
 	&.home {
 		nav a {
 			color: $white; 
+
+			&:hover {
+				color: $blueblack;
+			}
+
 		}
 		footer {
 			background: $blueblack;
@@ -280,7 +285,7 @@ nav {
 		.intro {
 			padding: 3% 20% 6%;
 		}
-		
+
 	}
 
 	//////////////////////////////////////////////////////////

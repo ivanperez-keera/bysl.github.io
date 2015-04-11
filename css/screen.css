@@ -12,6 +12,8 @@ body {
   background: #fff; }
   body.home nav a {
     color: #fff; }
+    body.home nav a:hover {
+      color: #0c2b3c; }
   body.home footer {
     background: #0c2b3c; }
 
