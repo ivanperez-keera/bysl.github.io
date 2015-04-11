@@ -13,7 +13,7 @@ body {
   body.home nav a {
     color: #fff; }
     body.home nav a:hover {
-      color: #0c2b3c; }
+      color: #f194c9; }
   body.home footer {
     background: #0c2b3c; }
 
@@ -27,9 +27,27 @@ body {
   margin-top: -29px;
   display: block; }
   #earthbounded.left {
-    background: url("/images/index/sprite-left.png"); }
+    background: url("/images/index/sprite-left.png");
+    image-rendering: -moz-crisp-edges;
+    /* Firefox */
+    image-rendering: -o-crisp-edges;
+    /* Opera */
+    image-rendering: -webkit-optimize-contrast;
+    /* Webkit (non-standard naming) */
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;
+    /* IE (non-standard property) */ }
   #earthbounded.right {
-    background: url("/images/index/sprite-right.png"); }
+    background: url("/images/index/sprite-right.png");
+    image-rendering: -moz-crisp-edges;
+    /* Firefox */
+    image-rendering: -o-crisp-edges;
+    /* Opera */
+    image-rendering: -webkit-optimize-contrast;
+    /* Webkit (non-standard naming) */
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;
+    /* IE (non-standard property) */ }
 
 #ufo {
   width: 88px;
@@ -40,7 +58,16 @@ body {
   margin-left: -44px;
   margin-top: -43px; }
   #ufo.flying {
-    background: url("/images/index/ufo.png"); }
+    background: url("/images/index/ufo.png");
+    image-rendering: -moz-crisp-edges;
+    /* Firefox */
+    image-rendering: -o-crisp-edges;
+    /* Opera */
+    image-rendering: -webkit-optimize-contrast;
+    /* Webkit (non-standard naming) */
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;
+    /* IE (non-standard property) */ }
 
 a {
   color: #36b5ab;
@@ -74,51 +101,141 @@ nav {
 #onett {
   background: url("/images/index/onett.png") top center;
   height: 1730px;
-  width: 100%; }
+  width: 100%;
+  image-rendering: -moz-crisp-edges;
+  /* Firefox */
+  image-rendering: -o-crisp-edges;
+  /* Opera */
+  image-rendering: -webkit-optimize-contrast;
+  /* Webkit (non-standard naming) */
+  image-rendering: pixelated;
+  -ms-interpolation-mode: nearest-neighbor;
+  /* IE (non-standard property) */ }
   #onett #trees {
     background: url("/images/index/z-trees.png") bottom center;
     height: 1730px;
     width: 100%;
-    position: absolute; }
+    position: absolute;
+    image-rendering: -moz-crisp-edges;
+    /* Firefox */
+    image-rendering: -o-crisp-edges;
+    /* Opera */
+    image-rendering: -webkit-optimize-contrast;
+    /* Webkit (non-standard naming) */
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;
+    /* IE (non-standard property) */ }
 
 #saturn {
   background: url("/images/index/saturn-valley.png") center center;
   height: 2300px;
-  width: 100%; }
+  width: 100%;
+  image-rendering: -moz-crisp-edges;
+  /* Firefox */
+  image-rendering: -o-crisp-edges;
+  /* Opera */
+  image-rendering: -webkit-optimize-contrast;
+  /* Webkit (non-standard naming) */
+  image-rendering: pixelated;
+  -ms-interpolation-mode: nearest-neighbor;
+  /* IE (non-standard property) */ }
   #saturn #valley {
     background: url("/images/index/z-saturn.png") center center;
     height: 950px;
     width: 100%;
-    position: absolute; }
+    position: absolute;
+    image-rendering: -moz-crisp-edges;
+    /* Firefox */
+    image-rendering: -o-crisp-edges;
+    /* Opera */
+    image-rendering: -webkit-optimize-contrast;
+    /* Webkit (non-standard naming) */
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;
+    /* IE (non-standard property) */ }
   #saturn #distorter {
     height: 2300px;
     width: 100%;
     position: absolute; }
     #saturn #distorter.phased1 {
-      background: url("/images/index/z-ufo1.png") center center; }
+      background: url("/images/index/z-ufo1.png") center center;
+      image-rendering: -moz-crisp-edges;
+      /* Firefox */
+      image-rendering: -o-crisp-edges;
+      /* Opera */
+      image-rendering: -webkit-optimize-contrast;
+      /* Webkit (non-standard naming) */
+      image-rendering: pixelated;
+      -ms-interpolation-mode: nearest-neighbor;
+      /* IE (non-standard property) */ }
     #saturn #distorter.phased2 {
-      background: url("/images/index/z-ufo2.png") center center; }
+      background: url("/images/index/z-ufo2.png") center center;
+      image-rendering: -moz-crisp-edges;
+      /* Firefox */
+      image-rendering: -o-crisp-edges;
+      /* Opera */
+      image-rendering: -webkit-optimize-contrast;
+      /* Webkit (non-standard naming) */
+      image-rendering: pixelated;
+      -ms-interpolation-mode: nearest-neighbor;
+      /* IE (non-standard property) */ }
 
 #pinkcloud {
   background: url("/images/index/sky.png") center center;
   width: 100%;
-  height: 1840px; }
+  height: 1840px;
+  image-rendering: -moz-crisp-edges;
+  /* Firefox */
+  image-rendering: -o-crisp-edges;
+  /* Opera */
+  image-rendering: -webkit-optimize-contrast;
+  /* Webkit (non-standard naming) */
+  image-rendering: pixelated;
+  -ms-interpolation-mode: nearest-neighbor;
+  /* IE (non-standard property) */ }
   #pinkcloud #clouds {
     background: url("/images/index/z-clouds.png") center center;
     height: 1840px;
     width: 100%;
-    position: absolute; }
+    position: absolute;
+    image-rendering: -moz-crisp-edges;
+    /* Firefox */
+    image-rendering: -o-crisp-edges;
+    /* Opera */
+    image-rendering: -webkit-optimize-contrast;
+    /* Webkit (non-standard naming) */
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;
+    /* IE (non-standard property) */ }
 
 #moonside {
   width: 100%;
   height: 1434px;
-  background: url("/images/index/moonside.png") center center; }
+  background: url("/images/index/moonside.png") center center;
+  image-rendering: -moz-crisp-edges;
+  /* Firefox */
+  image-rendering: -o-crisp-edges;
+  /* Opera */
+  image-rendering: -webkit-optimize-contrast;
+  /* Webkit (non-standard naming) */
+  image-rendering: pixelated;
+  -ms-interpolation-mode: nearest-neighbor;
+  /* IE (non-standard property) */ }
   #moonside #ending {
     height: 580px;
     width: 100%;
     position: absolute; }
     #moonside #ending.show {
-      background: url("/images/index/ending.png") center center; }
+      background: url("/images/index/ending.png") center center;
+      image-rendering: -moz-crisp-edges;
+      /* Firefox */
+      image-rendering: -o-crisp-edges;
+      /* Opera */
+      image-rendering: -webkit-optimize-contrast;
+      /* Webkit (non-standard naming) */
+      image-rendering: pixelated;
+      -ms-interpolation-mode: nearest-neighbor;
+      /* IE (non-standard property) */ }
 
 #work div {
   padding: 8% 20% 10%;
