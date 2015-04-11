@@ -80,6 +80,9 @@ body {
 		nav a {
 			color: $white; 
 		}
+		footer {
+			background: $blueblack;
+		}
 	}
 
 }
@@ -417,7 +420,7 @@ nav {
 
 	footer {
 
-		background: $blueblack;
+		background: $beige;
 		color: $white;
 		font-family: $plutosans;
 		padding: 2em 0 1.5em;

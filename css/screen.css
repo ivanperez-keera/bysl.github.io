@@ -12,6 +12,8 @@ body {
   background: #fff; }
   body.home nav a {
     color: #fff; }
+  body.home footer {
+    background: #0c2b3c; }
 
 #earthbounded {
   width: 54px;
@@ -190,7 +192,7 @@ nav {
   clear: both; }
 
 footer {
-  background: #0c2b3c;
+  background: #f5f4f1;
   color: #fff;
   font-family: "Pluto Sans Cond Light", Helvetica, Arial, sans-serif;
   padding: 2em 0 1.5em; }
