@@ -93,9 +93,9 @@ nav {
     width: 100%;
     position: absolute; }
     #saturn #distorter.phased1 {
-      background: url("/images/index/ufo1.png") center center; }
+      background: url("/images/index/z-ufo1.png") center center; }
     #saturn #distorter.phased2 {
-      background: url("/images/index/ufo2.png") center center; }
+      background: url("/images/index/z-ufo2.png") center center; }
 
 #pinkcloud {
   background: url("/images/index/sky.png") center center;
