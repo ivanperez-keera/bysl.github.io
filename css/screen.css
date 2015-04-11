@@ -1,8 +1,7 @@
 @font-face {
   font-family: 'Pluto Sans Cond Light';
-  src: url('/fonts/pluto-sans.eot');
-  src: url('/fonts/pluto-sans.eot?#iefix') format('embedded-opentype'), url('/fonts/pluto-sans.woff') format('woff'), url('/fonts/pluto-sans.ttf') format('truetype'); }
-
+  src: url("/fonts/pluto-sans.eot");
+  src: url("/fonts/pluto-sans.eot?#iefix") format("embedded-opentype"), url("/fonts/pluto-sans.woff") format("woff"), url("/fonts/pluto-sans.ttf") format("truetype"); }
 body {
   margin: 0;
   font-family: "rooney-web-1", "rooney-web-2", "Lora", Georgia, serif;
@@ -23,12 +22,10 @@ body {
   margin-left: -27px;
   margin-top: -29px;
   display: block; }
-  #earthbounded.fp {
-    background: url('/images/sprite-fp.png'); }
   #earthbounded.left {
-    background: url('/images/sprite-left.png'); }
+    background: url("/images/index/sprite-left.png"); }
   #earthbounded.right {
-    background: url('/images/sprite-right.png'); }
+    background: url("/images/index/sprite-right.png"); }
 
 #ufo {
   width: 88px;
@@ -39,7 +36,7 @@ body {
   margin-left: -44px;
   margin-top: -43px; }
   #ufo.flying {
-    background: url('/images/ufo.png'); }
+    background: url("/images/index/ufo.png"); }
 
 a {
   color: #36b5ab;
@@ -63,29 +60,29 @@ nav {
   left: 0; }
   nav ul {
     text-align: center; }
+    nav ul li {
+      list-style-type: none; }
     nav ul a {
       font-family: "Pluto Sans Cond Light", Helvetica, Arial, sans-serif;
       text-transform: uppercase;
       font-size: 12px; }
-      nav ul a li {
-        list-style-type: none; }
 
 #onett {
-  background: url('/images/onett.png') top center;
+  background: url("/images/index/onett.png") top center;
   height: 1730px;
   width: 100%; }
   #onett #trees {
-    background: url('/images/z-trees.png') bottom center;
+    background: url("/images/index/z-trees.png") bottom center;
     height: 1730px;
     width: 100%;
     position: absolute; }
 
 #saturn {
-  background: url('/images/saturn-valley.png') center center;
+  background: url("/images/index/saturn-valley.png") center center;
   height: 2300px;
   width: 100%; }
   #saturn #valley {
-    background: url('/images/z-saturn.png') center center;
+    background: url("/images/index/z-saturn.png") center center;
     height: 950px;
     width: 100%;
     position: absolute; }
@@ -94,23 +91,16 @@ nav {
     width: 100%;
     position: absolute; }
     #saturn #distorter.phased1 {
-      background: url('/images/ufo1.png') center center; }
+      background: url("/images/index/ufo1.png") center center; }
     #saturn #distorter.phased2 {
-      background: url('/images/ufo2.png') center center; }
-    #saturn #distorter.phased3 {
-      background: url('/images/ufo3.png') center center; }
-
-#lostworld {
-  background: url('/images/lostworld.png') center center;
-  width: 100%;
-  height: 100px; }
+      background: url("/images/index/ufo2.png") center center; }
 
 #pinkcloud {
-  background: url('/images/sky.png') center center;
+  background: url("/images/index/sky.png") center center;
   width: 100%;
   height: 1840px; }
   #pinkcloud #clouds {
-    background: url('/images/z-clouds.png') center center;
+    background: url("/images/index/z-clouds.png") center center;
     height: 1840px;
     width: 100%;
     position: absolute; }
@@ -118,13 +108,13 @@ nav {
 #moonside {
   width: 100%;
   height: 1434px;
-  background: url('/images/moonside.png') center center; }
+  background: url("/images/index/moonside.png") center center; }
   #moonside #ending {
     height: 580px;
     width: 100%;
     position: absolute; }
     #moonside #ending.show {
-      background: url('/images/ending.png') center center; }
+      background: url("/images/index/ending.png") center center; }
 
 #work div {
   padding: 8% 20% 10%;
@@ -272,5 +262,6 @@ footer {
     padding: 3% 10% 6%; }
 
   footer ul li {
-    width: 100%; }
- }
+    width: 100%; } }
+
+/*# sourceMappingURL=screen.css.map */

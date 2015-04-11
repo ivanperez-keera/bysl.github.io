@@ -154,14 +154,14 @@ nav {
 		ul {
 			text-align: center;
 
+			li {
+				list-style-type: none;
+			}
+
 			a {
 				font-family: $plutosans;
 				text-transform: uppercase;
 				font-size: $h7;
-
-				li {
-					list-style-type: none;
-				}
 			}
 		}
 
