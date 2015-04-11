@@ -4,7 +4,7 @@
   src: url("/fonts/pluto-sans.eot?#iefix") format("embedded-opentype"), url("/fonts/pluto-sans.woff") format("woff"), url("/fonts/pluto-sans.ttf") format("truetype"); }
 body {
   margin: 0;
-  font-family: "Rooney", serif;
+  font-family: "rooney-web-1", "rooney-web-2", "Lora", Georgia, serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.8em;
@@ -63,7 +63,7 @@ nav {
   nav ul {
     text-align: center; }
     nav ul a {
-      font-family: "Pluto Sans Cond Light", sans-serif;
+      font-family: "Pluto Sans Cond Light", Helvetica, Arial, sans-serif;
       text-transform: uppercase;
       font-size: 12px; }
       nav ul a li {
@@ -138,7 +138,7 @@ nav {
     max-width: 100%; }
 #work h2 {
   font-size: 32px;
-  font-family: "Pluto Sans Cond Light", sans-serif;
+  font-family: "Pluto Sans Cond Light", Helvetica, Arial, sans-serif;
   font-weight: 300;
   line-height: 48px; }
 #work .intro {
@@ -158,7 +158,7 @@ nav {
     max-width: 100%; }
 #talks h2 {
   font-size: 32px;
-  font-family: "Pluto Sans Cond Light", sans-serif;
+  font-family: "Pluto Sans Cond Light", Helvetica, Arial, sans-serif;
   font-weight: 300;
   line-height: 48px; }
 #talks .video .video-wrapper {
@@ -175,6 +175,24 @@ nav {
 #talks .speakerdeck-wrapper {
   padding-left: 0; }
 
+#about div {
+  padding: 3% 20% 6%;
+  border-bottom: 1px dotted #dadee2; }
+  #about div:last-child {
+    border-bottom: 0; }
+  #about div p {
+    max-width: 500px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28.8px; }
+  #about div img {
+    max-width: 100%; }
+#about h2 {
+  font-size: 32px;
+  font-family: "Pluto Sans Cond Light", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  line-height: 48px; }
+
 .clear {
   margin: 0;
   padding: 0;
@@ -183,7 +201,7 @@ nav {
 footer {
   background: #0c2b3c;
   color: #fff;
-  font-family: "Pluto Sans Cond Light", sans-serif;
+  font-family: "Pluto Sans Cond Light", Helvetica, Arial, sans-serif;
   padding: 2em 0 1.5em; }
   footer ul a {
     color: #36b5ab; }
@@ -195,7 +213,7 @@ footer {
     height: 50px; }
   footer .footnote {
     margin: 2em 0 0 40px;
-    font-family: "Pluto Sans Cond Light", sans-serif;
+    font-family: "Pluto Sans Cond Light", Helvetica, Arial, sans-serif;
     font-size: 12px;
     color: #afb9c0; }
 
@@ -235,6 +253,9 @@ footer {
 
 .typeHighlight {
   color: #f194c9 !important; }
+
+.typeLowlight {
+  color: #afb9c0 !important; }
 
 @media screen and (max-width: 500px) {
   .about {

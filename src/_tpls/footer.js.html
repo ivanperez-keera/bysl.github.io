@@ -1,0 +1,78 @@
+	<script type="text/javascript" src="/js/jquery-1.8.3.min.js"> </script>
+	<script type="text/javascript">
+
+  	$(document).ready(function(){
+  		
+			$(window).scroll(function() {
+
+				var scrollTopValue = $(window).scrollTop();
+
+				if(parseInt(scrollTopValue/14)%2) {
+					$('#earthbounded').removeClass('left');
+					$('#earthbounded').addClass('right');
+				}
+				else {
+					$('#earthbounded').removeClass('right');
+					$('#earthbounded').addClass('left');
+				}
+
+				var windowHeightValue = $(window).height();
+
+				// Waiting until reaching center
+				var startGame = parseInt(828-windowHeightValue/2);
+				if(scrollTopValue >= startGame) {
+					$('#earthbounded').css('position', 'fixed');
+					$('#earthbounded').css('top', '50%');
+				}
+				else {
+					$('#earthbounded').css('position', 'absolute');
+					$('#earthbounded').css('top', '828px');
+				}
+
+				// Board Saturn Valley UFO
+				var boardUFO = parseInt(3148-windowHeightValue/2);
+				var phaseInterval = parseInt(windowHeightValue/6)
+				if(scrollTopValue >= boardUFO) {
+					$('#earthbounded').css("display", "none");
+				}
+				else {
+					$('#earthbounded').css("display", "block");
+				}
+
+				// Phased UFO
+				if(scrollTopValue >= boardUFO+phaseInterval) {
+					$('#distorter').removeClass('phased1');
+					$('#distorter').addClass('phased3');
+				}
+				else {
+					$('#distorter').addClass('phased1');
+					$('#distorter').removeClass('phased3');
+				}
+
+				if(scrollTopValue >= boardUFO+phaseInterval*2) {
+					$('#distorter').removeClass('phased3');
+				}
+
+				var showUFO = parseInt(4384-windowHeightValue/2);
+				if(scrollTopValue >= showUFO) {
+					$('#ufo').addClass('flying');
+				}
+				else {
+					$('#ufo').removeClass('flying');
+				}
+
+				var landUFO = parseInt(6374-windowHeightValue/2);
+				if(scrollTopValue >= landUFO) {
+					$('#ufo').removeClass('flying');
+					$('#ending').addClass('show');
+				}
+				else {
+					$('#ending').removeClass('show');
+				}
+
+			});
+		}); //document ready
+	</script>
+
+</body>
+</html>
