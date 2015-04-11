@@ -11,7 +11,7 @@ $h7: 12px;
 $p: 16px;
 
 //type faces
-$plutosans: "Pluto Sans Cond Light", Helvetica, sans-serif;
+$plutosans: "Pluto Sans Cond Light", Helvetica, Arial, sans-serif;
 $rooney: "rooney-web-1","rooney-web-2", "Lora", Georgia, serif;
 
 //colors
@@ -80,9 +80,6 @@ body {
 		nav a {
 			color: $white; 
 		}
-		footer {
-			background: $blueblack;
-		}
 	}
 
 }
@@ -99,16 +96,12 @@ body {
 	margin-top: -29px;
 	display: block;
 
-	&.fp {
-		background: url('/images/sprite-fp.png') 54px 58px;
-	}
-
 	&.left {
-		background: url('/images/sprite-left.png') 54px 58px;
+		background: url('/images/index/sprite-left.png');
 	}
 
 	&.right {
-		background: url('/images/sprite-right.png') 54px 58px;
+		background: url('/images/index/sprite-right.png');
 	}
 
 }
@@ -123,7 +116,7 @@ body {
 	margin-top: -43px;
 
 	&.flying {
-		background: url('/images/ufo.png') 88px 86px;
+		background: url('/images/index/ufo.png');
 	}
 
 }
@@ -154,9 +147,6 @@ header {
 }
 
 nav {
-		//background: url('/images/nav.png');
-		//height: 134px;
-		//width: 252px;
 		position: fixed;
 		top: 10px;
 		left: 0;
@@ -178,12 +168,12 @@ nav {
 	}
 
 	#onett {
-		background: url('/images/onett.png') top center;
+		background: url('/images/index/onett.png') top center;
 		height: 1730px;
 		width: 100%;
 
 		#trees {
-			background: url('/images/z-trees.png') bottom center;
+			background: url('/images/index/z-trees.png') bottom center;
 			height: 1730px;
 			width: 100%;
 			position: absolute;
@@ -192,12 +182,12 @@ nav {
 	}
 
 	#saturn {
-		background: url('/images/saturn-valley.png') center center;
+		background: url('/images/index/saturn-valley.png') center center;
 		height: 2300px;
 		width: 100%;
 
 		#valley {
-			background: url('/images/z-saturn.png') center center;
+			background: url('/images/index/z-saturn.png') center center;
 			height: 950px;
 			width: 100%;
 			position: absolute;
@@ -209,34 +199,24 @@ nav {
 			position: absolute;
 
 			&.phased1 {
-				background: url('/images/ufo1.png') center center;
+				background: url('/images/index/ufo1.png') center center;
 			}
 
 			&.phased2 {
-				background: url('/images/ufo2.png') center center;
-			}			
-
-			&.phased3 {
-				background: url('/images/ufo3.png') center center;
+				background: url('/images/index/ufo2.png') center center;
 			}
 
 		}
 
 	}
 
-	#lostworld {
-		background: url('/images/lostworld.png') center center;
-		width: 100%;
-		height: 100px;
-	}
-
 	#pinkcloud {
-		background: url('/images/sky.png') center center;
+		background: url('/images/index/sky.png') center center;
 		width: 100%;
 		height: 1840px;
 
 		#clouds {
-			background: url('/images/z-clouds.png') center center;
+			background: url('/images/index/z-clouds.png') center center;
 			height: 1840px;
 			width: 100%;
 			position: absolute;
@@ -247,7 +227,7 @@ nav {
 	#moonside {
 		width: 100%;
 		height: 1434px;
-		background: url('/images/moonside.png') center center;
+		background: url('/images/index/moonside.png') center center;
 
 		#ending {
 			height: 580px;
@@ -255,7 +235,7 @@ nav {
 			position: absolute;
 
 			&.show {
-				background: url('/images/ending.png') center center;
+				background: url('/images/index/ending.png') center center;
 			}
 
 		}
@@ -298,6 +278,36 @@ nav {
 			padding: 3% 20% 6%;
 		}
 
+		.opentable {
+		}
+
+		.blippy {
+		}		
+
+		.beyond {
+		}
+
+		.trulia {
+		}
+
+		.styleguides {
+		}
+
+		.library {
+		}
+
+		.daily {
+		}
+
+		.articles {
+		}
+
+		.sketchnotes {
+		}
+
+		.old {
+		}
+
 	}
 
 	//////////////////////////////////////////////////////////
@@ -306,7 +316,7 @@ nav {
 	#talks {
 
 		div {
-			padding: 8% 20% 6%;
+			padding: 3% 20% 6%;
 			border-bottom: $dottedBorder;
 
 			&:last-child {
@@ -334,31 +344,67 @@ nav {
 		}
 
 		.intro {
-			padding: 3% 20% 6%;
 		}
 
 		.video {
 
-			max-width: 1200px;
-
 			.video-wrapper {
 				position: relative;
-				padding-bottom: 56.25%; //16:9 aspect ratio
-				padding-top: 25px;
-				height: 0;
+					padding-bottom: 56.25%; //16:9 aspect ratio
+					padding-top: 25px;
+					height: 0;
 
-				iframe {
-					position: absolute;
-					top: 0;
-					left: 0;
-					width: 100%;
-					height: 100%;
+					iframe {
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+					}
+
 				}
 			}
-		}
 
 		.speakerdeck-wrapper {
 			padding-left: 0;
+		}
+
+	} //talks
+
+	//////////////////////////////////////////////////////////
+	// about
+
+	#about {
+
+		div {
+			padding: 3% 20% 6%;
+			border-bottom: $dottedBorder;
+
+			&:last-child {
+				border-bottom: 0;
+			}
+
+			p {
+				max-width: 500px;
+				font-size: $p;
+				font-weight: 300;
+				line-height: $p*1.8;
+			}
+
+			img {
+				max-width: 100%;
+			}
+
+		}
+
+		h2 {
+			font-size: $h2;
+			font-family: $plutosans;
+			font-weight: 300;
+			line-height: $h2*1.5;
+		}
+
+		.intro {
 		}
 
 	} //talks
@@ -371,7 +417,7 @@ nav {
 
 	footer {
 
-		background: $beige;
+		background: $blueblack;
 		color: $white;
 		font-family: $plutosans;
 		padding: 2em 0 1.5em;
@@ -433,7 +479,7 @@ nav {
 		}
 
 		p {
-			margin: 9% auto 15%;
+			margin: 12% auto 15%;
 			padding: 0 10%;
 			max-width: 500px;
 			color: $white;
@@ -443,6 +489,9 @@ nav {
 
 	.typeHighlight {
 		color: $flora !important;
+	}	
+	.typeLowlight {
+		color: $grey !important;
 	}
 
 	@media screen and (max-width:500px) {
@@ -469,89 +518,4 @@ nav {
 
 	}
 
-	// Load retina graphics...
-	@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-    only screen and (-o-min-device-pixel-ratio: 3/2),
-    only screen and (min--moz-device-pixel-ratio: 1.5),
-    only screen and (min-device-pixel-ratio: 1.5) {
-		
-		/*
-		#earthbounded {
-			&.fp {
-				background: url('/images/sprite-fp@2x.png') 54px 58px;
-			}
-
-			&.left {
-				background: url('/images/sprite-left@2x.png') 54px 58px;
-			}
-
-			&.right {
-				background: url('/images/sprite-right@2x.png') 54px 58px;
-			}
-		}
-
-		#ufo {
-			&.flying {
-				background: url('/images/ufo@2x.png') 88px 86px;
-			}
-		} 
-		
-
-		#onett {
-			background-image: url('/images/onett@2x.png');
-			background-size: 4316px 1730px;
-
-			#trees {
-				background-image: url('/images/z-trees@2x.png');
-				background-size: 4316px 1730px;
-			}
-		}
-
-	#saturn {
-		background-image: url('/images/saturn-valley@2x.png');
-		background-size: 3360px 2300px;
-		
-		#valley {
-			background-image: url('/images/z-saturn@2x.png');
-			background-size: 3360px 950px;
-		}	
-
-		#distorter {
-			&.phased1 {
-				background-image: url('/images/ufo1@2x.png');
-				background-size: 3360px 2300px;
-			}
-
-			&.phased2 {
-				background-image: url('/images/ufo2@2x.png');
-				background-size: 3360px 2300px;
-			}			
-
-			&.phased3 {
-				background-image: url('/images/ufo3@2x.png');
-				background-size: 3360px 2300px;
-			}
-		}
-	}
-
-	#pinkcloud {
-		background-image: url('/images/sky@2x.png');
-		background-size: 1440px 1840px;
-		#clouds {
-			background-image: url('/images/z-clouds@2x.png');
-			background-size: 1440px 1840px;
-		}
-	}
-
-	#moonside {
-		background-image: url('/images/moonside@2x.png');
-		background-size: 2184px 1434px;
-		#ending {
-			&.show {
-				background-image: url('/images/ending@2x.png');
-				background-size: 2184px 580px;
-			}
-		}
-	} */
-
-}
+	

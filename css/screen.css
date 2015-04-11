@@ -1,7 +1,8 @@
 @font-face {
   font-family: 'Pluto Sans Cond Light';
-  src: url("/fonts/pluto-sans.eot");
-  src: url("/fonts/pluto-sans.eot?#iefix") format("embedded-opentype"), url("/fonts/pluto-sans.woff") format("woff"), url("/fonts/pluto-sans.ttf") format("truetype"); }
+  src: url('/fonts/pluto-sans.eot');
+  src: url('/fonts/pluto-sans.eot?#iefix') format('embedded-opentype'), url('/fonts/pluto-sans.woff') format('woff'), url('/fonts/pluto-sans.ttf') format('truetype'); }
+
 body {
   margin: 0;
   font-family: "rooney-web-1", "rooney-web-2", "Lora", Georgia, serif;
@@ -12,8 +13,6 @@ body {
   background: #fff; }
   body.home nav a {
     color: #fff; }
-  body.home footer {
-    background: #0c2b3c; }
 
 #earthbounded {
   width: 54px;
@@ -25,11 +24,11 @@ body {
   margin-top: -29px;
   display: block; }
   #earthbounded.fp {
-    background: url("/images/sprite-fp.png") 54px 58px; }
+    background: url('/images/sprite-fp.png'); }
   #earthbounded.left {
-    background: url("/images/sprite-left.png") 54px 58px; }
+    background: url('/images/sprite-left.png'); }
   #earthbounded.right {
-    background: url("/images/sprite-right.png") 54px 58px; }
+    background: url('/images/sprite-right.png'); }
 
 #ufo {
   width: 88px;
@@ -40,7 +39,7 @@ body {
   margin-left: -44px;
   margin-top: -43px; }
   #ufo.flying {
-    background: url("/images/ufo.png") 88px 86px; }
+    background: url('/images/ufo.png'); }
 
 a {
   color: #36b5ab;
@@ -65,28 +64,28 @@ nav {
   nav ul {
     text-align: center; }
     nav ul a {
-      font-family: "Pluto Sans Cond Light", Helvetica, sans-serif;
+      font-family: "Pluto Sans Cond Light", Helvetica, Arial, sans-serif;
       text-transform: uppercase;
       font-size: 12px; }
       nav ul a li {
         list-style-type: none; }
 
 #onett {
-  background: url("/images/onett.png") top center;
+  background: url('/images/onett.png') top center;
   height: 1730px;
   width: 100%; }
   #onett #trees {
-    background: url("/images/z-trees.png") bottom center;
+    background: url('/images/z-trees.png') bottom center;
     height: 1730px;
     width: 100%;
     position: absolute; }
 
 #saturn {
-  background: url("/images/saturn-valley.png") center center;
+  background: url('/images/saturn-valley.png') center center;
   height: 2300px;
   width: 100%; }
   #saturn #valley {
-    background: url("/images/z-saturn.png") center center;
+    background: url('/images/z-saturn.png') center center;
     height: 950px;
     width: 100%;
     position: absolute; }
@@ -95,23 +94,23 @@ nav {
     width: 100%;
     position: absolute; }
     #saturn #distorter.phased1 {
-      background: url("/images/ufo1.png") center center; }
+      background: url('/images/ufo1.png') center center; }
     #saturn #distorter.phased2 {
-      background: url("/images/ufo2.png") center center; }
+      background: url('/images/ufo2.png') center center; }
     #saturn #distorter.phased3 {
-      background: url("/images/ufo3.png") center center; }
+      background: url('/images/ufo3.png') center center; }
 
 #lostworld {
-  background: url("/images/lostworld.png") center center;
+  background: url('/images/lostworld.png') center center;
   width: 100%;
   height: 100px; }
 
 #pinkcloud {
-  background: url("/images/sky.png") center center;
+  background: url('/images/sky.png') center center;
   width: 100%;
   height: 1840px; }
   #pinkcloud #clouds {
-    background: url("/images/z-clouds.png") center center;
+    background: url('/images/z-clouds.png') center center;
     height: 1840px;
     width: 100%;
     position: absolute; }
@@ -119,13 +118,13 @@ nav {
 #moonside {
   width: 100%;
   height: 1434px;
-  background: url("/images/moonside.png") center center; }
+  background: url('/images/moonside.png') center center; }
   #moonside #ending {
     height: 580px;
     width: 100%;
     position: absolute; }
     #moonside #ending.show {
-      background: url("/images/ending.png") center center; }
+      background: url('/images/ending.png') center center; }
 
 #work div {
   padding: 8% 20% 10%;
@@ -140,14 +139,14 @@ nav {
     max-width: 100%; }
 #work h2 {
   font-size: 32px;
-  font-family: "Pluto Sans Cond Light", Helvetica, sans-serif;
+  font-family: "Pluto Sans Cond Light", Helvetica, Arial, sans-serif;
   font-weight: 300;
   line-height: 48px; }
 #work .intro {
   padding: 3% 20% 6%; }
 
 #talks div {
-  padding: 8% 20% 6%;
+  padding: 3% 20% 6%;
   border-bottom: 1px dotted #dadee2; }
   #talks div:last-child {
     border-bottom: 0; }
@@ -160,26 +159,40 @@ nav {
     max-width: 100%; }
 #talks h2 {
   font-size: 32px;
-  font-family: "Pluto Sans Cond Light", Helvetica, sans-serif;
+  font-family: "Pluto Sans Cond Light", Helvetica, Arial, sans-serif;
   font-weight: 300;
   line-height: 48px; }
-#talks .intro {
-  padding: 3% 20% 6%; }
-#talks .video {
-  max-width: 1200px; }
-  #talks .video .video-wrapper {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 25px;
-    height: 0; }
-    #talks .video .video-wrapper iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%; }
+#talks .video .video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0; }
+  #talks .video .video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
 #talks .speakerdeck-wrapper {
   padding-left: 0; }
+
+#about div {
+  padding: 3% 20% 6%;
+  border-bottom: 1px dotted #dadee2; }
+  #about div:last-child {
+    border-bottom: 0; }
+  #about div p {
+    max-width: 500px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28.8px; }
+  #about div img {
+    max-width: 100%; }
+#about h2 {
+  font-size: 32px;
+  font-family: "Pluto Sans Cond Light", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  line-height: 48px; }
 
 .clear {
   margin: 0;
@@ -187,9 +200,9 @@ nav {
   clear: both; }
 
 footer {
-  background: #f5f4f1;
+  background: #0c2b3c;
   color: #fff;
-  font-family: "Pluto Sans Cond Light", Helvetica, sans-serif;
+  font-family: "Pluto Sans Cond Light", Helvetica, Arial, sans-serif;
   padding: 2em 0 1.5em; }
   footer ul a {
     color: #36b5ab; }
@@ -201,7 +214,7 @@ footer {
     height: 50px; }
   footer .footnote {
     margin: 2em 0 0 40px;
-    font-family: "Pluto Sans Cond Light", Helvetica, sans-serif;
+    font-family: "Pluto Sans Cond Light", Helvetica, Arial, sans-serif;
     font-size: 12px;
     color: #afb9c0; }
 
@@ -234,13 +247,16 @@ footer {
     right: 10px;
     font-size: 48px; }
   .about p {
-    margin: 9% auto 15%;
+    margin: 12% auto 15%;
     padding: 0 10%;
     max-width: 500px;
     color: #fff; }
 
 .typeHighlight {
   color: #f194c9 !important; }
+
+.typeLowlight {
+  color: #afb9c0 !important; }
 
 @media screen and (max-width: 500px) {
   .about {
@@ -256,85 +272,5 @@ footer {
     padding: 3% 10% 6%; }
 
   footer ul li {
-    width: 100%; } }
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-  		/*
-  		#earthbounded {
-  			&.fp {
-  				background: url('/images/sprite-fp@2x.png') 54px 58px;
-  			}
-  
-  			&.left {
-  				background: url('/images/sprite-left@2x.png') 54px 58px;
-  			}
-  
-  			&.right {
-  				background: url('/images/sprite-right@2x.png') 54px 58px;
-  			}
-  		}
-  
-  		#ufo {
-  			&.flying {
-  				background: url('/images/ufo@2x.png') 88px 86px;
-  			}
-  		} 
-  		
-  
-  		#onett {
-  			background-image: url('/images/onett@2x.png');
-  			background-size: 4316px 1730px;
-  
-  			#trees {
-  				background-image: url('/images/z-trees@2x.png');
-  				background-size: 4316px 1730px;
-  			}
-  		}
-  
-  	#saturn {
-  		background-image: url('/images/saturn-valley@2x.png');
-  		background-size: 3360px 2300px;
-  		
-  		#valley {
-  			background-image: url('/images/z-saturn@2x.png');
-  			background-size: 3360px 950px;
-  		}	
-  
-  		#distorter {
-  			&.phased1 {
-  				background-image: url('/images/ufo1@2x.png');
-  				background-size: 3360px 2300px;
-  			}
-  
-  			&.phased2 {
-  				background-image: url('/images/ufo2@2x.png');
-  				background-size: 3360px 2300px;
-  			}			
-  
-  			&.phased3 {
-  				background-image: url('/images/ufo3@2x.png');
-  				background-size: 3360px 2300px;
-  			}
-  		}
-  	}
-  
-  	#pinkcloud {
-  		background-image: url('/images/sky@2x.png');
-  		background-size: 1440px 1840px;
-  		#clouds {
-  			background-image: url('/images/z-clouds@2x.png');
-  			background-size: 1440px 1840px;
-  		}
-  	}
-  
-  	#moonside {
-  		background-image: url('/images/moonside@2x.png');
-  		background-size: 2184px 1434px;
-  		#ending {
-  			&.show {
-  				background-image: url('/images/ending@2x.png');
-  				background-size: 2184px 580px;
-  			}
-  		}
-  	} */ }
-
-/*# sourceMappingURL=screen.css.map */
+    width: 100%; }
+ }
