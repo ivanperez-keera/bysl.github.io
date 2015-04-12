@@ -112,11 +112,16 @@
 					$('#earthbounded').css('position', 'absolute');
 					$('#earthbounded').css('top', '828px');
 				}
+				
+				// Enter Forest
+				var enterForest = parseInt(1462-windowHeightValue/2);
+				var exitCave = parseInt(2624-windowHeightValue/2)
 
 				// Board Saturn Valley UFO
 				var boardUFO = parseInt(3148-windowHeightValue/2);
-				var phaseInterval = parseInt(windowHeightValue/6)
-				if(scrollTopValue >= boardUFO) {
+				var phaseInterval = parseInt(windowHeightValue/6);
+
+				if(scrollTopValue >= enterForest && scrollTopValue <= exitCave || scrollTopValue >= boardUFO) {
 					$('#earthbounded').css("display", "none");
 				}
 				else {
