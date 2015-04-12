@@ -90,7 +90,7 @@
   		var walkAnimationInterval = null;
 			var scrollTimeOut = null;
 
-			$(window).on('scroll', function() {
+			$('window').on('scroll', function() {
 
 				if (walkAnimationInterval == null) {
 			    var walkAnimationInterval = animateWalk();
@@ -98,7 +98,7 @@
 			  if (scrollTimeOut !== null) {
 			    clearTimeout(scrollTimeout);
 			  }
-			  
+
 			  var scrollTimeOut = setTimeout(function () {
 			    stopWalkAnimation(walkAnimationInterval);
 			    walkAnimationInterval = null;
@@ -173,7 +173,7 @@
 					$('#ending').removeClass('show');
 				}
 
-			});
+			}); //window scroll
 		}); //document ready
 	</script>
 
