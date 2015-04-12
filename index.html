@@ -86,26 +86,25 @@
 	<script type="text/javascript">
 
   	$(document).ready(function(){
+
+  		var walkAnimationInterval = null;
+			var scrollTimeOut = null;
+			$('window').on('scroll', function () {
+			  if (walkAnimationInterval == null) {
+			    var walkAnimationInterval = animateWalk();
+			  }
+			 
+			  if (scrollTimeOut !== null) {
+			    clearTimeout(scrollTimeout);
+			  }
+			  var scrollTimeOut = setTimeout(function () {
+			    stopWalkAnimation(walkAnimationInterval);
+			    walkAnimationInterval = null;
+			  }, 100)
+			  
+			});
   		
-			$(window).scroll(function() {
-
-				var tid = setInterval(walkCycle, 200);
-				function walkCycle() {
-					$('#earthbounded').toggleClass('left right');
-				}
-				function abortTimer() { // to be called when you want to stop the timer
-				  clearInterval(tid);
-				}
-
-				/*
-				if(parseInt(scrollTopValue/14)%2) {
-					$('#earthbounded').removeClass('left');
-					$('#earthbounded').addClass('right');
-				}
-				else {
-					$('#earthbounded').removeClass('right');
-					$('#earthbounded').addClass('left');
-				} */
+			$('window').on('scroll', function() {
 
 				var scrollTopValue = $(window).scrollTop();
 				var windowHeightValue = $(window).height();
