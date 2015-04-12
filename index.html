@@ -87,10 +87,10 @@
 
   	$(document).ready(function(){
 
-			$('window').on('scroll', function() {
+  		var walkAnimationInterval = null;
+			var scrollTimeOut = null;
 
-				var walkAnimationInterval = null;
-				var scrollTimeOut = null;
+			$('window').on('scroll', function() {
 
 				if (walkAnimationInterval == null) {
 			    var walkAnimationInterval = animateWalk();
