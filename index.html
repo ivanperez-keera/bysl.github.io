@@ -9,7 +9,7 @@
 	<meta name="author" content="Susan Lin, Susan L., Susan, bysusanlin, @bysusanlin">
 
 	<meta name="p:domain_verify" content="766c1df40cfdc1ba812d5b2668f45ede">
-	
+
 	<link rel="stylesheet" href="/css/screen.css">
 	<link rel="SHORTCUT ICON" href="/favicon.ico">
 
@@ -85,37 +85,36 @@
 	<script type="text/javascript" src="/js/jquery-1.8.3.min.js"> </script>
 	<script type="text/javascript">
 
-	$(document).ready(function(){
-		
+	$(document).ready(function() {
+
 		var walkAnimationInterval = null;
 		var scrollTimeOut = null;
-		
-		
+
 		var animateWalk = function () {
 			return setInterval(
-				function () {$('#earthbounded').toggleClass('left right');},
-				200
-			}
+				function () {
+					$('#earthbounded').toggleClass('left right');
+				}, 200
 		}
-		
+
 		var stopWalkAnimation = function (tid) {
 			clearInterval(tid);
 		}
-		
+
 		$(window).on('scroll', function() {
 			if (walkAnimationInterval == null) {
 				walkAnimationInterval = animateWalk();
 			}
-			
+
 			if (scrollTimeOut !== null) {
 				clearTimeout(scrollTimeOut);
 			}
-			
+
 			scrollTimeOut = setTimeout(function () {
 				stopWalkAnimation(walkAnimationInterval);
 				walkAnimationInterval = null;
 			}, 100)
-			
+
 			var scrollTopValue = $(window).scrollTop();
 			var windowHeightValue = $(window).height();
 
@@ -174,7 +173,7 @@
             }
             else {
             	$('#ending').removeClass('show');
-            	
+
             }
 
             
