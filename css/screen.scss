@@ -126,7 +126,7 @@ body {
 	}
 
 	&.walk {
-		background-image: url('/images/bysusanlin-earthbound.gif')
+		background-image: url('/images/bysusanlin-earthbound.gif');
 		@include pixelated;
 	}
 
