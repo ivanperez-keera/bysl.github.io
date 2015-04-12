@@ -89,9 +89,10 @@
 
   		var walkAnimationInterval = null;
 			var scrollTimeOut = null;
-			
-			$('window').on('scroll', function () {
-			  if (walkAnimationInterval == null) {
+  		
+			$(window).on('scroll', function() {
+
+				if (walkAnimationInterval == null) {
 			    var walkAnimationInterval = animateWalk();
 			  }
 			 
@@ -111,10 +112,6 @@
 				function stopWalkAnimation(tid) {
 					clearInterval(tid);
 				}
-			  
-			});
-  		
-			$(window).scroll(function() {
 
 				var scrollTopValue = $(window).scrollTop();
 				var windowHeightValue = $(window).height();
