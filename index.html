@@ -91,7 +91,7 @@
 		var walkAnimationInterval = null;
 		var scrollTimeOut = null;
 
-		var animateWalk = function () {
+		var animateWalk = function (){
 			return setInterval(
 				function () {
 					$('#earthbounded').toggleClass('left right');
@@ -102,16 +102,24 @@
 			clearInterval(tid);
 		}
 
+		var start = function() {
+		    $('#earthbounded').css('position', 'fixed');
+      	$('#earthbounded').css('top', '50%');
+      }
+      else {
+      	$('#earthbounded').css('position', 'absolute');
+      	$('#earthbounded').css('top', '828px');
+    }
+
 		$(window).on('scroll', function() {
+
 			if (walkAnimationInterval == null) {
 				walkAnimationInterval = animateWalk();
 			}
-
 			if (scrollTimeOut !== null) {
 				clearTimeout(scrollTimeOut);
 			}
-
-			scrollTimeOut = setTimeout(function () {
+			scrollTimeOut = setTimeout(function() {
 				stopWalkAnimation(walkAnimationInterval);
 				walkAnimationInterval = null;
 			}, 100)
@@ -119,66 +127,61 @@
 			var scrollTopValue = $(window).scrollTop();
 			var windowHeightValue = $(window).height();
 
-            // Waiting until reaching center
-            var startGame = parseInt(828-windowHeightValue/2); 
-            if(scrollTopValue >= startGame) {
-            	$('#earthbounded').css('position', 'fixed');
-            	$('#earthbounded').css('top', '50%');
-            }
-            else {
-            	$('#earthbounded').css('position', 'absolute');
-            	$('#earthbounded').css('top', '828px');
-            }
+      // Waiting until reaching center
+      var startGame = parseInt(828-windowHeightValue/2); 
+      if(scrollTopValue >= startGame) {
+      	start();
+      }
 
-            // Enter Forest
-            var enterForest = parseInt(1491-windowHeightValue/2);
-            var exitCave = parseInt(2595-windowHeightValue/2)
+      // Enter Forest
+      var enterForest = parseInt(1491-windowHeightValue/2);
+      var exitCave = parseInt(2595-windowHeightValue/2)
 
-            // Board Saturn Valley UFO
-            var boardUFO = parseInt(3148-windowHeightValue/2);
-            var phaseInterval = parseInt(windowHeightValue/6);
+      // Board Saturn Valley UFO
+      var boardUFO = parseInt(3148-windowHeightValue/2);
+      var phaseInterval = parseInt(windowHeightValue/6);
 
-            if(scrollTopValue >= enterForest && scrollTopValue <= exitCave || scrollTopValue >= boardUFO) {
-            	$('#earthbounded').css("display", "none");
-            }
-            else {
-            	$('#earthbounded').css("display", "block");
-            }
+      if(scrollTopValue >= enterForest && scrollTopValue <= exitCave || scrollTopValue >= boardUFO) {
+      	$('#earthbounded').css("display", "none");
+      }
+      else {
+      	$('#earthbounded').css("display", "block");
+      }
 
-            // Phased UFO
-            if(scrollTopValue >= boardUFO+phaseInterval) {
-            	$('#distorter').removeClass('phased1');
-            	$('#distorter').addClass('phased2');
-            }
-            else {
-            	$('#distorter').addClass('phased1');
-            	$('#distorter').removeClass('phased2');
-            }
+      // Phased UFO
+      if(scrollTopValue >= boardUFO+phaseInterval) {
+      	$('#distorter').removeClass('phased1');
+      	$('#distorter').addClass('phased2');
+      }
+      else {
+      	$('#distorter').addClass('phased1');
+      	$('#distorter').removeClass('phased2');
+      }
 
-            if(scrollTopValue >= boardUFO+phaseInterval*2) {
-            	$('#distorter').removeClass('phased2');
-            }
+      if(scrollTopValue >= boardUFO+phaseInterval*2) {
+      	$('#distorter').removeClass('phased2');
+      }
 
-            var showUFO = parseInt(4384-windowHeightValue/2);
-            if(scrollTopValue >= showUFO) {
-            	$('#ufo').addClass('flying');
-            }
-            else {
-            	$('#ufo').removeClass('flying');
-            }
+      var showUFO = parseInt(4384-windowHeightValue/2);
+      if(scrollTopValue >= showUFO) {
+      	$('#ufo').addClass('flying');
+      }
+      else {
+      	$('#ufo').removeClass('flying');
+      }
 
-            var landUFO = parseInt(6374-windowHeightValue/2);
-            if(scrollTopValue >= landUFO) {
-            	$('#ufo').removeClass('flying');
-            	$('#ending').addClass('show');
-            }
-            else {
-            	$('#ending').removeClass('show');
+      var landUFO = parseInt(6374-windowHeightValue/2);
+      if(scrollTopValue >= landUFO) {
+      	$('#ufo').removeClass('flying');
+      	$('#ending').addClass('show');
+      }
+      else {
+      	$('#ending').removeClass('show');
 
-            }
+      }
 
-          });
-		}); //document ready
+    }); //window scroll
+	}); //document ready
 </script>
 
 <footer>
