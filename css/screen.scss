@@ -125,6 +125,11 @@ body {
 		@include pixelated;
 	}
 
+	&.walk {
+		background-image: url('/images/bysusanlin-earthbound.gif')
+		@include pixelated;
+	}
+
 }
 
 #ufo {

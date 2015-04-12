@@ -94,7 +94,7 @@
 		var animateWalk = function () {
 			return setInterval(
 				function () {
-					$('#earthbounded').toggleClass('left right');
+					$('#earthbounded').toggleClass('left walk');
 				}, 333)
 		}
 
@@ -120,7 +120,7 @@
 			var windowHeightValue = $(window).height();
 
             // Waiting until reaching center
-            var startGame = parseInt(828-windowHeightValue/2);
+            var startGame = parseInt(828-windowHeightValue/2); 
             if(scrollTopValue >= startGame) {
             	$('#earthbounded').css('position', 'fixed');
             	$('#earthbounded').css('top', '50%');

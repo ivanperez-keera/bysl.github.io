@@ -1,372 +1,58 @@
-@font-face {
-  font-family: 'Pluto Sans Cond Light';
-  src: url("/fonts/pluto-sans.eot");
-  src: url("/fonts/pluto-sans.eot?#iefix") format("embedded-opentype"), url("/fonts/pluto-sans.woff") format("woff"), url("/fonts/pluto-sans.ttf") format("truetype"); }
-body {
-  margin: 0;
-  font-family: "rooney-web-1", "rooney-web-2", "Lora", Georgia, serif;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 1.8em;
-  color: #434343;
-  background: #fff; }
-  body.home nav a {
-    color: #fff; }
-    body.home nav a:hover {
-      color: #f194c9; }
-  body.home footer {
-    background: #0c2b3c; }
+/*
+Error: Invalid CSS after "...arthbound.gif')": expected ";", was "@include pixela..."
+        on line 130 of screen.scss
 
-.sprite {
-  image-rendering: -moz-crisp-edges;
-  /* Firefox */
-  image-rendering: -o-crisp-edges;
-  /* Opera */
-  image-rendering: -webkit-optimize-contrast;
-  /* Webkit (non-standard naming) */
-  image-rendering: pixelated;
-  -ms-interpolation-mode: nearest-neighbor;
-  /* IE (non-standard property) */ }
+125: 		@include pixelated;
+126: 	}
+127: 
+128: 	&.walk {
+129: 		background-image: url('/images/bysusanlin-earthbound.gif')
+130: 		@include pixelated;
+131: 	}
+132: 
+133: }
+134: 
+135: #ufo {
 
-#earthbounded {
-  width: 54px;
-  height: 58px;
-  position: absolute;
-  top: 828px;
-  left: 50%;
-  margin-left: -27px;
-  margin-top: -29px;
-  display: block; }
-  #earthbounded.left {
-    background-image: url("/images/index/sprite-left.png");
-    image-rendering: -moz-crisp-edges;
-    /* Firefox */
-    image-rendering: -o-crisp-edges;
-    /* Opera */
-    image-rendering: -webkit-optimize-contrast;
-    /* Webkit (non-standard naming) */
-    image-rendering: pixelated;
-    -ms-interpolation-mode: nearest-neighbor;
-    /* IE (non-standard property) */ }
-  #earthbounded.right {
-    background-image: url("/images/index/sprite-right.png");
-    image-rendering: -moz-crisp-edges;
-    /* Firefox */
-    image-rendering: -o-crisp-edges;
-    /* Opera */
-    image-rendering: -webkit-optimize-contrast;
-    /* Webkit (non-standard naming) */
-    image-rendering: pixelated;
-    -ms-interpolation-mode: nearest-neighbor;
-    /* IE (non-standard property) */ }
-
-#ufo {
-  width: 88px;
-  height: 86px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  margin-left: -44px;
-  margin-top: -43px; }
-  #ufo.flying {
-    background-image: url("/images/index/ufo.png");
-    image-rendering: -moz-crisp-edges;
-    /* Firefox */
-    image-rendering: -o-crisp-edges;
-    /* Opera */
-    image-rendering: -webkit-optimize-contrast;
-    /* Webkit (non-standard naming) */
-    image-rendering: pixelated;
-    -ms-interpolation-mode: nearest-neighbor;
-    /* IE (non-standard property) */ }
-
-a {
-  color: #36b5ab;
-  text-decoration: none; }
-  a:hover {
-    color: #f194c9; }
-  a:active {
-    position: relative;
-    top: 1px;
-    border: 0; }
-
-header {
-  background: #f5f4f1;
-  text-align: center; }
-  header img {
-    margin: 15px 25px 10px; }
-
-nav {
-  position: fixed;
-  top: 10px;
-  left: 0; }
-  nav ul {
-    text-align: center; }
-    nav ul li {
-      list-style-type: none; }
-    nav ul a {
-      font-family: "Pluto Sans Cond Light", Helvetica, Arial, sans-serif;
-      text-transform: uppercase;
-      font-size: 12px; }
-
-#onett {
-  background-image: url("/images/index/onett.png");
-  background-position: top center;
-  height: 1730px;
-  width: 100%;
-  image-rendering: -moz-crisp-edges;
-  /* Firefox */
-  image-rendering: -o-crisp-edges;
-  /* Opera */
-  image-rendering: -webkit-optimize-contrast;
-  /* Webkit (non-standard naming) */
-  image-rendering: pixelated;
-  -ms-interpolation-mode: nearest-neighbor;
-  /* IE (non-standard property) */ }
-  #onett #trees {
-    background-image: url("/images/index/z-trees.png");
-    background-position: bottom center;
-    height: 1730px;
-    width: 100%;
-    position: absolute;
-    image-rendering: -moz-crisp-edges;
-    /* Firefox */
-    image-rendering: -o-crisp-edges;
-    /* Opera */
-    image-rendering: -webkit-optimize-contrast;
-    /* Webkit (non-standard naming) */
-    image-rendering: pixelated;
-    -ms-interpolation-mode: nearest-neighbor;
-    /* IE (non-standard property) */ }
-
-#saturn {
-  background-image: url("/images/index/saturn-valley.png");
-  background-position: center center;
-  height: 2300px;
-  width: 100%;
-  image-rendering: -moz-crisp-edges;
-  /* Firefox */
-  image-rendering: -o-crisp-edges;
-  /* Opera */
-  image-rendering: -webkit-optimize-contrast;
-  /* Webkit (non-standard naming) */
-  image-rendering: pixelated;
-  -ms-interpolation-mode: nearest-neighbor;
-  /* IE (non-standard property) */ }
-  #saturn #valley {
-    background-image: url("/images/index/z-saturn.png");
-    background-position: center center;
-    height: 950px;
-    width: 100%;
-    position: absolute;
-    image-rendering: -moz-crisp-edges;
-    /* Firefox */
-    image-rendering: -o-crisp-edges;
-    /* Opera */
-    image-rendering: -webkit-optimize-contrast;
-    /* Webkit (non-standard naming) */
-    image-rendering: pixelated;
-    -ms-interpolation-mode: nearest-neighbor;
-    /* IE (non-standard property) */ }
-  #saturn #distorter {
-    height: 2300px;
-    width: 100%;
-    position: absolute; }
-    #saturn #distorter.phased1 {
-      background-image: url("/images/index/z-ufo1.png");
-      background-position: center center;
-      image-rendering: -moz-crisp-edges;
-      /* Firefox */
-      image-rendering: -o-crisp-edges;
-      /* Opera */
-      image-rendering: -webkit-optimize-contrast;
-      /* Webkit (non-standard naming) */
-      image-rendering: pixelated;
-      -ms-interpolation-mode: nearest-neighbor;
-      /* IE (non-standard property) */ }
-    #saturn #distorter.phased2 {
-      background-image: url("/images/index/z-ufo2.png");
-      background-position: center center;
-      image-rendering: -moz-crisp-edges;
-      /* Firefox */
-      image-rendering: -o-crisp-edges;
-      /* Opera */
-      image-rendering: -webkit-optimize-contrast;
-      /* Webkit (non-standard naming) */
-      image-rendering: pixelated;
-      -ms-interpolation-mode: nearest-neighbor;
-      /* IE (non-standard property) */ }
-
-#pinkcloud {
-  background-image: url("/images/index/sky.png");
-  background-position: center center;
-  width: 100%;
-  height: 1840px;
-  image-rendering: -moz-crisp-edges;
-  /* Firefox */
-  image-rendering: -o-crisp-edges;
-  /* Opera */
-  image-rendering: -webkit-optimize-contrast;
-  /* Webkit (non-standard naming) */
-  image-rendering: pixelated;
-  -ms-interpolation-mode: nearest-neighbor;
-  /* IE (non-standard property) */ }
-  #pinkcloud #clouds {
-    background-image: url("/images/index/z-clouds.png");
-    background-position: center center;
-    height: 1840px;
-    width: 100%;
-    position: absolute;
-    image-rendering: -moz-crisp-edges;
-    /* Firefox */
-    image-rendering: -o-crisp-edges;
-    /* Opera */
-    image-rendering: -webkit-optimize-contrast;
-    /* Webkit (non-standard naming) */
-    image-rendering: pixelated;
-    -ms-interpolation-mode: nearest-neighbor;
-    /* IE (non-standard property) */ }
-
-#moonside {
-  width: 100%;
-  height: 1434px;
-  background-image: url("/images/index/moonside.png");
-  background-position: center center;
-  image-rendering: -moz-crisp-edges;
-  /* Firefox */
-  image-rendering: -o-crisp-edges;
-  /* Opera */
-  image-rendering: -webkit-optimize-contrast;
-  /* Webkit (non-standard naming) */
-  image-rendering: pixelated;
-  -ms-interpolation-mode: nearest-neighbor;
-  /* IE (non-standard property) */ }
-  #moonside #ending {
-    height: 580px;
-    width: 100%;
-    position: absolute; }
-    #moonside #ending.show {
-      background-image: url("/images/index/ending.png");
-      background-position: center center;
-      image-rendering: -moz-crisp-edges;
-      /* Firefox */
-      image-rendering: -o-crisp-edges;
-      /* Opera */
-      image-rendering: -webkit-optimize-contrast;
-      /* Webkit (non-standard naming) */
-      image-rendering: pixelated;
-      -ms-interpolation-mode: nearest-neighbor;
-      /* IE (non-standard property) */ }
-
-#work div {
-  padding: 8% 20% 10%;
-  border-bottom: 1px dotted #dadee2; }
-  #work div:last-child {
-    border-bottom: 0; }
-  #work div p {
-    max-width: 500px;
-    font-size: 16px;
-    font-weight: 300; }
-  #work div img {
-    max-width: 100%; }
-#work h2 {
-  font-size: 32px;
-  font-family: "Pluto Sans Cond Light", Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  line-height: 48px; }
-#work .intro {
-  padding: 3% 20% 6%; }
-
-#talks div {
-  padding: 3% 20% 6%;
-  border-bottom: 1px dotted #dadee2; }
-  #talks div:last-child {
-    border-bottom: 0; }
-  #talks div p {
-    max-width: 500px;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 28.8px; }
-  #talks div img {
-    max-width: 100%; }
-#talks h2 {
-  font-size: 32px;
-  font-family: "Pluto Sans Cond Light", Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  line-height: 48px; }
-#talks .video .video-wrapper {
-  position: relative;
-  padding-bottom: 56.25%;
-  padding-top: 25px;
-  height: 0; }
-  #talks .video .video-wrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; }
-#talks .speakerdeck-wrapper {
-  padding-left: 0; }
-
-#about div {
-  padding: 3% 20% 6%;
-  border-bottom: 1px dotted #dadee2; }
-  #about div:last-child {
-    border-bottom: 0; }
-  #about div p {
-    max-width: 500px;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 28.8px; }
-  #about div img {
-    max-width: 100%; }
-#about h2 {
-  font-size: 32px;
-  font-family: "Pluto Sans Cond Light", Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  line-height: 48px; }
-
-.clear {
-  margin: 0;
-  padding: 0;
-  clear: both; }
-
-footer {
-  background: #f5f4f1;
-  color: #fff;
-  font-family: "Pluto Sans Cond Light", Helvetica, Arial, sans-serif;
-  padding: 2em 0 1.5em; }
-  footer ul a {
-    color: #36b5ab; }
-  footer ul li {
-    float: left;
-    display: block;
-    list-style-type: none;
-    width: 33.33%;
-    height: 50px; }
-  footer .footnote {
-    margin: 2em 0 0 40px;
-    font-family: "Pluto Sans Cond Light", Helvetica, Arial, sans-serif;
-    font-size: 12px;
-    color: #afb9c0; }
-
-.typeHighlight {
-  color: #f194c9 !important; }
-
-.typeLowlight {
-  color: #afb9c0 !important; }
-
-@media screen and (max-width: 500px) {
-  nav {
-    display: none; }
-
-  #about div, #work div, #talks div {
-    padding: 8% 10% 10%; }
-
-  #about .intro, #work .intro, #talks .intro {
-    padding: 3% 10% 6%; }
-
-  footer ul li {
-    width: 100%; } }
-
-/*# sourceMappingURL=screen.css.map */
+Backtrace:
+screen.scss:130
+/Users/susan/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.6/lib/sass/scss/parser.rb:1163:in `expected'
+/Users/susan/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.6/lib/sass/scss/parser.rb:1099:in `expected'
+/Users/susan/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.6/lib/sass/scss/parser.rb:1094:in `tok!'
+/Users/susan/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.6/lib/sass/scss/parser.rb:761:in `block in try_declaration'
+/Users/susan/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.6/lib/sass/scss/parser.rb:1139:in `call'
+/Users/susan/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.6/lib/sass/scss/parser.rb:1139:in `rethrow'
+/Users/susan/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.6/lib/sass/scss/parser.rb:766:in `try_declaration'
+/Users/susan/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.6/lib/sass/scss/parser.rb:696:in `declaration_or_ruleset'
+/Users/susan/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.6/lib/sass/scss/parser.rb:661:in `block_child'
+/Users/susan/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.6/lib/sass/scss/parser.rb:650:in `block_contents'
+/Users/susan/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.6/lib/sass/scss/parser.rb:642:in `block'
+/Users/susan/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.6/lib/sass/scss/parser.rb:711:in `declaration_or_ruleset'
+/Users/susan/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.6/lib/sass/scss/parser.rb:661:in `block_child'
+/Users/susan/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.6/lib/sass/scss/parser.rb:653:in `block_contents'
+/Users/susan/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.6/lib/sass/scss/parser.rb:642:in `block'
+/Users/susan/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.6/lib/sass/scss/parser.rb:635:in `ruleset'
+/Users/susan/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.6/lib/sass/scss/parser.rb:660:in `block_child'
+/Users/susan/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.6/lib/sass/scss/parser.rb:653:in `block_contents'
+/Users/susan/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.6/lib/sass/scss/parser.rb:117:in `stylesheet'
+/Users/susan/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.6/lib/sass/scss/parser.rb:42:in `parse'
+/Users/susan/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.6/lib/sass/engine.rb:393:in `_to_tree'
+/Users/susan/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.6/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/Users/susan/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.6/lib/sass/engine.rb:285:in `render_with_sourcemap'
+/Users/susan/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.6/lib/sass/plugin/compiler.rb:489:in `update_stylesheet'
+/Users/susan/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.6/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/susan/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.6/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/susan/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.6/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/susan/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.6/lib/sass/plugin/compiler.rb:469:in `on_file_changed'
+/Users/susan/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.6/lib/sass/plugin/compiler.rb:328:in `block in watch'
+/Users/susan/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.6/vendor/listen/lib/listen/listener.rb:252:in `call'
+/Users/susan/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.6/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/Users/susan/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.6/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/Users/susan/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.6/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
+/Users/susan/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.6/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+/Users/susan/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.6/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...arthbound.gif')\": expected \";\", was \"@include pixela...\"\A         on line 130 of screen.scss\A \A 125: 		@include pixelated;\A 126: 	}\A 127: \A 128: 	&.walk {\A 129: 		background-image: url('/images/bysusanlin-earthbound.gif')\A 130: 		@include pixelated;\A 131: 	}\A 132: \A 133: }\A 134: \A 135: #ufo {"; }
