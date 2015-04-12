@@ -89,20 +89,23 @@
 
   		var walkAnimationInterval = null;
 			var scrollTimeOut = null;
-
-			$('window').on('scroll', function() {
-
-				if (walkAnimationInterval == null) {
+			
+			$('window').on('scroll', function () {
+			  if (walkAnimationInterval == null) {
 			    var walkAnimationInterval = animateWalk();
 			  }
+			 
 			  if (scrollTimeOut !== null) {
 			    clearTimeout(scrollTimeout);
 			  }
-
 			  var scrollTimeOut = setTimeout(function () {
 			    stopWalkAnimation(walkAnimationInterval);
 			    walkAnimationInterval = null;
 			  }, 100)
+			  
+			});
+  		
+			$(window).scroll(function() {
 
 				var tid = setInterval(animateWalk, 200);
 				function animateWalk() {
@@ -173,7 +176,7 @@
 					$('#ending').removeClass('show');
 				}
 
-			}); //window scroll
+			});
 		}); //document ready
 	</script>
 
