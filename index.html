@@ -85,16 +85,15 @@
 	<script type="text/javascript" src="/js/jquery-1.8.3.min.js"> </script>
 	<script type="text/javascript">
 
-	$(document).ready(function() {
+	$(document).ready(function(){
 
 		var walkAnimationInterval = null;
 		var scrollTimeOut = null;
 
 		var animateWalk = function () {
 			return setInterval(
-				function () {
-					$('#earthbounded').toggleClass('left right');
-				}, 200
+				function () {$('#earthbounded').toggleClass('left right');},
+				200
 		}
 
 		var stopWalkAnimation = function (tid) {
