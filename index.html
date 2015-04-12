@@ -9,7 +9,7 @@
 	<meta name="author" content="Susan Lin, Susan L., Susan, bysusanlin, @bysusanlin">
 
 	<meta name="p:domain_verify" content="766c1df40cfdc1ba812d5b2668f45ede">
-
+		
 	<link rel="stylesheet" href="/css/screen.css">
 	<link rel="SHORTCUT ICON" href="/favicon.ico">
 
@@ -85,47 +85,50 @@
 	<script type="text/javascript" src="/js/jquery-1.8.3.min.js"> </script>
 	<script type="text/javascript">
 
-	$(document).ready(function(){
-
-		var walkAnimationInterval = null;
-		var scrollTimeOut = null;
-
-		var animateWalk = function () {
-			return setInterval(
-				function () {$('#earthbounded').toggleClass('left right');},
-				200
-		}
-
-		var stopWalkAnimation = function (tid) {
-			clearInterval(tid);
-		}
-
-		$(window).on('scroll', function() {
-			if (walkAnimationInterval == null) {
-				walkAnimationInterval = animateWalk();
-			}
-
-			if (scrollTimeOut !== null) {
-				clearTimeout(scrollTimeOut);
-			}
-
-			scrollTimeOut = setTimeout(function () {
-				stopWalkAnimation(walkAnimationInterval);
-				walkAnimationInterval = null;
-			}, 100)
-
-			var scrollTopValue = $(window).scrollTop();
-			var windowHeightValue = $(window).height();
+  	$(document).ready(function(){
+ 
+    var walkAnimationInterval = null;
+    var scrollTimeOut = null;
+ 
+   
+    var animateWalk = function () {
+         return setInterval(
+            function () {$('#earthbounded').toggleClass('left right');},
+          200
+        }
+    }
+    
+    var stopWalkAnimation = function (tid) {
+        clearInterval(tid);
+    }
+ 
+    $(window).on('scroll', function() {
+        if (walkAnimationInterval == null) {
+            walkAnimationInterval = animateWalk();
+        }
+ 
+        if (scrollTimeOut !== null) {
+            clearTimeout(scrollTimeOut);
+        }
+        
+        scrollTimeOut = setTimeout(function () {
+            stopWalkAnimation(walkAnimationInterval);
+            walkAnimationInterval = null;
+        }, 100)
+ 
+        /*
+            var scrollTopValue = $(window).scrollTop();
+            var windowHeightValue = $(window).height();
 
             // Waiting until reaching center
             var startGame = parseInt(828-windowHeightValue/2);
             if(scrollTopValue >= startGame) {
-            	$('#earthbounded').css('position', 'fixed');
-            	$('#earthbounded').css('top', '50%');
+                $('#earthbounded').css('position', 'fixed');
+                $('#earthbounded').css('top', '50%');
             }
             else {
-            	$('#earthbounded').css('position', 'absolute');
-            	$('#earthbounded').css('top', '828px');
+                $('#earthbounded').css('position', 'absolute');
+                $('#earthbounded').css('top', '828px');
             }
 
             // Enter Forest
@@ -137,98 +140,98 @@
             var phaseInterval = parseInt(windowHeightValue/6);
 
             if(scrollTopValue >= enterForest && scrollTopValue <= exitCave || scrollTopValue >= boardUFO) {
-            	$('#earthbounded').css("display", "none");
+                $('#earthbounded').css("display", "none");
             }
             else {
-            	$('#earthbounded').css("display", "block");
+                $('#earthbounded').css("display", "block");
             }
 
             // Phased UFO
             if(scrollTopValue >= boardUFO+phaseInterval) {
-            	$('#distorter').removeClass('phased1');
-            	$('#distorter').addClass('phased2');
+                $('#distorter').removeClass('phased1');
+                $('#distorter').addClass('phased2');
             }
             else {
-            	$('#distorter').addClass('phased1');
-            	$('#distorter').removeClass('phased2');
+                $('#distorter').addClass('phased1');
+                $('#distorter').removeClass('phased2');
             }
 
             if(scrollTopValue >= boardUFO+phaseInterval*2) {
-            	$('#distorter').removeClass('phased2');
+                $('#distorter').removeClass('phased2');
             }
 
             var showUFO = parseInt(4384-windowHeightValue/2);
             if(scrollTopValue >= showUFO) {
-            	$('#ufo').addClass('flying');
+                $('#ufo').addClass('flying');
             }
             else {
-            	$('#ufo').removeClass('flying');
+                $('#ufo').removeClass('flying');
             }
 
             var landUFO = parseInt(6374-windowHeightValue/2);
             if(scrollTopValue >= landUFO) {
-            	$('#ufo').removeClass('flying');
-            	$('#ending').addClass('show');
+                $('#ufo').removeClass('flying');
+                $('#ending').addClass('show');
             }
             else {
-            	$('#ending').removeClass('show');
-
+                $('#ending').removeClass('show');
+          
             }
 
-            
-          });
+            */
+		    });
 		}); //document ready
-</script>
+	</script>
 
-<footer>
+	<footer>
 
-	<ul>
+		<ul>
 
-		<a href="/">
-			<li>
-				00. Index
+			<a href="/">
+				<li>
+					00. Index
+				</li>
+			</a>
+
+			<a href="/about">
+				<li>
+					01. About
+				</li>
+			</a>
+
+			<a href="/work">
+				<li>
+					02. Work
+				</li>
+			</a>
+
+			<a href="/talks">
+				<li>
+					03. Talks
+				</li>
+			</a>			
+
+			<a href="http://sketch.bysusanlin.com">
+				<li>
+					04. Blog
+				</li>
+			</a>
+
+			<li class="typeHighlight">
+				&#10048;
 			</li>
-		</a>
 
-		<a href="/about">
-			<li>
-				01. About
-			</li>
-		</a>
+		</ul>
 
-		<a href="/work">
-			<li>
-				02. Work
-			</li>
-		</a>
+		<div class="clear"></div>
 
-		<a href="/talks">
-			<li>
-				03. Talks
-			</li>
-		</a>			
+		<div class="footnote"> 
+			<img src="/images/sprite-fp.png" width="27px">
+			<br>
+			Last updated April 2015. P.S. I believe in you.
+		</div>
 
-		<a href="http://sketch.bysusanlin.com">
-			<li>
-				04. Blog
-			</li>
-		</a>
-
-		<li class="typeHighlight">
-			&#10048;
-		</li>
-
-	</ul>
-
-	<div class="clear"></div>
-
-	<div class="footnote"> 
-		<img src="/images/sprite-fp.png" width="27px">
-		<br>
-		Last updated April 2015. P.S. I believe in you.
-	</div>
-
-</footer>
+	</footer>
 
 </body>
 </html>
