@@ -91,7 +91,7 @@
 		var walkAnimationInterval = null;
 		var scrollTimeOut = null;
 
-		var animateWalk = function (){
+		var animateWalk = function () {
 			return setInterval(
 				function () {
 					$('#earthbounded').toggleClass('left right');
@@ -101,15 +101,6 @@
 		var stopWalkAnimation = function(tid) {
 			clearInterval(tid);
 		}
-
-		var stopGame = function() {
-		  $('#earthbounded').css('position', 'fixed');
-      $('#earthbounded').css('top', '50%');
-    }
-    var stopGame = function() {
-    	$('#earthbounded').css('position', 'absolute');
-      $('#earthbounded').css('top', '828px');
-    }
 
 		$(window).on('scroll', function() {
 
@@ -128,12 +119,14 @@
 			var windowHeightValue = $(window).height();
 
       // Waiting until reaching center
-      var startGameArt = parseInt(828-windowHeightValue/2); 
-      if(scrollTopValue >= startGameArt) {
-      	startGame();
+      var startGame = parseInt(828-windowHeightValue/2); 
+      if(scrollTopValue >= startGame) {
+      	$('#earthbounded').css('position', 'fixed');
+      	$('#earthbounded').css('top', '50%');
       }
       else {
-      	stopGame();
+      	$('#earthbounded').css('position', 'absolute');
+      	$('#earthbounded').css('top', '828px');
       }
 
       // Enter Forest
