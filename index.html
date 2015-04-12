@@ -102,12 +102,8 @@
 			    stopWalkAnimation(walkAnimationInterval);
 			    walkAnimationInterval = null;
 			  }, 100)
-			  
-			});
-  		
-			$(window).scroll(function() {
 
-				var tid = setInterval(animateWalk, 200);
+			  var tid = setInterval(animateWalk, 200);
 				function animateWalk() {
 					$('#earthbounded').toggleClass('left right');
 					return setInterval;
@@ -115,6 +111,10 @@
 				function stopWalkAnimation(tid) {
 					clearInterval(tid);
 				}
+			  
+			});
+  		
+			$(window).scroll(function() {
 
 				var scrollTopValue = $(window).scrollTop();
 				var windowHeightValue = $(window).height();
