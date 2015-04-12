@@ -99,6 +99,10 @@ body {
 
 }
 
+.sprite {
+	@include pixelated;
+}
+
 #earthbounded {
 	width: 54px;
 	height: 58px;
@@ -112,12 +116,12 @@ body {
 	display: block;
 
 	&.left {
-		background: url('/images/index/sprite-left.png');
+		background-image: url('/images/index/sprite-left.png');
 		@include pixelated;
 	}
 
 	&.right {
-		background: url('/images/index/sprite-right.png');
+		background-image: url('/images/index/sprite-right.png');
 		@include pixelated;
 	}
 
@@ -133,7 +137,7 @@ body {
 	margin-top: -43px;
 
 	&.flying {
-		background: url('/images/index/ufo.png');
+		background-image: url('/images/index/ufo.png');
 		@include pixelated;
 	}
 
@@ -186,13 +190,15 @@ nav {
 	}
 
 	#onett {
-		background: url('/images/index/onett.png') top center;
+		background-image: url('/images/index/onett.png');
+		background-position: top center;
 		height: 1730px;
 		width: 100%;
 		@include pixelated;
 
 		#trees {
-			background: url('/images/index/z-trees.png') bottom center;
+			background-image: url('/images/index/z-trees.png');
+			background-position: bottom center;
 			height: 1730px;
 			width: 100%;
 			position: absolute;
@@ -202,13 +208,15 @@ nav {
 	}
 
 	#saturn {
-		background: url('/images/index/saturn-valley.png') center center;
+		background-image: url('/images/index/saturn-valley.png');
+		background-position: center center;
 		height: 2300px;
 		width: 100%;
 		@include pixelated;
 
 		#valley {
-			background: url('/images/index/z-saturn.png') center center;
+			background-image: url('/images/index/z-saturn.png');
+			background-position: center center;
 			height: 950px;
 			width: 100%;
 			position: absolute;
@@ -221,12 +229,14 @@ nav {
 			position: absolute;
 
 			&.phased1 {
-				background: url('/images/index/z-ufo1.png') center center;
+				background-image: url('/images/index/z-ufo1.png');
+				background-position: center center;
 				@include pixelated;
 			}
 
 			&.phased2 {
-				background: url('/images/index/z-ufo2.png') center center;
+				background-image: url('/images/index/z-ufo2.png');
+				background-position: center center;
 				@include pixelated;
 			}
 
@@ -235,13 +245,15 @@ nav {
 	}
 
 	#pinkcloud {
-		background: url('/images/index/sky.png') center center;
+		background-image: url('/images/index/sky.png');
+		background-position: center center;
 		width: 100%;
 		height: 1840px;
 		@include pixelated;
 
 		#clouds {
-			background: url('/images/index/z-clouds.png') center center;
+			background-image: url('/images/index/z-clouds.png');
+			background-position: center center;
 			height: 1840px;
 			width: 100%;
 			position: absolute;
@@ -253,7 +265,8 @@ nav {
 	#moonside {
 		width: 100%;
 		height: 1434px;
-		background: url('/images/index/moonside.png') center center;
+		background-image: url('/images/index/moonside.png');
+		background-position: center center;
 		@include pixelated;
 
 		#ending {
@@ -262,7 +275,8 @@ nav {
 			position: absolute;
 
 			&.show {
-				background: url('/images/index/ending.png') center center;
+				background-image: url('/images/index/ending.png');
+				background-position: center center;
 				@include pixelated;
 			}
 
