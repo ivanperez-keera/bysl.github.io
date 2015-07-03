@@ -91,9 +91,11 @@ body {
 				color: $flora;
 			}
 		}
-
 		footer {
 			background: $blueblack;
+			ul a {
+				color: $teal;
+			}
 		}
 	}
 
@@ -406,10 +408,6 @@ nav {
 				font-size: $p;
 				font-weight: 300;
 				line-height: $p*1.8;
-			}
-
-			img {
-				max-width: 100%;
 			}
 
 		}
