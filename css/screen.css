@@ -92,7 +92,7 @@ body {
     /* IE (non-standard property) */ }
 
 a {
-  color: #36b5ab;
+  color: #447f9c;
   text-decoration: none; }
   a:hover {
     color: #f194c9; }
@@ -114,11 +114,10 @@ nav {
   nav ul {
     text-align: center; }
     nav ul li {
-      list-style-type: none; }
+      list-style-type: none;
+      line-height: 32px; }
     nav ul a {
-      font-family: "Pluto Sans Cond Light", Helvetica, Arial, sans-serif;
-      text-transform: uppercase;
-      font-size: 12px; }
+      font-family: "Pluto Sans Cond Light", Helvetica, Arial, sans-serif; }
 
 #onett {
   background-image: url("/images/index/onett.png");
@@ -348,8 +347,6 @@ footer {
   color: #fff;
   font-family: "Pluto Sans Cond Light", Helvetica, Arial, sans-serif;
   padding: 2em 0 1.5em; }
-  footer ul a {
-    color: #36b5ab; }
   footer ul li {
     float: left;
     display: block;

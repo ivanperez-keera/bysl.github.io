@@ -149,7 +149,7 @@ body {
 }
 
 a {
-	color: $teal;
+	color: $jean;
 	text-decoration: none;
 
 	&:hover {
@@ -183,12 +183,11 @@ nav {
 
 			li {
 				list-style-type: none;
+				line-height: $h2;
 			}
 
 			a {
 				font-family: $plutosans;
-				text-transform: uppercase;
-				font-size: $h7;
 			}
 		}
 
@@ -441,10 +440,6 @@ nav {
 		padding: 2em 0 1.5em;
 
 		ul {
-
-			a {
-				color: $teal;
-			}
 
 			li {
 				float: left;
