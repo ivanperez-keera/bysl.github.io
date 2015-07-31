@@ -11,13 +11,11 @@
   font-weight: 300;
   font-style: normal; }
 @font-face {
-  font-family: 'Rooney Web';
   src: url("/fonts/rooney-light-italic.eot");
   src: url("/fonts/rooney-light-italic.eot?#iefix") format("embedded-opentype"), url("/fonts/rooney-light-italic.woff") format("woff"), url("/fonts/rooney-light-italic.ttf") format("truetype");
   font-weight: 300;
   font-style: italic; }
 @font-face {
-  font-family: 'Rooney Web';
   src: url("/fonts/rooney-bold.eot");
   src: url("/fonts/rooney-bold.eot?#iefix") format("embedded-opentype"), url("/fonts/rooney-bold.woff") format("woff"), url("/fonts/rooney-bold.ttf") format("truetype");
   font-weight: bold;
