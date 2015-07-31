@@ -18,6 +18,8 @@ body {
     background: #0c2b3c; }
     body.home footer ul a {
       color: #36b5ab; }
+      body.home footer ul a:hover {
+        color: #f194c9; }
 
 .sprite {
   image-rendering: -moz-crisp-edges;

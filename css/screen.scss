@@ -95,6 +95,9 @@ body {
 			background: $blueblack;
 			ul a {
 				color: $teal;
+				&:hover {
+					color: $flora;
+				}
 			}
 		}
 	}
