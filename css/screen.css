@@ -28,6 +28,12 @@ body {
   line-height: 1.8em;
   color: #434343;
   background: #fff; }
+  body strong, body b {
+    font-family: 'Rooney Web Bold';
+    font-weight: bold; }
+  body em, body i {
+    font-family: 'Rooney Web Italic';
+    font-style: italic; }
   body.home nav a {
     color: #fff; }
     body.home nav a:hover {
