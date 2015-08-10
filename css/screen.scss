@@ -112,6 +112,15 @@ body {
 	color: $black;
 	background: $white;
 
+	strong, b {
+	  font-family: 'Rooney Web Bold';
+		font-weight: bold; 
+	}
+	em, i { 
+	  font-family: 'Rooney Web Italic';
+		font-style: italic; 
+	}
+
 	&.home {
 		nav a {
 			color: $white;
