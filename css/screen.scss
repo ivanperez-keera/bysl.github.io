@@ -66,6 +66,7 @@ $dottedBorder: 1px dotted lighten($grey, 15%);
   font-style: normal;
 }
 @font-face {
+	font-family: 'Rooney Web Italic';
 	src: url('/fonts/rooney-light-italic.eot');
 	src: url('/fonts/rooney-light-italic.eot?#iefix') format('embedded-opentype'), 
 				url('/fonts/rooney-light-italic.woff') format('woff'), 
@@ -74,6 +75,7 @@ $dottedBorder: 1px dotted lighten($grey, 15%);
   font-style: italic;
 }
 @font-face {
+	font-family: 'Rooney Web Bold';
 	src: url('/fonts/rooney-bold.eot');
 	src: url('/fonts/rooney-bold.eot?#iefix') format('embedded-opentype'), 
 				url('/fonts/rooney-bold.woff') format('woff'), 
