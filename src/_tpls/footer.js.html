@@ -1,78 +1,165 @@
+
 	<script type="text/javascript" src="/js/jquery-1.8.3.min.js"> </script>
+
 	<script type="text/javascript">
 
-  	$(document).ready(function(){
-  		
-			$(window).scroll(function() {
+	$(document).ready(function() {
 
-				var scrollTopValue = $(window).scrollTop();
+		var walkAnimationInterval = null;
+		var scrollTimeOut = null;
 
-				if(parseInt(scrollTopValue/14)%2) {
-					$('#earthbounded').removeClass('left');
-					$('#earthbounded').addClass('right');
-				}
-				else {
-					$('#earthbounded').removeClass('right');
-					$('#earthbounded').addClass('left');
-				}
+		var animateWalk = function () {
+			return setInterval(
+				function () {
+					$('#earthbounded').toggleClass('left right');
+				}, 100)
+		}
 
-				var windowHeightValue = $(window).height();
+		var stopWalkAnimation = function(tid) {
+			clearInterval(tid);
+		}
 
-				// Waiting until reaching center
-				var startGame = parseInt(828-windowHeightValue/2);
-				if(scrollTopValue >= startGame) {
-					$('#earthbounded').css('position', 'fixed');
-					$('#earthbounded').css('top', '50%');
-				}
-				else {
-					$('#earthbounded').css('position', 'absolute');
-					$('#earthbounded').css('top', '828px');
-				}
+		$(window).on('scroll', function() {
 
-				// Board Saturn Valley UFO
-				var boardUFO = parseInt(3148-windowHeightValue/2);
-				var phaseInterval = parseInt(windowHeightValue/6)
-				if(scrollTopValue >= boardUFO) {
-					$('#earthbounded').css("display", "none");
-				}
-				else {
-					$('#earthbounded').css("display", "block");
-				}
+			if (walkAnimationInterval == null) {
+				walkAnimationInterval = animateWalk();
+			}
+			if (scrollTimeOut !== null) {
+				clearTimeout(scrollTimeOut);
+			}
+			scrollTimeOut = setTimeout(function() {
+				stopWalkAnimation(walkAnimationInterval);
+				walkAnimationInterval = null;
+			}, 100)
 
-				// Phased UFO
-				if(scrollTopValue >= boardUFO+phaseInterval) {
-					$('#distorter').removeClass('phased1');
-					$('#distorter').addClass('phased3');
-				}
-				else {
-					$('#distorter').addClass('phased1');
-					$('#distorter').removeClass('phased3');
-				}
+			var scrollTopValue = $(window).scrollTop();
+			var windowHeightValue = $(window).height();
 
-				if(scrollTopValue >= boardUFO+phaseInterval*2) {
-					$('#distorter').removeClass('phased3');
-				}
+      // Waiting until reaching center
+      var startGame = parseInt(828-windowHeightValue/2);
+      if(scrollTopValue >= startGame) {
+      	$('#earthbounded').css('position', 'fixed');
+      	$('#earthbounded').css('top', '50%');
+      }
+      else {
+      	$('#earthbounded').css('position', 'absolute');
+      	$('#earthbounded').css('top', '828px');
+      }
 
-				var showUFO = parseInt(4384-windowHeightValue/2);
-				if(scrollTopValue >= showUFO) {
-					$('#ufo').addClass('flying');
-				}
-				else {
-					$('#ufo').removeClass('flying');
-				}
+      // Enter Forest
+      var enterForest = parseInt(1491-windowHeightValue/2);
+      var exitCave = parseInt(2595-windowHeightValue/2)
 
-				var landUFO = parseInt(6374-windowHeightValue/2);
-				if(scrollTopValue >= landUFO) {
-					$('#ufo').removeClass('flying');
-					$('#ending').addClass('show');
-				}
-				else {
-					$('#ending').removeClass('show');
-				}
+      // Board Saturn Valley UFO
+      var boardUFO = parseInt(3148-windowHeightValue/2);
+      var phaseInterval = parseInt(windowHeightValue/6);
 
-			});
-		}); //document ready
-	</script>
+      if(scrollTopValue >= enterForest && scrollTopValue <= exitCave || scrollTopValue >= boardUFO) {
+      	$('#earthbounded').css("display", "none");
+      }
+      else {
+      	$('#earthbounded').css("display", "block");
+      }
+
+      // Phased UFO
+      if(scrollTopValue >= boardUFO+phaseInterval) {
+      	$('#distorter').removeClass('phased1');
+      	$('#distorter').addClass('phased2');
+      }
+      else {
+      	$('#distorter').addClass('phased1');
+      	$('#distorter').removeClass('phased2');
+      }
+
+      if(scrollTopValue >= boardUFO+phaseInterval*2) {
+      	$('#distorter').removeClass('phased2');
+      }
+
+      var showUFO = parseInt(4384-windowHeightValue/2);
+      if(scrollTopValue >= showUFO) {
+      	$('#ufo').addClass('flying');
+      }
+      else {
+      	$('#ufo').removeClass('flying');
+      }
+
+      var landUFO = parseInt(6374-windowHeightValue/2);
+      if(scrollTopValue >= landUFO) {
+      	$('#ufo').removeClass('flying');
+      	$('#ending').addClass('show');
+      }
+      else {
+      	$('#ending').removeClass('show');
+
+      }
+
+    }); //window scroll
+	}); //document ready
+</script>
+
+	<footer>
+
+		<ul>
+
+			<a href="/">
+				<li>
+					Index
+				</li>
+			</a>
+
+			<a href="/about">
+				<li>
+					About
+				</li>
+			</a>
+
+			<a href="/design">
+				<li>
+					Design
+				</li>
+			</a>
+
+			<a href="/illustration">
+				<li>
+					Illustration
+				</li>
+			</a>
+
+			<a href="/talks">
+				<li>
+					Talks
+				</li>
+			</a>
+
+			<a href="http://sketch.bysusanlin.com">
+				<li>
+					Blog
+				</li>
+			</a>
+
+			<a href="http://www.shop.bysusanlin.com">
+				<li>
+					Shop
+				</li>
+			</a>
+
+			<a href="https://www.patreon.com/susan">
+				<li>
+					Patreon
+				</li>
+			</a>
+
+		</ul>
+
+		<div class="clear"></div>
+
+		<div class="footnote">
+			<img src="/images/sprite-fp.png" width="27px" class="sprite">
+			<br>
+			Last updated July 2015. P.S. I believe in you.
+		</div>
+
+	</footer>
 
 </body>
 </html>

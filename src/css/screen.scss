@@ -12,7 +12,7 @@ $p: 16px;
 
 //type faces
 $plutosans: "Pluto Sans Cond Light", Helvetica, Arial, sans-serif;
-$rooney: "rooney-web-1","rooney-web-2", "Lora", Georgia, serif;
+$rooney: "Rooney Web", "Lora", Georgia, serif;
 
 //colors
 $blacker: #111;
@@ -43,7 +43,6 @@ $buff: #e3d2a1;
 $orchid: #d876ad;
 $flora: #f194c9;
 
-
 //color use assets
 $whiteTextShadow: 0 1px 0 $white;
 $dottedBorder: 1px dotted lighten($grey, 15%);
@@ -53,6 +52,36 @@ $dottedBorder: 1px dotted lighten($grey, 15%);
 	font-family: 'Pluto Sans Cond Light';
 	src: url('/fonts/pluto-sans.eot');
 	src: url('/fonts/pluto-sans.eot?#iefix') format('embedded-opentype'), url('/fonts/pluto-sans.woff') format('woff'), url('/fonts/pluto-sans.ttf') format('truetype');
+	font-weight: normal;
+  font-style: normal;
+}
+//rooney web pls
+@font-face {
+	font-family: 'Rooney Web';
+	src: url('/fonts/rooney-light.eot');
+	src: url('/fonts/rooney-light.eot?#iefix') format('embedded-opentype'),
+				url('/fonts/rooney-light.woff') format('woff'),
+				url('/fonts/rooney-light.ttf') format('truetype');
+	font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+	font-family: 'Rooney Web Italic';
+	src: url('/fonts/rooney-light-italic.eot');
+	src: url('/fonts/rooney-light-italic.eot?#iefix') format('embedded-opentype'),
+				url('/fonts/rooney-light-italic.woff') format('woff'),
+				url('/fonts/rooney-light-italic.ttf') format('truetype');
+	font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+	font-family: 'Rooney Web Bold';
+	src: url('/fonts/rooney-bold.eot');
+	src: url('/fonts/rooney-bold.eot?#iefix') format('embedded-opentype'),
+				url('/fonts/rooney-bold.woff') format('woff'),
+				url('/fonts/rooney-bold.ttf') format('truetype');
+	font-weight: bold;
+  font-style: normal;
 }
 //I use this mixin a lot
 @mixin transition($duration, $property: all, $delay:0) {
@@ -67,6 +96,15 @@ $dottedBorder: 1px dotted lighten($grey, 15%);
 	-ms-transition-delay: $delay;
 	-o-transition-delay: $delay;
 }
+
+@mixin pixelated {
+	image-rendering: -moz-crisp-edges;         	/* Firefox */
+	image-rendering: -o-crisp-edges;         		/* Opera */
+	image-rendering: -webkit-optimize-contrast;	/* Webkit (non-standard naming) */
+	image-rendering: pixelated;
+	-ms-interpolation-mode: nearest-neighbor;  	/* IE (non-standard property) */
+}
+
 body {
 	margin: 0;
 	font-family: $rooney;
@@ -76,12 +114,39 @@ body {
 	color: $black;
 	background: $white;
 
+	strong, b {
+	  font-family: 'Rooney Web Bold';
+		font-weight: bold;
+	}
+
+	em, i {
+	  font-family: 'Rooney Web Italic';
+		font-style: italic;
+		font-weight: 300;
+	}
+
 	&.home {
 		nav a {
-			color: $white; 
+			color: $white;
+			&:hover {
+				color: $flora;
+			}
+		}
+		footer {
+			background: $blueblack;
+			ul a {
+				color: $teal;
+				&:hover {
+					color: $flora;
+				}
+			}
 		}
 	}
 
+}
+
+.sprite {
+	@include pixelated;
 }
 
 #earthbounded {
@@ -96,16 +161,19 @@ body {
 	margin-top: -29px;
 	display: block;
 
-	&.fp {
-		background: url('/images/sprite-fp.png');
-	}
-
 	&.left {
-		background: url('/images/sprite-left.png');
+		background-image: url('/images/index/sprite-left.png');
+		@include pixelated;
 	}
 
 	&.right {
-		background: url('/images/sprite-right.png');
+		background-image: url('/images/index/sprite-right.png');
+		@include pixelated;
+	}
+
+	&.walk {
+		background-image: url('/images/bysusanlin-earthbound.gif');
+		@include pixelated;
 	}
 
 }
@@ -120,13 +188,14 @@ body {
 	margin-top: -43px;
 
 	&.flying {
-		background: url('/images/ufo.png');
+		background-image: url('/images/index/ufo.png');
+		@include pixelated;
 	}
 
 }
 
 a {
-	color: $teal;
+	color: $jean;
 	text-decoration: none;
 
 	&:hover {
@@ -151,9 +220,6 @@ header {
 }
 
 nav {
-		//background: url('/images/nav.png');
-		//height: 134px;
-		//width: 252px;
 		position: fixed;
 		top: 10px;
 		left: 0;
@@ -161,44 +227,51 @@ nav {
 		ul {
 			text-align: center;
 
+			li {
+				list-style-type: none;
+				line-height: $h2;
+			}
+
 			a {
 				font-family: $plutosans;
-				text-transform: uppercase;
-				font-size: $h7;
-
-				li {
-					list-style-type: none;
-				}
 			}
 		}
 
 	}
 
 	#onett {
-		background: url('/images/onett.png') top center;
+		background-image: url('/images/index/onett.png');
+		background-position: top center;
 		height: 1730px;
 		width: 100%;
+		@include pixelated;
 
 		#trees {
-			background: url('/images/z-trees.png') bottom center;
+			background-image: url('/images/index/z-trees.png');
+			background-position: bottom center;
 			height: 1730px;
 			width: 100%;
 			position: absolute;
+			@include pixelated;
 		}
 
 	}
 
 	#saturn {
-		background: url('/images/saturn-valley.png') center center;
+		background-image: url('/images/index/saturn-valley.png');
+		background-position: center center;
 		height: 2300px;
 		width: 100%;
+		@include pixelated;
 
 		#valley {
-			background: url('/images/z-saturn.png') center center;
+			background-image: url('/images/index/z-saturn.png');
+			background-position: center center;
 			height: 950px;
 			width: 100%;
 			position: absolute;
-		}		
+			@include pixelated;
+		}
 
 		#distorter {
 			height: 2300px;
@@ -206,37 +279,35 @@ nav {
 			position: absolute;
 
 			&.phased1 {
-				background: url('/images/ufo1.png') center center;
+				background-image: url('/images/index/z-ufo1.png');
+				background-position: center center;
+				@include pixelated;
 			}
 
 			&.phased2 {
-				background: url('/images/ufo2.png') center center;
-			}			
-
-			&.phased3 {
-				background: url('/images/ufo3.png') center center;
+				background-image: url('/images/index/z-ufo2.png');
+				background-position: center center;
+				@include pixelated;
 			}
 
 		}
 
 	}
 
-	#lostworld {
-		background: url('/images/lostworld.png') center center;
-		width: 100%;
-		height: 100px;
-	}
-
 	#pinkcloud {
-		background: url('/images/sky.png') center center;
+		background-image: url('/images/index/sky.png');
+		background-position: center center;
 		width: 100%;
 		height: 1840px;
+		@include pixelated;
 
 		#clouds {
-			background: url('/images/z-clouds.png') center center;
+			background-image: url('/images/index/z-clouds.png');
+			background-position: center center;
 			height: 1840px;
 			width: 100%;
 			position: absolute;
+			@include pixelated;
 		}
 
 	}
@@ -244,7 +315,9 @@ nav {
 	#moonside {
 		width: 100%;
 		height: 1434px;
-		background: url('/images/moonside.png') center center;
+		background-image: url('/images/index/moonside.png');
+		background-position: center center;
+		@include pixelated;
 
 		#ending {
 			height: 580px;
@@ -252,7 +325,9 @@ nav {
 			position: absolute;
 
 			&.show {
-				background: url('/images/ending.png') center center;
+				background-image: url('/images/index/ending.png');
+				background-position: center center;
+				@include pixelated;
 			}
 
 		}
@@ -293,36 +368,6 @@ nav {
 
 		.intro {
 			padding: 3% 20% 6%;
-		}
-
-		.opentable {
-		}
-
-		.blippy {
-		}		
-
-		.beyond {
-		}
-
-		.trulia {
-		}
-
-		.styleguides {
-		}
-
-		.library {
-		}
-
-		.daily {
-		}
-
-		.articles {
-		}
-
-		.sketchnotes {
-		}
-
-		.old {
 		}
 
 	}
@@ -367,9 +412,9 @@ nav {
 
 			.video-wrapper {
 				position: relative;
-					padding-bottom: 56.25%; //16:9 aspect ratio
-					padding-top: 25px;
-					height: 0;
+				padding-bottom: 56.25%; //16:9 aspect ratio
+				padding-top: 25px;
+				height: 0;
 
 					iframe {
 						position: absolute;
@@ -377,6 +422,7 @@ nav {
 						left: 0;
 						width: 100%;
 						height: 100%;
+						max-width: 1200px;
 					}
 
 				}
@@ -434,16 +480,12 @@ nav {
 
 	footer {
 
-		background: $blueblack;
+		background: $beige;
 		color: $white;
 		font-family: $plutosans;
 		padding: 2em 0 1.5em;
 
 		ul {
-
-			a {
-				color: $teal;
-			}
 
 			li {
 				float: left;
@@ -463,69 +505,24 @@ nav {
 
 	}
 
-	.overlay {
-		display: none;
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background-color: $blueblack;
-		filter:alpha(opacity=95);
-		-moz-opacity:0.95;
-		-khtml-opacity: 0.95;
-		opacity: 0.95;
-		z-index: 10000;
-	}
-
-	.about {
-		display: none;
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		z-index: 10001;
-		text-align: centered;
-
-		#closeOverlay {
-			position: absolute;
-			top: 10px;
-			right: 10px;
-			font-size: $h1;
-		}
-
-		p {
-			margin: 12% auto 15%;
-			padding: 0 10%;
-			max-width: 500px;
-			color: $white;
-		}
-
-	}
-
 	.typeHighlight {
 		color: $flora !important;
-	}	
+	}
 	.typeLowlight {
 		color: $grey !important;
 	}
 
 	@media screen and (max-width:500px) {
 
-		.about {
-			overflow: auto; //make bio scroll
-		}
-
 		nav {
 			display: none; //hide it
 		}
 
-		#work div, #talks div {
+		#about div, #work div, #talks div {
 			padding: 8% 10% 10%;
 		}
 
-		#work .intro, #talks .intro {
+		#about .intro, #work .intro, #talks .intro {
 			padding: 3% 10% 6%;
 		}
 
@@ -534,5 +531,3 @@ nav {
 		}
 
 	}
-
-	
