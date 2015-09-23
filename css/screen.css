@@ -1,27 +1,31 @@
 @font-face {
   font-family: 'Pluto Sans Cond Light';
-  src: url("/fonts/pluto-sans.eot");
-  src: url("/fonts/pluto-sans.eot?#iefix") format("embedded-opentype"), url("/fonts/pluto-sans.woff") format("woff"), url("/fonts/pluto-sans.ttf") format("truetype");
+  src: url('/fonts/pluto-sans.eot');
+  src: url('/fonts/pluto-sans.eot?#iefix') format('embedded-opentype'), url('/fonts/pluto-sans.woff') format('woff'), url('/fonts/pluto-sans.ttf') format('truetype');
   font-weight: normal;
   font-style: normal; }
+
 @font-face {
   font-family: 'Rooney Web';
-  src: url("/fonts/rooney-light.eot");
-  src: url("/fonts/rooney-light.eot?#iefix") format("embedded-opentype"), url("/fonts/rooney-light.woff") format("woff"), url("/fonts/rooney-light.ttf") format("truetype");
+  src: url('/fonts/rooney-light.eot');
+  src: url('/fonts/rooney-light.eot?#iefix') format('embedded-opentype'), url('/fonts/rooney-light.woff') format('woff'), url('/fonts/rooney-light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal; }
+
 @font-face {
   font-family: 'Rooney Web Italic';
-  src: url("/fonts/rooney-light-italic.eot");
-  src: url("/fonts/rooney-light-italic.eot?#iefix") format("embedded-opentype"), url("/fonts/rooney-light-italic.woff") format("woff"), url("/fonts/rooney-light-italic.ttf") format("truetype");
+  src: url('/fonts/rooney-light-italic.eot');
+  src: url('/fonts/rooney-light-italic.eot?#iefix') format('embedded-opentype'), url('/fonts/rooney-light-italic.woff') format('woff'), url('/fonts/rooney-light-italic.ttf') format('truetype');
   font-weight: 300;
   font-style: italic; }
+
 @font-face {
   font-family: 'Rooney Web Bold';
-  src: url("/fonts/rooney-bold.eot");
-  src: url("/fonts/rooney-bold.eot?#iefix") format("embedded-opentype"), url("/fonts/rooney-bold.woff") format("woff"), url("/fonts/rooney-bold.ttf") format("truetype");
+  src: url('/fonts/rooney-bold.eot');
+  src: url('/fonts/rooney-bold.eot?#iefix') format('embedded-opentype'), url('/fonts/rooney-bold.woff') format('woff'), url('/fonts/rooney-bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal; }
+
 body {
   margin: 0;
   font-family: "Rooney Web", "Lora", Georgia, serif;
@@ -69,7 +73,7 @@ body {
   margin-top: -29px;
   display: block; }
   #earthbounded.left {
-    background-image: url("/images/index/sprite-left.png");
+    background-image: url('/images/index/sprite-left.png');
     image-rendering: -moz-crisp-edges;
     /* Firefox */
     image-rendering: -o-crisp-edges;
@@ -80,7 +84,7 @@ body {
     -ms-interpolation-mode: nearest-neighbor;
     /* IE (non-standard property) */ }
   #earthbounded.right {
-    background-image: url("/images/index/sprite-right.png");
+    background-image: url('/images/index/sprite-right.png');
     image-rendering: -moz-crisp-edges;
     /* Firefox */
     image-rendering: -o-crisp-edges;
@@ -91,7 +95,7 @@ body {
     -ms-interpolation-mode: nearest-neighbor;
     /* IE (non-standard property) */ }
   #earthbounded.walk {
-    background-image: url("/images/bysusanlin-earthbound.gif");
+    background-image: url('/images/bysusanlin-earthbound.gif');
     image-rendering: -moz-crisp-edges;
     /* Firefox */
     image-rendering: -o-crisp-edges;
@@ -111,7 +115,7 @@ body {
   margin-left: -44px;
   margin-top: -43px; }
   #ufo.flying {
-    background-image: url("/images/index/ufo.png");
+    background-image: url('/images/index/ufo.png');
     image-rendering: -moz-crisp-edges;
     /* Firefox */
     image-rendering: -o-crisp-edges;
@@ -151,7 +155,7 @@ nav {
       font-family: "Pluto Sans Cond Light", Helvetica, Arial, sans-serif; }
 
 #onett {
-  background-image: url("/images/index/onett.png");
+  background-image: url('/images/index/onett.png');
   background-position: top center;
   height: 1730px;
   width: 100%;
@@ -165,7 +169,7 @@ nav {
   -ms-interpolation-mode: nearest-neighbor;
   /* IE (non-standard property) */ }
   #onett #trees {
-    background-image: url("/images/index/z-trees.png");
+    background-image: url('/images/index/z-trees.png');
     background-position: bottom center;
     height: 1730px;
     width: 100%;
@@ -181,7 +185,7 @@ nav {
     /* IE (non-standard property) */ }
 
 #saturn {
-  background-image: url("/images/index/saturn-valley.png");
+  background-image: url('/images/index/saturn-valley.png');
   background-position: center center;
   height: 2300px;
   width: 100%;
@@ -195,7 +199,7 @@ nav {
   -ms-interpolation-mode: nearest-neighbor;
   /* IE (non-standard property) */ }
   #saturn #valley {
-    background-image: url("/images/index/z-saturn.png");
+    background-image: url('/images/index/z-saturn.png');
     background-position: center center;
     height: 950px;
     width: 100%;
@@ -214,7 +218,7 @@ nav {
     width: 100%;
     position: absolute; }
     #saturn #distorter.phased1 {
-      background-image: url("/images/index/z-ufo1.png");
+      background-image: url('/images/index/z-ufo1.png');
       background-position: center center;
       image-rendering: -moz-crisp-edges;
       /* Firefox */
@@ -226,7 +230,7 @@ nav {
       -ms-interpolation-mode: nearest-neighbor;
       /* IE (non-standard property) */ }
     #saturn #distorter.phased2 {
-      background-image: url("/images/index/z-ufo2.png");
+      background-image: url('/images/index/z-ufo2.png');
       background-position: center center;
       image-rendering: -moz-crisp-edges;
       /* Firefox */
@@ -239,7 +243,7 @@ nav {
       /* IE (non-standard property) */ }
 
 #pinkcloud {
-  background-image: url("/images/index/sky.png");
+  background-image: url('/images/index/sky.png');
   background-position: center center;
   width: 100%;
   height: 1840px;
@@ -253,7 +257,7 @@ nav {
   -ms-interpolation-mode: nearest-neighbor;
   /* IE (non-standard property) */ }
   #pinkcloud #clouds {
-    background-image: url("/images/index/z-clouds.png");
+    background-image: url('/images/index/z-clouds.png');
     background-position: center center;
     height: 1840px;
     width: 100%;
@@ -271,7 +275,7 @@ nav {
 #moonside {
   width: 100%;
   height: 1434px;
-  background-image: url("/images/index/moonside.png");
+  background-image: url('/images/index/moonside.png');
   background-position: center center;
   image-rendering: -moz-crisp-edges;
   /* Firefox */
@@ -287,7 +291,7 @@ nav {
     width: 100%;
     position: absolute; }
     #moonside #ending.show {
-      background-image: url("/images/index/ending.png");
+      background-image: url('/images/index/ending.png');
       background-position: center center;
       image-rendering: -moz-crisp-edges;
       /* Firefox */
@@ -407,6 +411,5 @@ footer {
     padding: 3% 10% 6%; }
 
   footer ul li {
-    width: 100%; } }
-
-/*# sourceMappingURL=screen.css.map */
+    width: 100%; }
+ }
