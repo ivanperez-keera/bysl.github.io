@@ -20,9 +20,48 @@
 
 <body class="home">
 
+	<div class="container">
+		<header>
+
+  <ul>
+		<a href="/about">
+      <li>
+        About
+      </li>
+    </a>
+    <a href="/design">
+      <li>
+        Design
+      </li>
+    </a>
+    <a href="/illustration">
+      <li>
+        Illustration
+      </li>
+    </a>
+    <a href="/sketchnotes">
+      <li>
+        Sketchnotes
+      </li>
+    </a>
+    <a href="/talks">
+      <li>
+        Talks
+      </li>
+    </a>
+    <a href="http://sketch.bysusanlin.com">
+      <li>
+        Blog
+      </li>
+    </a>
+  </ul>
+
+</header>
+	</div>
+
 	<div id="earthbounded" class="left">
 		<!-- sprite here ^__^ -->
-	</div>	
+	</div>
 
 	<div id="ufo" class="">
 		<!-- fly, fly away -->
@@ -35,66 +74,16 @@
 	<div id="saturn">
 		<div id="valley"></div>
 		<div id="distorter" class="phased1"></div>
-	</div>	
+	</div>
 
 	<div id="pinkcloud">
 		<div id="clouds"></div>
-	</div>	
-
-	<div id="moonside">
-		<div id="ending" class=""></div>
 	</div>
 
-	<nav>
-		<ul>
-			<a href="/">
-				<li>
-					<img src="/images/bysusanlin-totoro.svg" height="40px">
-				</li>
-			</a>
-			<a href="/about">
-				<li>
-					About
-				</li>
-			</a>
-			<a href="/design">
-				<li>
-					Design
-				</li>
-			</a>
-			<a href="/illustration">
-				<li>
-					Illustration
-				</li>
-			</a>
-			<a href="/talks">
-				<li>
-					Talks
-				</li>
-			</a>
-			<a href="http://sketch.bysusanlin.com">
-				<li>
-					Blog
-				</li>
-			</a>
-			<a href="http://shop.bysusanlin.com">
-				<li>
-					Shop
-				</li>
-			</a>
-			<a href="https://www.patreon.com/susan">
-				<li>
-					Patreon
-				</li>
-			</a>
-			<li class="typeLowlight">
-				&mdash;
-			</li>
-			<li class="typeHighlight">
-				&#10048;
-			</li>
-		</ul>
-	</nav>
+	<div id="moonside">
+		<div id="ending"></div>
+	</div>
+
 
 	<script type="text/javascript" src="/js/jquery-1.8.3.min.js"> </script>
 
@@ -133,22 +122,22 @@
 			var windowHeightValue = $(window).height();
 
       // Waiting until reaching center
-      var startGame = parseInt(828-windowHeightValue/2);
+      var startGame = parseInt(908-windowHeightValue/2);
       if(scrollTopValue >= startGame) {
       	$('#earthbounded').css('position', 'fixed');
       	$('#earthbounded').css('top', '50%');
       }
       else {
       	$('#earthbounded').css('position', 'absolute');
-      	$('#earthbounded').css('top', '828px');
+      	$('#earthbounded').css('top', '908px');
       }
 
       // Enter Forest
-      var enterForest = parseInt(1491-windowHeightValue/2);
-      var exitCave = parseInt(2595-windowHeightValue/2)
+      var enterForest = parseInt(1571-windowHeightValue/2);
+      var exitCave = parseInt(2675-windowHeightValue/2)
 
       // Board Saturn Valley UFO
-      var boardUFO = parseInt(3148-windowHeightValue/2);
+      var boardUFO = parseInt(3228-windowHeightValue/2);
       var phaseInterval = parseInt(windowHeightValue/6);
 
       if(scrollTopValue >= enterForest && scrollTopValue <= exitCave || scrollTopValue >= boardUFO) {
@@ -172,7 +161,7 @@
       	$('#distorter').removeClass('phased2');
       }
 
-      var showUFO = parseInt(4384-windowHeightValue/2);
+      var showUFO = parseInt(4464-windowHeightValue/2);
       if(scrollTopValue >= showUFO) {
       	$('#ufo').addClass('flying');
       }
@@ -180,7 +169,7 @@
       	$('#ufo').removeClass('flying');
       }
 
-      var landUFO = parseInt(6374-windowHeightValue/2);
+      var landUFO = parseInt(6454-windowHeightValue/2);
       if(scrollTopValue >= landUFO) {
       	$('#ufo').removeClass('flying');
       	$('#ending').addClass('show');
@@ -193,8 +182,7 @@
     }); //window scroll
 	}); //document ready
 </script>
-
-	<footer>
+<footer>
 
 		<ul>
 
@@ -222,6 +210,12 @@
 				</li>
 			</a>
 
+			<a href="/sketchnotes">
+				<li>
+					Sketchnotes
+				</li>
+			</a>
+
 			<a href="/talks">
 				<li>
 					Talks
@@ -234,7 +228,13 @@
 				</li>
 			</a>
 
-			<a href="http://www.shop.bysusanlin.com">
+			<a href="https://www.levelframes.com/artists/susan-lin">
+				<li>
+					Level Frames
+				</li>
+			</a>
+
+			<a href="http://shop.bysusanlin.com">
 				<li>
 					Shop
 				</li>
@@ -253,7 +253,7 @@
 		<div class="footnote">
 			<img src="/images/sprite-fp.png" width="27px" class="sprite">
 			<br>
-			Last updated July 2015. P.S. I believe in you.
+			&copy; Susan Lin, 2003-2015.
 		</div>
 
 	</footer>
