@@ -1,4 +1,4 @@
-{% include '_tpls/header.html' %}
+{% include '_tpls/head.html' %}
 
 	<title>Susan &times; Internet</title>
 
@@ -6,9 +6,13 @@
 
 <body class="home">
 
+	<div class="container">
+		{% include '_tpls/header.html' %}
+	</div>
+
 	<div id="earthbounded" class="left">
 		<!-- sprite here ^__^ -->
-	</div>	
+	</div>
 
 	<div id="ufo" class="">
 		<!-- fly, fly away -->
@@ -21,15 +25,15 @@
 	<div id="saturn">
 		<div id="valley"></div>
 		<div id="distorter" class="phased1"></div>
-	</div>	
+	</div>
 
 	<div id="pinkcloud">
 		<div id="clouds"></div>
-	</div>	
-
-	<div id="moonside">
-		<div id="ending" class=""></div>
 	</div>
 
-{% include '_tpls/nav.html' %}
-{% include '_tpls/footer.js.html' %}
+	<div id="moonside">
+		<div id="ending"></div>
+	</div>
+
+{% include '_tpls/index-js.html' %}
+{% include '_tpls/footer.html' %}
