@@ -135,23 +135,24 @@ body {
 
 	&.home { //custom for body on homepage
 
-		background: $blueblack;
+		background: $leaf;
 
 		header a {
-			color: $teal;
+			color: $white;
 			&:hover {
-				color: $flora;
+				color: $lightMint;
 			}
 		}
 
 		header ul li {
-			border-bottom: 2px solid $jean;
+			border-bottom: 2px solid $overgrowth;
 		}
 
 		footer {
 			background: $blueblack;
 
 			ul {
+				margin-top: 0;
 				border-top: 0;
 			}
 
@@ -175,7 +176,7 @@ body {
 	width: 54px;
 	height: 58px;
 	position: absolute;
-	top: 908px;
+	top: 923px;
 	left: 50%;
 	margin-left: -27px;
 	margin-top: -29px;
@@ -232,7 +233,7 @@ a {
 header {
 		margin-top: -16px;
     padding: 0;
-		min-height: 65px;
+		min-height: 80px;
 
 		ul {
 			padding: 15px 0 50px;
@@ -257,7 +258,7 @@ nav {
 		position: fixed;
 		left: 25px;
 		top: 50%;
-		transform: translate(0,-55%);
+		transform: translate(0,-56%);
 		font-family: $plutosans;
 		font-size: $h6;
 		line-height: 1.6em;
@@ -386,6 +387,10 @@ nav {
 				font-weight: 300;
 			}
 
+			ul {
+				padding-left: 17px;
+			}
+
 			img {
 				max-width: 100%;
 			}
@@ -400,7 +405,7 @@ nav {
 		}
 
 		.intro {
-			padding: 3% 0 6%;
+			padding: 0 0 6%;
 		}
 
 		.video {
@@ -501,7 +506,7 @@ nav {
 	@media screen and (max-width:600px) {
 
 		.home header {
-			min-height: 110px;
+			min-height: 120px;
 		}
 
 	}
