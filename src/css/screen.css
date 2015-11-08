@@ -408,11 +408,12 @@ footer {
     .container .intro {
       padding-top: 5%; }
 
-  footer {
+  footer ul {
     padding: 30px 5% 15px; }
-
-  footer ul li {
-    width: 100%; } }
+    footer ul li {
+      width: 100%; }
+  footer .footnote {
+    padding: 30px 5% 15px; } }
 @media screen and (max-width: 600px) {
   .home header {
     min-height: 120px; } }

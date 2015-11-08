@@ -500,11 +500,20 @@ nav {
 		}
 
 		footer {
-			padding: 30px 5% 15px;
-		}
 
-		footer ul li {
-			width: 100%;
+      ul {
+        padding: 30px 5% 15px;
+
+        li {
+          width: 100%;
+        }
+
+      }
+
+      .footnote {
+        padding: 30px 5% 15px;
+      }
+      
 		}
 
 	}
