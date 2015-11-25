@@ -435,7 +435,7 @@ footer {
     padding: 30px 5% 15px; }
  }
 
-@media screen and (max-width: 675px) {
+@media screen and (max-width: 680px) {
   .home header {
     min-height: 120px; }
  }
