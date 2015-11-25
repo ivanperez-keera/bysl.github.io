@@ -528,7 +528,7 @@ nav {
 		color: $mint !important;
 	}
 
-	@media screen and (max-width:800px) {
+	@media screen and (max-width:875px) {
 
 		nav {
 			display: none; //hide it
@@ -580,7 +580,7 @@ nav {
       }
 		}
 
-	} //max width 800
+	} //max width 875
 
 	@media screen and (max-width:600px) {
 		.home header {
