@@ -1,42 +1,3 @@
-/*doc
----
-title: Add Ons
-name: addOn
-category: Forms
-author: JD
----
-
-There are many cases where text needs to be around an input. You can use
-these decorators so that your text will align nicely next to the input
-and be clear that it is related to the input. To use a field decorator
-you add `fieldAppend` or `fieldPrepend` to your `fieldItem` and then
-inside the `fieldItem` you add an `addOn` class.
-
-There are two caveats when using these components:
-
-1. There must not be any white space or line break betweent the .addOn
-element and the input element.
-2. The input must be sized so that there is room for the .addOn element
-(so use a colsN class).
-
-```html_example
-<div class="form">
-  <div class="field">
-    <label for="how_much" class="fieldLabel">How much?</label>
-    <span class="fieldItem fieldAppend text">
-      <input id="how_much" aria-labelledby="zero_cents" class="cols12" type="text"><span id="zero_cents" class="addOn addOnBasic">.00</span>
-    </span>
-  </div>
-  <div class="field">
-    <label for="how_much" class="fieldLabel">How much?</label>
-    <span class="fieldItem fieldPrepend text">
-      <span id="dollars" class="addOn addOnBasic">$</span><input aria-labelledby="dollars" id="how_much" class="cols12" type="text">
-    </span>
-  </div>
-</div>
-```
-
-*/
 @font-face {
   font-family: 'Pluto Sans Cond Light';
   src: url('/fonts/pluto-sans.eot');
@@ -160,7 +121,7 @@ body {
   width: 88px;
   height: 86px;
   position: fixed;
-  top: 50%;
+  top: 55%;
   left: 50%;
   margin-left: -44px;
   margin-top: -43px; }
@@ -207,7 +168,7 @@ header {
 nav {
   position: fixed;
   left: 25px;
-  top: 50%;
+  top: 53%;
   transform: translate(0, -56%);
   font-family: "Pluto Sans Cond Light", Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -366,7 +327,7 @@ nav {
 
 .container {
   margin: 0 auto;
-  padding: 0 5% 0 25%;
+  padding: 0 5% 0 28%;
   max-width: 1370px;
   text-align: left; }
   .container div {
@@ -415,7 +376,7 @@ footer {
   font-family: "Pluto Sans Cond Light", Helvetica, Arial, sans-serif; }
   footer ul {
     border-top: 1px dotted #dadee2;
-    padding: 30px 5% 15px 25%;
+    padding: 30px 5% 15px 28%;
     max-width: 1370px;
     margin: 0 auto; }
     footer ul li {
@@ -425,7 +386,7 @@ footer {
       width: 33.33%;
       height: 50px; }
   footer .footnote {
-    padding: 30px 5% 15px 25%;
+    padding: 30px 5% 15px 28%;
     max-width: 1370px;
     margin: 2em auto 0;
     font-family: "Pluto Sans Cond Light", Helvetica, Arial, sans-serif;
@@ -444,7 +405,7 @@ footer {
 .typeBluelight {
   color: #21dcc7 !important; }
 
-@media screen and (max-width: 875px) {
+@media screen and (max-width: 990px) {
   nav {
     display: none; }
 
