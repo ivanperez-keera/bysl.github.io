@@ -261,7 +261,7 @@ header {
 nav {
 		position: fixed;
 		left: 25px;
-		top: 50%;
+		top: 53%;
 		transform: translate(0,-56%);
 		font-family: $plutosans;
 		font-size: $h6;
@@ -363,16 +363,12 @@ nav {
 				background-position: center center;
 				@include pixelated;
 			}
-
 		}
-
 	}
 
-
 	.container {
-
 		margin: 0 auto;
-		padding: 0 5% 0 25%;
+		padding: 0 5% 0 28%;
 		max-width: 1370px;
 		text-align: left;
 
@@ -451,7 +447,7 @@ nav {
 
 		ul {
 			border-top: $dottedBorder;
-      padding: 30px 5% 15px 25%;
+      padding: 30px 5% 15px 28%;
       max-width: 1370px;
       margin: 0 auto;
 
@@ -465,7 +461,7 @@ nav {
 		}
 
 		.footnote {
-      padding: 30px 5% 15px 25%;
+      padding: 30px 5% 15px 28%;
       max-width: 1370px;
       margin: 2em auto 0;
       font-family: $plutosans;
@@ -488,7 +484,7 @@ nav {
 		color: $mint !important;
 	}
 
-	@media screen and (max-width:1030px) {
+	@media screen and (max-width:990px) {
 
 		nav {
 			display: none; //hide it
