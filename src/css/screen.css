@@ -401,7 +401,11 @@ footer {
 .typeBluelight {
   color: #21dcc7 !important; }
 
-@media screen and (max-width: 800px) {
+.typeNums {
+  font-family: "Pluto Sans Cond Light", Helvetica, Arial, sans-serif;
+  font-size: 14px; }
+
+@media screen and (max-width: 990px) {
   nav {
     display: none; }
 
