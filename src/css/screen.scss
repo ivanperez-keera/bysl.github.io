@@ -484,6 +484,11 @@ nav {
 		color: $mint !important;
 	}
 
+  .typeNums {
+    font-size: $h6 !important;
+    font-family: $plutosans;
+  }
+
 	@media screen and (max-width:990px) {
 
 		nav {

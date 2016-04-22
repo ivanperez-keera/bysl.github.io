@@ -164,7 +164,7 @@ header {
 nav {
   position: fixed;
   left: 25px;
-  top: 52%;
+  top: 53%;
   transform: translate(0, -56%);
   font-family: "Pluto Sans Cond Light", Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -400,6 +400,10 @@ footer {
 
 .typeBluelight {
   color: #21dcc7 !important; }
+
+.typeNums {
+  font-size: 14px !important;
+  font-family: "Pluto Sans Cond Light", Helvetica, Arial, sans-serif; }
 
 @media screen and (max-width: 990px) {
   nav {
