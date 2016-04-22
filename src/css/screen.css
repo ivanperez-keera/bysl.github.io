@@ -117,7 +117,7 @@ body {
   width: 88px;
   height: 86px;
   position: fixed;
-  top: 50%;
+  top: 55%;
   left: 50%;
   margin-left: -44px;
   margin-top: -43px; }
@@ -164,7 +164,7 @@ header {
 nav {
   position: fixed;
   left: 25px;
-  top: 50%;
+  top: 52%;
   transform: translate(0, -56%);
   font-family: "Pluto Sans Cond Light", Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -323,7 +323,7 @@ nav {
 
 .container {
   margin: 0 auto;
-  padding: 0 5% 0 25%;
+  padding: 0 5% 0 28%;
   max-width: 1370px;
   text-align: left; }
   .container div {
@@ -372,7 +372,7 @@ footer {
   font-family: "Pluto Sans Cond Light", Helvetica, Arial, sans-serif; }
   footer ul {
     border-top: 1px dotted #dadee2;
-    padding: 30px 5% 15px 25%;
+    padding: 30px 5% 15px 28%;
     max-width: 1370px;
     margin: 0 auto; }
     footer ul li {
@@ -382,7 +382,7 @@ footer {
       width: 33.33%;
       height: 50px; }
   footer .footnote {
-    padding: 30px 5% 15px 25%;
+    padding: 30px 5% 15px 28%;
     max-width: 1370px;
     margin: 2em auto 0;
     font-family: "Pluto Sans Cond Light", Helvetica, Arial, sans-serif;
@@ -400,10 +400,6 @@ footer {
 
 .typeBluelight {
   color: #21dcc7 !important; }
-
-.typeNums {
-  font-family: "Pluto Sans Cond Light", Helvetica, Arial, sans-serif;
-  font-size: 14px; }
 
 @media screen and (max-width: 990px) {
   nav {
