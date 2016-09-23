@@ -405,6 +405,11 @@ footer {
 .typeBluelight {
   color: #21dcc7 !important; }
 
+.avatar {
+    border-radius: 100% !important;
+    max-width: 200px !important;
+}
+
 .typeNums {
   font-size: 14px !important;
   font-family: "Pluto Sans Cond Light", Helvetica, Arial, sans-serif; }
