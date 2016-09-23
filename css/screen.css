@@ -75,13 +75,13 @@ body {
   /* IE (non-standard property) */ }
 
 #earthbounded {
-  width: 54px;
-  height: 58px;
+  width: 38px;
+  height: 48px;
   position: absolute;
   top: 923px;
   left: 50%;
-  margin-left: -27px;
-  margin-top: -29px;
+  margin-left: -19px;
+  margin-top: -24px;
   display: block; }
   #earthbounded.left {
     background-image: url('/images/index/sprite-left.png');
@@ -118,13 +118,13 @@ body {
     /* IE (non-standard property) */ }
 
 #ufo {
-  width: 88px;
-  height: 86px;
+  width: 72px;
+  height: 88px;
   position: fixed;
   top: 55%;
   left: 50%;
-  margin-left: -44px;
-  margin-top: -43px; }
+  margin-left: -36px;
+  margin-top: -44px; }
   #ufo.flying {
     background-image: url('/images/index/ufo.png');
     image-rendering: -moz-crisp-edges;
