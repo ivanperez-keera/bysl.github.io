@@ -1,28 +1,28 @@
 @font-face {
   font-family: 'Pluto Sans Cond Light';
-  src: url('/fonts/pluto-sans.eot');
-  src: url('/fonts/pluto-sans.eot?#iefix') format('embedded-opentype'), url('/fonts/pluto-sans.woff') format('woff'), url('/fonts/pluto-sans.ttf') format('truetype');
+  src: url('../fonts/pluto-sans.eot');
+  src: url('../fonts/pluto-sans.eot?#iefix') format('embedded-opentype'), url('../fonts/pluto-sans.woff') format('woff'), url('/fonts/pluto-sans.ttf') format('truetype');
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Rooney Web';
   src: url('/fonts/rooney-light.eot');
-  src: url('/fonts/rooney-light.eot?#iefix') format('embedded-opentype'), url('/fonts/rooney-light.woff') format('woff'), url('/fonts/rooney-light.ttf') format('truetype');
+  src: url('/fonts/rooney-light.eot?#iefix') format('embedded-opentype'), url('../fonts/rooney-light.woff') format('woff'), url('/fonts/rooney-light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
   font-family: 'Rooney Web Italic';
   src: url('/fonts/rooney-light-italic.eot');
-  src: url('/fonts/rooney-light-italic.eot?#iefix') format('embedded-opentype'), url('/fonts/rooney-light-italic.woff') format('woff'), url('/fonts/rooney-light-italic.ttf') format('truetype');
+  src: url('/fonts/rooney-light-italic.eot?#iefix') format('embedded-opentype'), url('../fonts/rooney-light-italic.woff') format('woff'), url('/fonts/rooney-light-italic.ttf') format('truetype');
   font-weight: 300;
   font-style: italic; }
 
 @font-face {
   font-family: 'Rooney Web Bold';
   src: url('/fonts/rooney-bold.eot');
-  src: url('/fonts/rooney-bold.eot?#iefix') format('embedded-opentype'), url('/fonts/rooney-bold.woff') format('woff'), url('/fonts/rooney-bold.ttf') format('truetype');
+  src: url('/fonts/rooney-bold.eot?#iefix') format('embedded-opentype'), url('../fonts/rooney-bold.woff') format('woff'), url('/fonts/rooney-bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal; }
 
@@ -408,7 +408,7 @@ footer {
     max-width: 200px !important;
 }
 
-.typeNums {
+.metaText {
   font-size: 14px !important;
   font-family: "Pluto Sans Cond Light", Helvetica, Arial, sans-serif; }
 
