@@ -46,13 +46,13 @@ body {
   body hr {
     border: 1px dotted #dadee2; }
   body.home {
-    background: #56ad16; }
+    background: #2dc2a5; }
     body.home header a {
       color: #fff; }
       body.home header a:hover {
         color: #aeeed9; }
     body.home header ul li {
-      border-bottom: 2px solid #488f0c; }
+      border-bottom: 2px solid #2a9991; }
     body.home footer {
       background: #0c2b3c; }
       body.home footer ul {
@@ -118,13 +118,13 @@ body {
     /* IE (non-standard property) */ }
 
 #ufo {
-  width: 72px;
-  height: 88px;
+  width: 90px;
+  height: 86px;
   position: fixed;
   top: 55%;
   left: 50%;
-  margin-left: -36px;
-  margin-top: -44px; }
+  margin-left: -45px;
+  margin-top: -43px; }
   #ufo.flying {
     background-image: url('/images/index/ufo.png');
     image-rendering: -moz-crisp-edges;
